@@ -1,0 +1,545 @@
+version = 1
+
+[profile]
+username = "kdominic89"
+display_name = "Dominic K."
+organization = "doka-labs"
+headline = ".NET, developer tools, and open source."
+tagline = "Dominic K. \u00b7 .NET, developer tools, and open source."
+pages_url = "https://kdominic89.github.io/kdominic89/"
+source_url = "https://github.com/kdominic89/kdominic89"
+
+[collection]
+github_user = "kdominic89"
+github_organizations = ["doka-labs"]
+discover_public_repositories = true
+visualize_discovered_repositories = false
+include_forks = false
+include_archived = false
+collect_contributions = true
+collect_private_repository_count = false
+repository_limit = 100
+history_limit = 24
+
+[render]
+width = 1800
+height = 1680
+motion_seconds = 32
+detail_level = "abstract"
+show_activity_orbit = true
+show_state_hash = true
+show_interests_in_readme = true
+show_technology_labels = true
+
+[[domains]]
+id = "personal"
+label = "kdominic89"
+owner = "kdominic89"
+kind = "account"
+anchor = [451.0, 522.0]
+summary = "Personal projects."
+
+[[domains]]
+id = "doka-labs"
+label = "doka-labs"
+owner = "doka-labs"
+kind = "organization"
+anchor = [1260.0, 519.0]
+summary = "Public and private projects."
+
+[[technologies]]
+id = "rust"
+label = "Rust"
+category = "language"
+affinities = ["personal"]
+show_in_readme = true
+
+[[technologies]]
+id = "go"
+label = "Go"
+category = "language"
+affinities = ["personal"]
+show_in_readme = true
+
+[[technologies]]
+id = "csharp"
+label = "C#"
+category = "language"
+affinities = ["doka-labs"]
+show_in_readme = true
+
+[[technologies]]
+id = "dotnet"
+label = ".NET"
+category = "runtime"
+affinities = ["doka-labs"]
+show_in_readme = true
+
+[[technologies]]
+id = "angular"
+label = "Angular"
+category = "frontend"
+affinities = ["personal", "doka-labs"]
+cross_domain = true
+show_in_readme = true
+
+[[technologies]]
+id = "typescript"
+label = "TypeScript"
+category = "language"
+affinities = ["personal", "doka-labs"]
+cross_domain = true
+show_in_readme = false
+
+[[technologies]]
+id = "wasm"
+label = "WebAssembly"
+category = "runtime"
+affinities = ["personal"]
+show_in_readme = true
+
+[[technologies]]
+id = "mcp"
+label = "MCP"
+category = "protocol"
+affinities = ["personal"]
+show_in_readme = false
+
+[[technologies]]
+id = "roslyn"
+label = "Roslyn"
+category = "code-intelligence"
+affinities = ["personal", "doka-labs"]
+cross_domain = true
+show_in_readme = false
+
+[[technologies]]
+id = "rust-analyzer"
+label = "rust-analyzer"
+category = "code-intelligence"
+affinities = ["personal"]
+show_in_readme = false
+
+[[technologies]]
+id = "python"
+label = "Python"
+category = "language-target"
+affinities = ["personal"]
+show_in_readme = false
+
+[[technologies]]
+id = "php"
+label = "PHP"
+category = "language-target"
+affinities = ["personal"]
+show_in_readme = false
+
+[[technologies]]
+id = "lua"
+label = "Lua"
+category = "language-target"
+affinities = ["personal"]
+show_in_readme = false
+
+[[technologies]]
+id = "html"
+label = "HTML"
+category = "structural-target"
+affinities = ["personal", "doka-labs"]
+cross_domain = true
+show_in_readme = false
+
+[[technologies]]
+id = "css"
+label = "CSS"
+category = "structural-target"
+affinities = ["personal", "doka-labs"]
+cross_domain = true
+show_in_readme = false
+
+[[technologies]]
+id = "shell"
+label = "Bash / Zsh"
+category = "structural-target"
+affinities = ["personal"]
+show_in_readme = false
+
+[[technologies]]
+id = "sql-dialects"
+label = "SQL dialects"
+category = "structural-target"
+affinities = ["personal", "doka-labs"]
+cross_domain = true
+show_in_readme = false
+
+[[technologies]]
+id = "docker"
+label = "Docker"
+category = "platform"
+affinities = ["personal", "doka-labs"]
+cross_domain = true
+show_in_readme = false
+
+[[technologies]]
+id = "ollama"
+label = "Ollama"
+category = "ai-runtime"
+affinities = ["personal"]
+show_in_readme = false
+
+[[technologies]]
+id = "sqlite"
+label = "SQLite"
+category = "database"
+affinities = ["personal"]
+show_in_readme = false
+
+[[technologies]]
+id = "sqlcipher"
+label = "SQLCipher"
+category = "security"
+affinities = ["personal"]
+show_in_readme = false
+
+[[technologies]]
+id = "age"
+label = "age"
+category = "security"
+affinities = ["personal"]
+show_in_readme = false
+
+[[technologies]]
+id = "google-drive"
+label = "Google Drive"
+category = "integration"
+affinities = ["personal"]
+show_in_readme = false
+
+[[technologies]]
+id = "mysql"
+label = "MySQL"
+category = "database"
+affinities = ["doka-labs"]
+show_in_readme = false
+
+[[technologies]]
+id = "mariadb"
+label = "MariaDB"
+category = "database"
+affinities = ["doka-labs"]
+show_in_readme = false
+
+[[technologies]]
+id = "postgresql"
+label = "PostgreSQL"
+category = "database"
+affinities = ["doka-labs"]
+show_in_readme = false
+
+[[technologies]]
+id = "linux"
+label = "Linux"
+category = "platform"
+affinities = ["personal", "doka-labs"]
+cross_domain = true
+show_in_readme = false
+
+[[technologies]]
+id = "macos"
+label = "macOS"
+category = "platform"
+affinities = ["personal"]
+show_in_readme = false
+
+[[technologies]]
+id = "swift"
+label = "Swift"
+category = "language"
+affinities = ["personal", "doka-labs"]
+
+[[technologies]]
+id = "javascript"
+label = "JavaScript"
+category = "language"
+affinities = ["personal", "doka-labs"]
+
+[[projects]]
+id = "ai-devops"
+label = "ai-devops"
+surface_label = "ai-devops"
+domain = "personal"
+visibility = "private-abstract"
+status = "active"
+visual = "core"
+anchor = [315.0, 298.0]
+radius = 55.0
+weight = 0.8
+summary = "Hooks, skills, and rules\nfor coding agents"
+display_stack = ["Rust", "6 MCP endpoints"]
+implemented_with = ["rust"]
+show_in_readme = true
+
+[[projects.components]]
+id = "graph-mcp"
+label = "Graph"
+kind = "mcp"
+scope = "project"
+summary = "Code context."
+
+[[projects.components]]
+id = "memory-mcp"
+label = "Memory"
+kind = "mcp"
+scope = "project"
+summary = "Project memory."
+
+[[projects.components]]
+id = "knowledge-mcp"
+label = "Knowledge"
+kind = "mcp"
+scope = "global-and-project"
+summary = "Reusable knowledge."
+
+[[projects.components]]
+id = "experience-mcp"
+label = "Experience"
+kind = "mcp"
+scope = "global-and-project"
+summary = "Reusable experience."
+
+[[projects.components]]
+id = "workflow-mcp"
+label = "Workflow"
+kind = "mcp"
+scope = "project"
+summary = "Development workflows."
+
+[[projects.components]]
+id = "telemetry-mcp"
+label = "Telemetry"
+kind = "mcp"
+scope = "project"
+summary = "Development telemetry."
+
+[[projects]]
+id = "budget-board"
+label = "BudgetBoard"
+surface_label = "BudgetBoard"
+domain = "personal"
+visibility = "private-abstract"
+status = "active"
+visual = "finance"
+anchor = [159.0, 529.0]
+radius = 43.0
+weight = 0.8
+summary = "Personal finance with\nencrypted storage and backups"
+display_stack = ["Go", "SQLCipher", "age"]
+implemented_with = ["go"]
+show_in_readme = true
+
+[[projects]]
+id = "state-trace"
+label = "StateTrace"
+surface_label = "StateTrace"
+domain = "personal"
+visibility = "private-abstract"
+status = "active"
+visual = "trace"
+anchor = [607.0, 688.0]
+radius = 48.0
+weight = 0.8
+summary = "Filesystem monitoring"
+display_stack = ["Rust", "Swift", "SQLite"]
+implemented_with = ["rust", "swift"]
+show_in_readme = true
+
+[[projects]]
+id = "dotconfig"
+label = "DotConfig"
+surface_label = "DotConfig"
+domain = "personal"
+visibility = "private-abstract"
+status = "active"
+visual = "dotfiles"
+anchor = [227.0, 754.0]
+radius = 36.0
+weight = 0.8
+summary = "Shell, editor, and Git configuration"
+display_stack = ["Zsh", "Neovim", "Git", "Starship"]
+implemented_with = ["shell", "lua"]
+show_in_readme = true
+
+[[projects]]
+id = "vscode-theme"
+label = "vscode-theme"
+surface_label = "vscode-theme"
+domain = "personal"
+visibility = "private-abstract"
+status = "active"
+visual = "theme"
+anchor = [704.0, 366.0]
+radius = 37.0
+weight = 0.8
+summary = "DotConfig Mocha,\nbased on Catppuccin"
+display_stack = ["TypeScript", "JSON"]
+implemented_with = ["typescript"]
+show_in_readme = true
+
+[[projects]]
+id = "mysql"
+label = "Doka.EntityFrameworkCore.MySql"
+surface_label = "MySql"
+domain = "doka-labs"
+visibility = "public"
+status = "active"
+visual = "provider"
+anchor = [1090.0, 318.0]
+radius = 48.0
+weight = 0.8
+summary = "Provider, spatial support & caching"
+display_stack = ["C#", ".NET", "EF Core"]
+implemented_with = ["csharp", "dotnet"]
+show_in_readme = true
+repository = "doka-labs/Doka.EntityFrameworkCore.MySql"
+label_prefix = "Doka.EntityFrameworkCore."
+
+[[projects]]
+id = "safe-migrations"
+label = "Doka.EntityFrameworkCore.SafeMigrations"
+surface_label = "SafeMigrations"
+domain = "doka-labs"
+visibility = "public"
+status = "active"
+visual = "migrations"
+anchor = [1510.0, 436.0]
+radius = 51.0
+weight = 0.8
+summary = "MySQL / MariaDB / PostgreSQL"
+display_stack = ["C#", ".NET", "EF Core"]
+implemented_with = ["csharp", "dotnet"]
+show_in_readme = true
+repository = "doka-labs/Doka.EntityFrameworkCore.SafeMigrations"
+label_prefix = "Doka.EntityFrameworkCore."
+
+[[projects]]
+id = "relational-lab"
+label = "RelationalLab"
+surface_label = "RelationalLab"
+domain = "doka-labs"
+visibility = "private-abstract"
+status = "active"
+visual = "lab"
+anchor = [1284.0, 744.0]
+radius = 42.0
+weight = 0.8
+summary = "A test lab for relational databases"
+display_stack = ["C#", ".NET", "JavaScript"]
+implemented_with = ["csharp", "dotnet", "javascript"]
+show_in_readme = true
+
+[[publications]]
+id = "mysql"
+label = "Doka.EntityFrameworkCore.MySql"
+surface_label = "Doka.EntityFrameworkCore.MySql"
+domain = "doka-labs"
+registry = "nuget"
+anchor = [66.0, 1017.0]
+summary = "Published NuGet packages."
+technologies = ["csharp", "dotnet"]
+show_in_readme = true
+
+[[publications.packages]]
+anchor = [85.0, 1067.0]
+id = "Doka.EntityFrameworkCore.MySql"
+family = "provider"
+url = "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql/"
+summary = "EF Core provider for MySQL and MariaDB"
+
+[[publications.packages]]
+anchor = [85.0, 1147.0]
+id = "Doka.EntityFrameworkCore.MySql.NetTopologySuite"
+family = "spatial"
+url = "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql.NetTopologySuite/"
+summary = "Spatial support"
+
+[[publications.packages]]
+anchor = [85.0, 1227.0]
+id = "Doka.Caching.MySql"
+family = "cache"
+url = "https://www.nuget.org/packages/Doka.Caching.MySql/"
+summary = "Distributed caching with MySQL"
+
+[[publications]]
+id = "safe-migrations"
+label = "Doka.EntityFrameworkCore.SafeMigrations"
+surface_label = "Doka.EntityFrameworkCore.SafeMigrations"
+domain = "doka-labs"
+registry = "nuget"
+anchor = [920.0, 1017.0]
+summary = "Published NuGet packages."
+technologies = ["csharp", "dotnet"]
+show_in_readme = true
+
+[[publications.packages]]
+anchor = [939.0, 1067.0]
+id = "Doka.EntityFrameworkCore.SafeMigrations"
+family = "migrations"
+url = "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations/"
+summary = "Core package"
+
+[[publications.packages]]
+anchor = [939.0, 1147.0]
+id = "Doka.EntityFrameworkCore.SafeMigrations.MySql"
+family = "migrations"
+url = "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.MySql/"
+summary = "MySQL and MariaDB adapter"
+
+[[publications.packages]]
+anchor = [939.0, 1227.0]
+id = "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql"
+family = "migrations"
+url = "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.PostgreSql/"
+summary = "PostgreSQL adapter"
+
+[[interests]]
+id = "other"
+label = "AI, self-hosting, Grafana, security."
+summary = "Personal interests."
+show_in_readme = true
+
+[[interests]]
+id = "functional-programming"
+label = "Elixir / Erlang / OCaml"
+summary = "Languages I want to explore."
+show_in_readme = true
+
+[[learning]]
+id = "hacking-akademie"
+label = "Hacking Akademie"
+url = "https://hacking-akademie.de/"
+interest = "other"
+
+[[learning]]
+id = "cybersec-academy"
+label = "Cybersec Academy"
+url = "https://cybersec-academy.de/"
+interest = "other"
+
+[presentation]
+main_stack = ["C#", ".NET", "Rust", "Go", "TypeScript", "Angular"]
+supporting_stack = ["Python", "PHP", "Lua", "Shell", "HTML", "CSS", "SQL"]
+platforms = ["macOS", "Windows", "Linux"]
+platform_note = "MacBook for work and personal use."
+learning_note = "Member of both.\nLearning when I have the time."
+
+[[presentation.hardware]]
+label = "MacBook Pro"
+detail = "M5 Pro / 64 GB"
+
+[[presentation.hardware]]
+label = "AMD Ryzen\u2122 AI Max+ 395"
+detail = "128 GB unified memory"
+
+[[presentation.hardware]]
+label = "Proxmox host"
+detail = "For self-hosting."

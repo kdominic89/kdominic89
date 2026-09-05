@@ -1,0 +1,48 @@
+name: Validate SOURCEFIELD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Install Rust toolchain
+        run: |
+          rustup show active-toolchain
+
+      - name: Check native and WebAssembly crates
+        run: |
+          cargo fmt --all -- --check
+          cargo check --workspace --all-targets --locked
+          cargo check -p sourcefield-wasm --target wasm32-unknown-unknown --locked
+          cargo test --workspace --all-targets --locked
+          cargo test --workspace --doc --locked
+          cargo clippy --workspace --all-targets --locked -- -D warnings
+          RUSTDOCFLAGS="-D warnings" cargo doc --workspace --no-deps --document-private-items --locked
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          node --test tests/browser*.mjs
+
+      - name: Rebuild deterministic offline preview
+        run: cargo run --locked -p sourcefield-cli -- generate --offline --no-history
+
+      - name: Validate browser and generated files
+        run: |
+          python3 scripts/validate_artifact.py
+          python3 -m unittest discover -s tests -p 'test_presentation.py'
+          node --check docs/app.js
+          node --check docs/simulation-fallback.js
+
+      - name: Build release WebAssembly
+        run: |
+          cargo install wasm-pack --version 0.15.0 --locked
+          ./scripts/build-wasm.sh
+          python3 scripts/validate_artifact.py --require-wasm

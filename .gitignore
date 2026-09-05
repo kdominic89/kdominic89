@@ -1,0 +1,61 @@
+# Rust build output and generated WebAssembly bindings.
+target/
+/dist/
+/docs/pkg/
+**/*.rs.bk
+*.dSYM/
+*.profraw
+*.profdata
+
+# Interrupted generator writes must never become published state.
+.sourcefield.lock
+*.tmp
+*.tmp-[0-9]*
+
+# Local credentials; keep sanitized environment examples shareable.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.envrc
+
+# Python tooling and local dependency environments.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local browser tooling and verification output.
+node_modules/
+/playwright-report/
+/test-results/
+
+# Local agent indexes and model caches.
+/.fastembed_cache/
+/.ai-devops-graph/
+
+# Editor state; allow intentional shared VS Code configuration.
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.swp
+*.swo
+*~
+
+# macOS, Windows and Linux desktop metadata.
+.DS_Store
+._*
+.AppleDouble/
+Thumbs.db
+Desktop.ini
+.directory
