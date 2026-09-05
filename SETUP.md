@@ -1,5 +1,8 @@
 # Setup
 
+SOURCEFIELD generates this profile with Rust and serves an interactive version through GitHub Pages.
+The checked-in snapshot is a labeled offline preview. Public metadata is collected by the update workflow.
+
 ## Local development
 
 Install Rust through rustup, Python 3.11 or newer, Node.js with the built-in test runner, and a
