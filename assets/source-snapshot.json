@@ -72,7 +72,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-09-11T08:09:08Z"
+      "pushed_at": "2026-09-12T08:00:48Z"
     },
     {
       "owner": "doka-labs",
@@ -134,7 +134,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-09-10T23:08:28Z"
+      "pushed_at": "2026-09-12T20:21:34Z"
     },
     {
       "owner": "kdominic89",
@@ -176,7 +176,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-09-11T08:06:05Z"
+      "pushed_at": "2026-09-12T07:57:00Z"
     },
     {
       "owner": "kdominic89",
@@ -222,18 +222,13 @@
     }
   ],
   "contributions": {
-    "total": 2680,
-    "commits": 336,
+    "total": 2682,
+    "commits": 337,
     "issues": 0,
-    "pull_requests": 60,
+    "pull_requests": 61,
     "reviews": 10,
     "restricted": 2273,
     "days": [
-      {
-        "date": "2025-09-13",
-        "count": 0,
-        "level": 0
-      },
       {
         "date": "2025-09-14",
         "count": 0,
@@ -2051,6 +2046,11 @@
       },
       {
         "date": "2026-09-12",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-09-13",
         "count": 0,
         "level": 0
       }
@@ -2061,42 +2061,42 @@
     {
       "id": "Doka.Caching.MySql",
       "version": "10.4.0",
-      "total_downloads": 965,
+      "total_downloads": 976,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.Caching.MySql/"
     },
     {
       "id": "Doka.EntityFrameworkCore.MySql",
       "version": "10.4.0",
-      "total_downloads": 2484,
+      "total_downloads": 2513,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql/"
     },
     {
       "id": "Doka.EntityFrameworkCore.MySql.NetTopologySuite",
       "version": "10.4.0",
-      "total_downloads": 1704,
+      "total_downloads": 1718,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql.NetTopologySuite/"
     },
     {
       "id": "Doka.EntityFrameworkCore.SafeMigrations",
-      "version": "10.4.0",
-      "total_downloads": 1419,
+      "version": "10.4.1",
+      "total_downloads": 1451,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations/"
     },
     {
       "id": "Doka.EntityFrameworkCore.SafeMigrations.MySql",
-      "version": "10.4.0",
-      "total_downloads": 1218,
+      "version": "10.4.1",
+      "total_downloads": 1237,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.MySql/"
     },
     {
       "id": "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
-      "version": "10.4.0",
-      "total_downloads": 1199,
+      "version": "10.4.1",
+      "total_downloads": 1217,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.PostgreSql/"
     }
