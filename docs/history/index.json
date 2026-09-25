@@ -1,6 +1,13 @@
 {
   "states": [
     {
+      "hash": "BB4C3A5206391267",
+      "generated_at": "2026-09-25T08:50:06.055796451+00:00",
+      "file": "bb4c3a5206391267.json",
+      "node_count": 56,
+      "edge_count": 80
+    },
+    {
       "hash": "FE3EFA9AD86172FB",
       "generated_at": "2026-09-24T08:27:54.753641374+00:00",
       "file": "fe3efa9ad86172fb.json",
