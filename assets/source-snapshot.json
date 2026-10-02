@@ -55,7 +55,7 @@
       "login": "doka-labs",
       "display_name": "Doka Labs",
       "profile_url": "https://github.com/doka-labs",
-      "public_repositories": 3,
+      "public_repositories": 4,
       "followers": 3
     }
   ],
@@ -72,7 +72,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-01T04:39:30Z"
+      "pushed_at": "2026-10-01T10:14:46Z"
     },
     {
       "owner": "doka-labs",
@@ -111,6 +111,35 @@
     },
     {
       "owner": "doka-labs",
+      "name": "Doka.EntityFrameworkCore.NestedSet",
+      "full_name": "doka-labs/Doka.EntityFrameworkCore.NestedSet",
+      "url": "https://github.com/doka-labs/Doka.EntityFrameworkCore.NestedSet",
+      "description": "Nested-set hierarchies for EF Core with atomic tree operations, configurable ordering, bulk APIs, and support for MySQL/MariaDB, PostgreSQL, SQL Server, and SQLite.",
+      "primary_language": "C#",
+      "topics": [
+        "bulk-operations",
+        "csharp",
+        "dotnet",
+        "efcore",
+        "entity-framework-core",
+        "hierarchical-data",
+        "mariadb",
+        "mysql",
+        "nested-set",
+        "nuget",
+        "postgresql",
+        "sql-server",
+        "sqlite",
+        "tree-structure"
+      ],
+      "stars": 1,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "pushed_at": "2026-10-02T05:13:26Z"
+    },
+    {
+      "owner": "doka-labs",
       "name": "Doka.EntityFrameworkCore.SafeMigrations",
       "full_name": "doka-labs/Doka.EntityFrameworkCore.SafeMigrations",
       "url": "https://github.com/doka-labs/Doka.EntityFrameworkCore.SafeMigrations",
@@ -134,7 +163,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-01T08:15:30Z"
+      "pushed_at": "2026-10-02T07:31:07Z"
     },
     {
       "owner": "kdominic89",
@@ -176,7 +205,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-09-30T09:44:30Z"
+      "pushed_at": "2026-10-01T18:20:03Z"
     },
     {
       "owner": "kdominic89",
@@ -222,18 +251,13 @@
     }
   ],
   "contributions": {
-    "total": 2741,
-    "commits": 354,
+    "total": 2744,
+    "commits": 377,
     "issues": 0,
-    "pull_requests": 81,
+    "pull_requests": 82,
     "reviews": 14,
-    "restricted": 2291,
+    "restricted": 2270,
     "days": [
-      {
-        "date": "2025-10-02",
-        "count": 4,
-        "level": 1
-      },
       {
         "date": "2025-10-03",
         "count": 0,
@@ -2051,7 +2075,12 @@
       },
       {
         "date": "2026-10-01",
-        "count": 6,
+        "count": 9,
+        "level": 1
+      },
+      {
+        "date": "2026-10-02",
+        "count": 4,
         "level": 1
       }
     ]
