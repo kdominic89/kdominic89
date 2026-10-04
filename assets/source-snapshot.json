@@ -47,7 +47,7 @@
     "login": "kdominic89",
     "display_name": "Dominic",
     "profile_url": "https://github.com/kdominic89",
-    "public_repositories": 11,
+    "public_repositories": 12,
     "followers": 7
   },
   "organizations": [
@@ -72,7 +72,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-02T09:51:52Z"
+      "pushed_at": "2026-10-03T09:14:10Z"
     },
     {
       "owner": "doka-labs",
@@ -163,7 +163,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-02T07:31:07Z"
+      "pushed_at": "2026-10-04T01:51:12Z"
     },
     {
       "owner": "kdominic89",
@@ -205,7 +205,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-02T09:48:09Z"
+      "pushed_at": "2026-10-03T09:11:21Z"
     },
     {
       "owner": "kdominic89",
@@ -237,6 +237,20 @@
     },
     {
       "owner": "kdominic89",
+      "name": "sourcefield",
+      "full_name": "kdominic89/sourcefield",
+      "url": "https://github.com/kdominic89/sourcefield",
+      "description": "A Rust-powered generator for interactive GitHub profiles with animated SVGs, shared organization data, and live GitHub and NuGet metadata.",
+      "primary_language": "Rust",
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "pushed_at": "2026-10-04T00:57:45Z"
+    },
+    {
+      "owner": "kdominic89",
       "name": "time-span.js",
       "full_name": "kdominic89/time-span.js",
       "url": "https://github.com/kdominic89/time-span.js",
@@ -251,18 +265,13 @@
     }
   ],
   "contributions": {
-    "total": 2746,
-    "commits": 377,
+    "total": 2754,
+    "commits": 384,
     "issues": 0,
     "pull_requests": 82,
     "reviews": 14,
     "restricted": 2272,
     "days": [
-      {
-        "date": "2025-10-04",
-        "count": 0,
-        "level": 0
-      },
       {
         "date": "2025-10-05",
         "count": 0,
@@ -2080,8 +2089,13 @@
       },
       {
         "date": "2026-10-03",
-        "count": 0,
-        "level": 0
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-10-04",
+        "count": 7,
+        "level": 1
       }
     ]
   },
