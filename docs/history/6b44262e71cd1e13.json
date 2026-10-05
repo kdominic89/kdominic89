@@ -111,8 +111,8 @@
   ],
   "schema": 2,
   "mode": "live",
-  "generated_at": "2026-09-11T08:04:24.036597800+00:00",
-  "semantic_hash": "7311E5805BB08A4B",
+  "generated_at": "2026-10-05T10:25:55.051111012+00:00",
+  "semantic_hash": "6B44262E71CD1E13",
   "canvas": {
     "show_activity_orbit": true,
     "show_state_hash": true,
@@ -133,12 +133,12 @@
     "source_url": "https://github.com/kdominic89/kdominic89"
   },
   "stats": {
-    "personal_public_repositories": 11,
-    "organization_public_repositories": 3,
-    "followers": 6,
+    "personal_public_repositories": 12,
+    "organization_public_repositories": 4,
+    "followers": 7,
     "package_count": 6,
-    "package_downloads": 8162,
-    "contribution_total": 2680,
+    "package_downloads": 13600,
+    "contribution_total": 2754,
     "private_repository_count": null
   },
   "nodes": [
@@ -581,8 +581,8 @@
       "summary": "Distributed caching with MySQL",
       "details": [
         "Family: cache",
-        "Observed version: 10.4.0",
-        "Downloads: 923"
+        "Observed version: 10.4.4",
+        "Downloads: 1561"
       ],
       "tags": [
         "nuget",
@@ -610,8 +610,8 @@
       "summary": "EF Core provider for MySQL and MariaDB",
       "details": [
         "Family: provider",
-        "Observed version: 10.4.0",
-        "Downloads: 2344"
+        "Observed version: 10.4.4",
+        "Downloads: 3668"
       ],
       "tags": [
         "nuget",
@@ -639,8 +639,8 @@
       "summary": "Spatial support",
       "details": [
         "Family: spatial",
-        "Observed version: 10.4.0",
-        "Downloads: 1646"
+        "Observed version: 10.4.4",
+        "Downloads: 2330"
       ],
       "tags": [
         "nuget",
@@ -696,8 +696,8 @@
       "summary": "Core package",
       "details": [
         "Family: migrations",
-        "Observed version: 10.4.0",
-        "Downloads: 1254"
+        "Observed version: 10.4.5",
+        "Downloads: 2364"
       ],
       "tags": [
         "nuget",
@@ -725,8 +725,8 @@
       "summary": "MySQL and MariaDB adapter",
       "details": [
         "Family: migrations",
-        "Observed version: 10.4.0",
-        "Downloads: 1007"
+        "Observed version: 10.4.5",
+        "Downloads: 1997"
       ],
       "tags": [
         "nuget",
@@ -754,8 +754,8 @@
       "summary": "PostgreSQL adapter",
       "details": [
         "Family: migrations",
-        "Observed version: 10.4.0",
-        "Downloads: 988"
+        "Observed version: 10.4.5",
+        "Downloads: 1680"
       ],
       "tags": [
         "nuget",
@@ -776,8 +776,8 @@
       "surface_label": "age",
       "kind": "technology",
       "domain": "personal",
-      "x": 500.13358,
-      "y": 375.76007,
+      "x": 685.8853,
+      "y": 636.027,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "age capability in the security layer.",
@@ -802,8 +802,8 @@
       "surface_label": "Angular",
       "kind": "technology",
       "domain": null,
-      "x": 1072.065,
-      "y": 523.15106,
+      "x": 976.7288,
+      "y": 631.73047,
       "radius": 22.0,
       "weight": 0.55,
       "summary": "Angular capability in the frontend layer.",
@@ -829,8 +829,8 @@
       "surface_label": "C#",
       "kind": "technology",
       "domain": "doka-labs",
-      "x": 1081.1113,
-      "y": 636.38776,
+      "x": 1335.951,
+      "y": 671.3731,
       "radius": 22.0,
       "weight": 0.55,
       "summary": "C# capability in the language layer.",
@@ -855,8 +855,8 @@
       "surface_label": "CSS",
       "kind": "technology",
       "domain": null,
-      "x": 620.6921,
-      "y": 595.7849,
+      "x": 654.2336,
+      "y": 425.98004,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "CSS capability in the structural-target layer.",
@@ -882,8 +882,8 @@
       "surface_label": "Docker",
       "kind": "technology",
       "domain": null,
-      "x": 1138.3059,
-      "y": 574.13715,
+      "x": 651.9432,
+      "y": 523.3508,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "Docker capability in the platform layer.",
@@ -909,8 +909,8 @@
       "surface_label": ".NET",
       "kind": "technology",
       "domain": "doka-labs",
-      "x": 1306.2749,
-      "y": 379.98895,
+      "x": 1205.3713,
+      "y": 349.20813,
       "radius": 22.0,
       "weight": 0.55,
       "summary": ".NET capability in the runtime layer.",
@@ -935,8 +935,8 @@
       "surface_label": "Go",
       "kind": "technology",
       "domain": "personal",
-      "x": 297.92944,
-      "y": 611.21216,
+      "x": 649.0642,
+      "y": 550.9885,
       "radius": 22.0,
       "weight": 0.55,
       "summary": "Go capability in the language layer.",
@@ -961,8 +961,8 @@
       "surface_label": "Google Drive",
       "kind": "technology",
       "domain": "personal",
-      "x": 240.03072,
-      "y": 606.1694,
+      "x": 170.98648,
+      "y": 461.9695,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "Google Drive capability in the integration layer.",
@@ -987,8 +987,8 @@
       "surface_label": "HTML",
       "kind": "technology",
       "domain": null,
-      "x": 1017.9677,
-      "y": 643.0114,
+      "x": 934.6045,
+      "y": 695.7589,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "HTML capability in the structural-target layer.",
@@ -1014,8 +1014,8 @@
       "surface_label": "JavaScript",
       "kind": "technology",
       "domain": null,
-      "x": 944.93726,
-      "y": 644.8748,
+      "x": 557.4392,
+      "y": 499.87585,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "JavaScript capability in the language layer.",
@@ -1041,8 +1041,8 @@
       "surface_label": "Linux",
       "kind": "technology",
       "domain": null,
-      "x": 1013.5373,
-      "y": 655.3685,
+      "x": 1061.4539,
+      "y": 653.0773,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "Linux capability in the platform layer.",
@@ -1068,8 +1068,8 @@
       "surface_label": "Lua",
       "kind": "technology",
       "domain": "personal",
-      "x": 586.2538,
-      "y": 398.3709,
+      "x": 220.7288,
+      "y": 513.6293,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "Lua capability in the language-target layer.",
@@ -1094,8 +1094,8 @@
       "surface_label": "macOS",
       "kind": "technology",
       "domain": "personal",
-      "x": 501.87527,
-      "y": 354.4462,
+      "x": 233.60217,
+      "y": 547.4663,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "macOS capability in the platform layer.",
@@ -1120,8 +1120,8 @@
       "surface_label": "MariaDB",
       "kind": "technology",
       "domain": "doka-labs",
-      "x": 1492.0155,
-      "y": 436.8258,
+      "x": 1156.3885,
+      "y": 331.47058,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "MariaDB capability in the database layer.",
@@ -1146,8 +1146,8 @@
       "surface_label": "MCP",
       "kind": "technology",
       "domain": "personal",
-      "x": 681.6317,
-      "y": 501.46695,
+      "x": 645.9679,
+      "y": 566.37683,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "MCP capability in the protocol layer.",
@@ -1172,8 +1172,8 @@
       "surface_label": "MySQL",
       "kind": "technology",
       "domain": "doka-labs",
-      "x": 1018.43176,
-      "y": 404.33594,
+      "x": 1126.196,
+      "y": 409.2929,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "MySQL capability in the database layer.",
@@ -1198,8 +1198,8 @@
       "surface_label": "Ollama",
       "kind": "technology",
       "domain": "personal",
-      "x": 173.44159,
-      "y": 582.79016,
+      "x": 631.6362,
+      "y": 616.1556,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "Ollama capability in the ai-runtime layer.",
@@ -1224,8 +1224,8 @@
       "surface_label": "PHP",
       "kind": "technology",
       "domain": "personal",
-      "x": 520.59595,
-      "y": 657.16235,
+      "x": 237.96503,
+      "y": 499.45248,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "PHP capability in the language-target layer.",
@@ -1250,8 +1250,8 @@
       "surface_label": "PostgreSQL",
       "kind": "technology",
       "domain": "doka-labs",
-      "x": 1256.2966,
-      "y": 330.9289,
+      "x": 1385.4673,
+      "y": 668.08093,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "PostgreSQL capability in the database layer.",
@@ -1276,8 +1276,8 @@
       "surface_label": "Python",
       "kind": "technology",
       "domain": "personal",
-      "x": 450.951,
-      "y": 685.60803,
+      "x": 497.03885,
+      "y": 686.73975,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "Python capability in the language-target layer.",
@@ -1302,8 +1302,8 @@
       "surface_label": "Roslyn",
       "kind": "technology",
       "domain": null,
-      "x": 587.5769,
-      "y": 540.91565,
+      "x": 1109.684,
+      "y": 589.3362,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "Roslyn capability in the code-intelligence layer.",
@@ -1329,8 +1329,8 @@
       "surface_label": "Rust",
       "kind": "technology",
       "domain": "personal",
-      "x": 541.4109,
-      "y": 357.97528,
+      "x": 417.58298,
+      "y": 702.5436,
       "radius": 22.0,
       "weight": 0.55,
       "summary": "Rust capability in the language layer.",
@@ -1355,8 +1355,8 @@
       "surface_label": "rust-analyzer",
       "kind": "technology",
       "domain": "personal",
-      "x": 501.92288,
-      "y": 656.04767,
+      "x": 466.92993,
+      "y": 327.41327,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "rust-analyzer capability in the code-intelligence layer.",
@@ -1381,8 +1381,8 @@
       "surface_label": "Bash / Zsh",
       "kind": "technology",
       "domain": "personal",
-      "x": 428.42734,
-      "y": 379.61697,
+      "x": 250.82812,
+      "y": 376.87778,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "Bash / Zsh capability in the structural-target layer.",
@@ -1407,8 +1407,8 @@
       "surface_label": "SQL dialects",
       "kind": "technology",
       "domain": null,
-      "x": 1018.217,
-      "y": 427.45685,
+      "x": 651.36694,
+      "y": 424.01746,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "SQL dialects capability in the structural-target layer.",
@@ -1434,8 +1434,8 @@
       "surface_label": "SQLCipher",
       "kind": "technology",
       "domain": "personal",
-      "x": 252.60895,
-      "y": 558.69696,
+      "x": 214.19934,
+      "y": 454.79,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "SQLCipher capability in the security layer.",
@@ -1460,8 +1460,8 @@
       "surface_label": "SQLite",
       "kind": "technology",
       "domain": "personal",
-      "x": 588.3921,
-      "y": 391.85367,
+      "x": 320.7022,
+      "y": 642.2017,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "SQLite capability in the database layer.",
@@ -1486,8 +1486,8 @@
       "surface_label": "Swift",
       "kind": "technology",
       "domain": null,
-      "x": 1050.806,
-      "y": 575.86926,
+      "x": 1130.4072,
+      "y": 586.62646,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "Swift capability in the language layer.",
@@ -1513,8 +1513,8 @@
       "surface_label": "TypeScript",
       "kind": "technology",
       "domain": null,
-      "x": 859.4824,
-      "y": 321.55045,
+      "x": 1020.5451,
+      "y": 394.9928,
       "radius": 9.0,
       "weight": 0.18,
       "summary": "TypeScript capability in the language layer.",
@@ -1540,8 +1540,8 @@
       "surface_label": "WebAssembly",
       "kind": "technology",
       "domain": "personal",
-      "x": 351.2635,
-      "y": 682.7681,
+      "x": 316.9754,
+      "y": 379.62262,
       "radius": 22.0,
       "weight": 0.55,
       "summary": "WebAssembly capability in the runtime layer.",
@@ -2170,126 +2170,6 @@
     }
   ],
   "activity": [
-    {
-      "date": "2025-09-12",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-13",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-14",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-15",
-      "count": 5,
-      "level": 1
-    },
-    {
-      "date": "2025-09-16",
-      "count": 5,
-      "level": 1
-    },
-    {
-      "date": "2025-09-17",
-      "count": 2,
-      "level": 1
-    },
-    {
-      "date": "2025-09-18",
-      "count": 1,
-      "level": 1
-    },
-    {
-      "date": "2025-09-19",
-      "count": 6,
-      "level": 1
-    },
-    {
-      "date": "2025-09-20",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-21",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-22",
-      "count": 1,
-      "level": 1
-    },
-    {
-      "date": "2025-09-23",
-      "count": 3,
-      "level": 1
-    },
-    {
-      "date": "2025-09-24",
-      "count": 2,
-      "level": 1
-    },
-    {
-      "date": "2025-09-25",
-      "count": 4,
-      "level": 1
-    },
-    {
-      "date": "2025-09-26",
-      "count": 1,
-      "level": 1
-    },
-    {
-      "date": "2025-09-27",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-28",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-29",
-      "count": 5,
-      "level": 1
-    },
-    {
-      "date": "2025-09-30",
-      "count": 6,
-      "level": 1
-    },
-    {
-      "date": "2025-10-01",
-      "count": 3,
-      "level": 1
-    },
-    {
-      "date": "2025-10-02",
-      "count": 4,
-      "level": 1
-    },
-    {
-      "date": "2025-10-03",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-04",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-10-05",
-      "count": 0,
-      "level": 0
-    },
     {
       "date": "2025-10-06",
       "count": 7,
@@ -3917,7 +3797,7 @@
     },
     {
       "date": "2026-08-27",
-      "count": 11,
+      "count": 12,
       "level": 1
     },
     {
@@ -3987,55 +3867,175 @@
     },
     {
       "date": "2026-09-10",
-      "count": 11,
+      "count": 10,
       "level": 1
     },
     {
       "date": "2026-09-11",
       "count": 5,
       "level": 1
+    },
+    {
+      "date": "2026-09-12",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-09-13",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-09-14",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-09-15",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-09-16",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-09-17",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-09-18",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-09-19",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-09-20",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-09-21",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-09-22",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-09-23",
+      "count": 11,
+      "level": 1
+    },
+    {
+      "date": "2026-09-24",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-09-25",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-09-26",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-09-27",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-09-28",
+      "count": 14,
+      "level": 1
+    },
+    {
+      "date": "2026-09-29",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2026-09-30",
+      "count": 22,
+      "level": 1
+    },
+    {
+      "date": "2026-10-01",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2026-10-02",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-10-03",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-10-04",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-10-05",
+      "count": 0,
+      "level": 0
     }
   ],
   "packages": [
     {
       "id": "Doka.Caching.MySql",
-      "version": "10.4.0",
-      "total_downloads": 923,
+      "version": "10.4.4",
+      "total_downloads": 1561,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.Caching.MySql/"
     },
     {
       "id": "Doka.EntityFrameworkCore.MySql",
-      "version": "10.4.0",
-      "total_downloads": 2344,
+      "version": "10.4.4",
+      "total_downloads": 3668,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql/"
     },
     {
       "id": "Doka.EntityFrameworkCore.MySql.NetTopologySuite",
-      "version": "10.4.0",
-      "total_downloads": 1646,
+      "version": "10.4.4",
+      "total_downloads": 2330,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql.NetTopologySuite/"
     },
     {
       "id": "Doka.EntityFrameworkCore.SafeMigrations",
-      "version": "10.4.0",
-      "total_downloads": 1254,
+      "version": "10.4.5",
+      "total_downloads": 2364,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations/"
     },
     {
       "id": "Doka.EntityFrameworkCore.SafeMigrations.MySql",
-      "version": "10.4.0",
-      "total_downloads": 1007,
+      "version": "10.4.5",
+      "total_downloads": 1997,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.MySql/"
     },
     {
       "id": "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
-      "version": "10.4.0",
-      "total_downloads": 988,
+      "version": "10.4.5",
+      "total_downloads": 1680,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.PostgreSql/"
     }
