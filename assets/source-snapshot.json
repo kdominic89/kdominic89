@@ -66,13 +66,13 @@
       "full_name": "doka-labs/.github",
       "url": "https://github.com/doka-labs/.github",
       "description": null,
-      "primary_language": "Rust",
+      "primary_language": "Python",
       "topics": [],
       "stars": 0,
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-05T10:33:52Z"
+      "pushed_at": "2026-10-07T09:50:11Z"
     },
     {
       "owner": "doka-labs",
@@ -103,7 +103,7 @@
         "spatial",
         "temporal-tables"
       ],
-      "stars": 4,
+      "stars": 3,
       "forks": 0,
       "archived": false,
       "fork": false,
@@ -163,7 +163,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-06T04:48:49Z"
+      "pushed_at": "2026-10-06T19:07:42Z"
     },
     {
       "owner": "kdominic89",
@@ -205,7 +205,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-05T10:27:13Z"
+      "pushed_at": "2026-10-06T10:18:38Z"
     },
     {
       "owner": "kdominic89",
@@ -255,7 +255,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-04T00:57:45Z"
+      "pushed_at": "2026-10-07T05:57:27Z"
     },
     {
       "owner": "kdominic89",
@@ -273,18 +273,13 @@
     }
   ],
   "contributions": {
-    "total": 2753,
-    "commits": 387,
+    "total": 2796,
+    "commits": 403,
     "issues": 0,
-    "pull_requests": 83,
+    "pull_requests": 85,
     "reviews": 14,
-    "restricted": 2267,
+    "restricted": 2292,
     "days": [
-      {
-        "date": "2025-10-07",
-        "count": 2,
-        "level": 1
-      },
       {
         "date": "2025-10-08",
         "count": 1,
@@ -2062,27 +2057,27 @@
       },
       {
         "date": "2026-09-28",
-        "count": 14,
+        "count": 18,
         "level": 1
       },
       {
         "date": "2026-09-29",
-        "count": 8,
+        "count": 9,
         "level": 1
       },
       {
         "date": "2026-09-30",
-        "count": 22,
+        "count": 23,
         "level": 1
       },
       {
         "date": "2026-10-01",
-        "count": 8,
+        "count": 10,
         "level": 1
       },
       {
         "date": "2026-10-02",
-        "count": 7,
+        "count": 9,
         "level": 1
       },
       {
@@ -2097,12 +2092,17 @@
       },
       {
         "date": "2026-10-05",
-        "count": 2,
+        "count": 3,
         "level": 1
       },
       {
         "date": "2026-10-06",
-        "count": 4,
+        "count": 28,
+        "level": 2
+      },
+      {
+        "date": "2026-10-07",
+        "count": 10,
         "level": 1
       }
     ]
@@ -2132,21 +2132,21 @@
     },
     {
       "id": "Doka.EntityFrameworkCore.SafeMigrations",
-      "version": "10.4.7",
+      "version": "10.4.8",
       "total_downloads": 2364,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations/"
     },
     {
       "id": "Doka.EntityFrameworkCore.SafeMigrations.MySql",
-      "version": "10.4.7",
+      "version": "10.4.8",
       "total_downloads": 1997,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.MySql/"
     },
     {
       "id": "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
-      "version": "10.4.7",
+      "version": "10.4.8",
       "total_downloads": 1680,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.PostgreSql/"
