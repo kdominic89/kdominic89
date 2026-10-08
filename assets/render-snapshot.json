@@ -3,47 +3,71 @@
   "sources": [
     {
       "source": "github:contributions",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "github:org:doka-labs",
-      "status": "preview"
+      "status": "live"
     },
     {
-      "source": "github:repositories",
-      "status": "preview"
+      "source": "github:repositories:doka-labs",
+      "status": "live"
+    },
+    {
+      "source": "github:repositories:kdominic89",
+      "status": "live"
     },
     {
       "source": "github:user",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.caching.mysql",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.mysql",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.mysql.nettopologysuite",
-      "status": "preview"
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.nestedset",
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.safemigrations",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.safemigrations.mysql",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.safemigrations.postgresql",
-      "status": "preview"
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.safemigrations.sqlite",
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.safemigrations.sqlserver",
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.nestedset",
+      "status": "live"
+    },
+    {
+      "source": "nuget:owner:doka-labs",
+      "status": "live"
     }
   ],
-  "mode": "preview",
-  "fetched_at": "",
+  "mode": "live",
+  "fetched_at": "2026-10-08T13:24:45.313451320+00:00",
   "user": {
     "login": "kdominic89",
     "display_name": "Dominic",
@@ -73,7 +97,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-08T10:01:31Z"
+      "pushed_at": "2026-10-08T10:38:21Z"
     },
     {
       "owner": "doka-labs",
@@ -164,7 +188,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-08T09:43:09Z"
+      "pushed_at": "2026-10-08T12:10:36Z"
     },
     {
       "owner": "kdominic89",
@@ -200,13 +224,13 @@
       "full_name": "kdominic89/kdominic89",
       "url": "https://github.com/kdominic89/kdominic89",
       "description": null,
-      "primary_language": "Rust",
+      "primary_language": "Python",
       "topics": [],
       "stars": 0,
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-07T10:17:11Z"
+      "pushed_at": "2026-10-08T13:19:17Z"
     },
     {
       "owner": "kdominic89",
@@ -274,8 +298,8 @@
     }
   ],
   "contributions": {
-    "total": 2806,
-    "commits": 407,
+    "total": 2807,
+    "commits": 408,
     "issues": 0,
     "pull_requests": 86,
     "reviews": 14,
@@ -2103,7 +2127,7 @@
       },
       {
         "date": "2026-10-08",
-        "count": 9,
+        "count": 10,
         "level": 1
       }
     ]
@@ -2111,7 +2135,7 @@
   "private_repository_count": null,
   "packages": [
     {
-      "owner": null,
+      "owner": "doka-labs",
       "id": "Doka.Caching.MySql",
       "version": "10.4.4",
       "total_downloads": 1561,
@@ -2119,7 +2143,7 @@
       "url": "https://www.nuget.org/packages/Doka.Caching.MySql/"
     },
     {
-      "owner": null,
+      "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.MySql",
       "version": "10.4.4",
       "total_downloads": 3668,
@@ -2127,7 +2151,7 @@
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql/"
     },
     {
-      "owner": null,
+      "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.MySql.NetTopologySuite",
       "version": "10.4.4",
       "total_downloads": 2330,
@@ -2135,31 +2159,61 @@
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql.NetTopologySuite/"
     },
     {
-      "owner": null,
+      "owner": "doka-labs",
+      "id": "Doka.EntityFrameworkCore.NestedSet",
+      "version": "10.0.0-rc.1",
+      "total_downloads": 0,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet/"
+    },
+    {
+      "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations",
-      "version": "10.4.8",
+      "version": "10.4.9",
       "total_downloads": 2364,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations/"
     },
     {
-      "owner": null,
+      "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.MySql",
-      "version": "10.4.8",
+      "version": "10.4.9",
       "total_downloads": 1997,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.MySql/"
     },
     {
-      "owner": null,
+      "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
-      "version": "10.4.8",
+      "version": "10.4.9",
       "total_downloads": 1680,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.PostgreSql/"
+    },
+    {
+      "owner": "doka-labs",
+      "id": "Doka.EntityFrameworkCore.SafeMigrations.SqlServer",
+      "version": "10.4.9",
+      "total_downloads": 0,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.SqlServer/"
+    },
+    {
+      "owner": "doka-labs",
+      "id": "Doka.EntityFrameworkCore.SafeMigrations.Sqlite",
+      "version": "10.4.9",
+      "total_downloads": 180,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.Sqlite/"
+    },
+    {
+      "owner": "doka-labs",
+      "id": "Doka.NestedSet",
+      "version": "10.0.0-rc.1",
+      "total_downloads": 0,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.NestedSet/"
     }
   ],
-  "warnings": [
-    "Offline preview: public signals are replaced on the first successful live workflow."
-  ]
+  "warnings": []
 }
