@@ -89,6 +89,10 @@
       "status": "live"
     },
     {
+      "source": "github:private-count",
+      "status": "live"
+    },
+    {
       "source": "github:repositories:doka-labs",
       "status": "live"
     },
@@ -147,8 +151,8 @@
   ],
   "schema_version": 3,
   "mode": "live",
-  "generated_at": "2026-10-08T13:24:48.233519559+00:00",
-  "semantic_hash": "5C68716D73337AEE",
+  "generated_at": "2026-10-08T14:15:34.816863610+00:00",
+  "semantic_hash": "7B343DF98BEC0207",
   "canvas": {
     "show_activity_orbit": true,
     "show_state_hash": true,
@@ -176,8 +180,8 @@
     "followers": 7,
     "package_count": 10,
     "package_downloads": 13780,
-    "contribution_total": 2807,
-    "private_repository_count": null
+    "contribution_total": 2808,
+    "private_repository_count": 9
   },
   "nodes": [
     {
@@ -4312,7 +4316,7 @@
     },
     {
       "date": "2026-10-08",
-      "count": 10,
+      "count": 11,
       "level": 1
     }
   ],

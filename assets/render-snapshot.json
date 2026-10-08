@@ -10,6 +10,10 @@
       "status": "live"
     },
     {
+      "source": "github:private-count",
+      "status": "live"
+    },
+    {
       "source": "github:repositories:doka-labs",
       "status": "live"
     },
@@ -67,7 +71,7 @@
     }
   ],
   "mode": "live",
-  "fetched_at": "2026-10-08T13:24:45.313451320+00:00",
+  "fetched_at": "2026-10-08T14:15:32.105853809+00:00",
   "user": {
     "login": "kdominic89",
     "display_name": "Dominic",
@@ -230,7 +234,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-08T13:19:17Z"
+      "pushed_at": "2026-10-08T13:25:02Z"
     },
     {
       "owner": "kdominic89",
@@ -298,12 +302,12 @@
     }
   ],
   "contributions": {
-    "total": 2807,
+    "total": 2808,
     "commits": 408,
     "issues": 0,
     "pull_requests": 86,
     "reviews": 14,
-    "restricted": 2297,
+    "restricted": 2298,
     "days": [
       {
         "date": "2025-10-09",
@@ -2127,12 +2131,12 @@
       },
       {
         "date": "2026-10-08",
-        "count": 10,
+        "count": 11,
         "level": 1
       }
     ]
   },
-  "private_repository_count": null,
+  "private_repository_count": 9,
   "packages": [
     {
       "owner": "doka-labs",
