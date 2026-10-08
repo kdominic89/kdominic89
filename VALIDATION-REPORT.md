@@ -1,43 +1,92 @@
-# Verification snapshot
+# Validation
 
-Verified locally on September 5, 2026 for the Rust SOURCEFIELD migration and approved V4 integration.
-This is a dated integration record, not a claim that future generated states have already passed.
-The release workflow reruns its gates for each update.
+Verified locally on October 8, 2026 using the actual published Sourcefield `v0.1.1` CLI and
+matching browser runtime at `b12eb4c72d60fbc075776a6ccc4bc15736db28af`. The existing shared
+installation was authenticated during the organization upgrade against the immutable release,
+both archive digests and GitHub attestations. Its current files and source identity were checked
+again for this consumer. No copied generator was compiled or substituted.
+
+## Preserved inputs and current output
+
+The preview is `70DE915F5859E081`: 63 nodes, 92 edges, ten projects, ten NuGet package positions
+and a 1800 by 1885 canvas. All 30 personal technologies, 15 doka-labs affinities, three canonical
+bindings, personal identity, private abstractions, learning, hardware and original project geometry
+are retained. Sourcefield is the sixth personal project; the imported SafeMigrations motif and
+SQL Server adapter use canonical organization facts.
+
+The actual public canonical capture resolves `doka-labs/.github:config/organization.toml` at
+`bc6f2f2360581eb87b35262dfa376a56f0427b01`, with SHA256
+`421fb355b1d18e644d14d03efe1640cfae7608f1351d19cf7023c06ee648ba2d`.
+The authored ref remains `main` for future refreshes; offline replay uses captured bytes.
+
+Migration uses published personal inputs from `845a43a7f230f795b687b1ef8670933fece6c41e`
+together with previously approved local authorship. All 24 real historical states retain every
+original field, semantic hash, ordering and timestamp. Conversion adds only the required schema,
+explicit personal variant and organization identities derived from recorded nodes. Complete
+original working/runtime files and verified original/published Git bundles are retained externally;
+restoring the original 93-file tree was rehearsed and checked byte for byte.
+
+The legacy source capture has six observed package records, Live status and an empty retrieval date.
+Migration adds its required snapshot schema without inventing a date or new observations. Subsequent
+offline generation preserves those migrated bytes exactly. Four newer authored packages therefore
+have no retained version observation in this preview. A successful online refresh obtains current
+observations. The separate effective render input is undated Preview, and the generator's deterministic
+Preview timestamp is an epoch sentinel rather than a collection date. Schema-2 generation records
+bind exactly six inputs and the current authored digest.
+
+## Executed acceptance
 
 | Check | Result |
 | --- | --- |
-| Rust 1.98.0, locked workspace and all targets | PASS |
-| wasm32-unknown-unknown compilation | PASS |
-| Native tests | 55 passed: CLI 13, collector 8, core 19, renderer 12, simulator 3 |
-| Python positive/negative tooling tests | 13 passed |
-| JavaScript interaction and browser-runner tests | 15 passed |
-| Rustfmt, strict Clippy, rustdoc including private items | PASS, no suppressed warnings |
-| Doctest invocation | PASS; no doctest examples are declared |
-| wasm-pack 0.15.0 release build with wasm-opt | PASS, optimization enabled |
-| Canonical artifact checks | 56 nodes, 80 edges, eight projects, six NuGet packages |
-| Real Chromium browser integration | 12 regression groups plus V4 geometry and animation lifecycle checks passed |
-| Desktop dark/light and mobile 390 x 600 | Visually inspected; controls visible after viewport changes |
-| Repeated offline generation | 11 current SVG/JSON files byte-identical |
-| Original Rust source and approved previews | 64 source files and eight preview files unchanged |
+| Released native migration and current validation | Passed; approved authorship and all historical facts preserved |
+| Installed consumer tests | 42 passed, zero skipped: 12 authored, 27 installed generation, 3 workflow |
+| Composition, privacy and rejected inputs | Passed; full technology/affinity inventory, unlinked private abstractions, stale/tampered captures, replay and atomicity |
+| Lock, workflow/tooling source and artifact checks | Passed; actual v0.1.1 identity and complete runtime |
+| Update and validate workflow syntax | Both passed actionlint |
+| Actual Chromium runtime | Passed; WASM, fallback, motifs, themes, geometry, interaction, pause and reduced motion |
+| Historical browser views | All 24 archives load; node counts match and current view restores |
+| README and mobile comparison | Before/after SVGs inspected at 820 and 343 content pixels |
+| Shared candidate and publication tools | Two fresh isolated Git clones pass; source/history preserved, ignored WASM restored and never staged, repeated output is a no-op |
+| Missing optional private token | Actual wrapper warns and generates the public candidate when the private boolean is selected without PROFILE_TOKEN |
+| Strict live collection and rolling retention | Isolated unpublished public run passed; ten genuine package observations, dated capture, 24 states, 23 older archives unchanged and only the expired owned archive removed |
+| Recovery, provenance and scope | Original/published bundles verify; six replay digests, ownership and release files checked; Sourcefield and doka-labs remain unchanged |
+| Source and documentation discipline | ASCII authored files, intentional preserved branding, Python/docstrings, local links and whitespace checked |
 
-The generated preview state is `FA9C5E60AC766234`, explicitly labeled Preview.
-Native HTTP fixtures exercise source failures, strict-live behavior, credential separation and
-public-error redaction. They do not claim authenticated production GitHub API execution.
-GitHub Actions execution and Pages deployment have not been performed locally.
+The live retention fixture is independent evidence and is not substituted for preserved migration
+output. No private credential or private repository enumeration was used. Public read authentication
+was supplied only to the isolated process and was never logged.
 
-Browser verification and screenshots are retained with the migration review outside this source
-repository. The source archive creates its own SHA256SUMS; it excludes compiler caches and WASM.
-See [Primary sources](SOURCES.md) and [Distribution contents](PACKAGE-INFO.md).
+Representative commands actually executed, with external paths abbreviated:
 
-V4 matches the approved ornament geometry for all ten visible domain/project nodes and all eight
-ownership curves. Browser checks cover nine curves, six evenly spaced private departures, both
-NuGet columns, 26 ring directions, 11 staggered signals, and theme/layer/reduced-motion transitions.
-Inline signal styles were replaced with local SVG rules and numeric browser timing to retain CSP.
-The overview stays fixed while exploratory layers retain simulation. No browser/CSP errors remain.
+```sh
+sourcefield migrate --source /path/to/reconciled-legacy-input \
+  --destination /path/to/new-migration --variant personal
 
-The portable real-browser entry point is `node scripts/verify-browser.mjs`. It passed with Node.js
-26.5.0, Playwright 1.62.1 and that installation's Chromium, using explicit runtime paths rather than
-checkout-specific defaults. Its interaction and field suites now live in `tests/integration/`.
-Three runner tests cover loopback serving, path isolation, missing tools and failed-launch cleanup.
-Both workflows rerun presentation geometry tests after regeneration. Chromium remains an explicit
-local/pre-publication check; the GitHub workflows do not install or run Playwright automatically.
+SOURCEFIELD_INSTALLATION=/path/to/authenticated/shared-installation \
+  python3 -B -m unittest discover -s tests -p 'test_*.py' -v
+
+python3 -B "$SOURCEFIELD_SOURCE/scripts/check_pin.py" \
+  --lock sourcefield.lock.json --workflow .github/workflows/update-profile.yml \
+  --own-commit b12eb4c72d60fbc075776a6ccc4bc15736db28af
+
+python3 -B "$SOURCEFIELD_SOURCE/scripts/validate_artifact.py" \
+  --root /path/to/candidate --workflow-root /path/to/consumer --require-wasm
+
+actionlint .github/workflows/update-profile.yml .github/workflows/validate.yml
+
+node "$SOURCEFIELD_SOURCE/scripts/verify-browser.mjs" \
+  --site /path/to/candidate/docs --output /path/to/external/evidence \
+  --playwright-module /path/to/existing/playwright/index.mjs \
+  --browser /path/to/existing/chromium
+```
+
+Detailed logs, recovery, immutable identities, screenshots and publication fixtures are kept outside
+the repository. Intentional SVG/JSON/captured inputs remain tracked; runtime binaries, build caches,
+browser tooling and recovery files are excluded.
+
+## Remaining publication steps
+
+Local implementation is ready for review. Commit, push, hosted `Validate SOURCEFIELD`, the next
+`Update SOURCEFIELD` run and Pages deployment remain separate steps. Local acceptance and the isolated
+live probe do not establish a public deployment or the upgraded consumer's hosted Ubuntu result.
+The repository currently permits all actions; no allowlist change was required or made.

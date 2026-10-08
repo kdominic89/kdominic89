@@ -1,0 +1,102 @@
+{
+  "domain:doka-labs": [
+    1260.0,
+    519.0
+  ],
+  "domain:personal": [
+    451.0,
+    522.0
+  ],
+  "package:Doka.Caching.MySql": [
+    92.0,
+    1247.0
+  ],
+  "package:Doka.EntityFrameworkCore.MySql": [
+    92.0,
+    1067.0
+  ],
+  "package:Doka.EntityFrameworkCore.MySql.NetTopologySuite": [
+    92.0,
+    1157.0
+  ],
+  "package:Doka.EntityFrameworkCore.NestedSet": [
+    1240.0,
+    1157.0
+  ],
+  "package:Doka.EntityFrameworkCore.SafeMigrations": [
+    666.0,
+    1067.0
+  ],
+  "package:Doka.EntityFrameworkCore.SafeMigrations.MySql": [
+    666.0,
+    1157.0
+  ],
+  "package:Doka.EntityFrameworkCore.SafeMigrations.PostgreSql": [
+    666.0,
+    1247.0
+  ],
+  "package:Doka.EntityFrameworkCore.SafeMigrations.SqlServer": [
+    666.0,
+    1427.0
+  ],
+  "package:Doka.EntityFrameworkCore.SafeMigrations.Sqlite": [
+    666.0,
+    1337.0
+  ],
+  "package:Doka.NestedSet": [
+    1240.0,
+    1067.0
+  ],
+  "project:ai-devops": [
+    315.0,
+    298.0
+  ],
+  "project:budget-board": [
+    159.0,
+    529.0
+  ],
+  "project:doka-labs/mysql": [
+    1090.0,
+    318.0
+  ],
+  "project:doka-labs/nested-set": [
+    1525.0,
+    726.0
+  ],
+  "project:doka-labs/relational-lab": [
+    1080.0,
+    766.0
+  ],
+  "project:doka-labs/safe-migrations": [
+    1530.0,
+    358.0
+  ],
+  "project:dotconfig": [
+    227.0,
+    754.0
+  ],
+  "project:sourcefield": [
+    547.0,
+    267.0
+  ],
+  "project:state-trace": [
+    607.0,
+    688.0
+  ],
+  "project:vscode-theme": [
+    704.0,
+    366.0
+  ],
+  "publication:doka-labs/mysql": [
+    76.0,
+    1017.0
+  ],
+  "publication:doka-labs/nested-set": [
+    1224.0,
+    1017.0
+  ],
+  "publication:doka-labs/safe-migrations": [
+    650.0,
+    1017.0
+  ]
+}

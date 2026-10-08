@@ -1,10 +1,10 @@
 {
+  "background_color": "#050812",
+  "description": "SOURCEFIELD: .NET, developer tools, and open source.",
+  "display": "standalone",
+  "icons": [],
   "name": "SOURCEFIELD / kdominic89",
   "short_name": "SOURCEFIELD",
-  "description": "An interactive topology of systems, capabilities and public packages.",
   "start_url": "./",
-  "display": "standalone",
-  "background_color": "#050812",
-  "theme_color": "#050812",
-  "icons": []
+  "theme_color": "#050812"
 }

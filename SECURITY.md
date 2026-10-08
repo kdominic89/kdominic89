@@ -1,16 +1,33 @@
 # Security
 
-Report suspected vulnerabilities through the repository's GitHub security advisory mechanism when
-available. Avoid placing credentials, private project source, or exploit payloads in public issues.
+Report suspected vulnerabilities in this profile's configuration or publication workflow through
+[GitHub private vulnerability reporting](https://github.com/kdominic89/kdominic89/security/advisories/new)
+when that repository feature is available. Do not put credentials, private-project information,
+or sensitive exploit payloads in public issues.
 
-The primary boundaries are public configuration, remote API responses, retained history, generated
-SVG, and browser state. Approved private-project summaries are public by design; see [Privacy](PRIVACY.md).
+For Sourcefield CLI, collection, imports, generation, installation, or browser-runtime defects,
+follow the upstream [security policy](https://github.com/kdominic89/sourcefield/blob/b12eb4c72d60fbc075776a6ccc4bc15736db28af/SECURITY.md).
+Include the exact release/source revision, minimal reproduction, input an attacker controls,
+prerequisites, and expected impact. Use synthetic inputs and redact sensitive captures. This
+consumer does not establish a separate response-time or support guarantee.
 
-Configuration and state validation reject malformed identifiers, unsafe links and inconsistent
-references. Rendering escapes text. Browser code validates fetched state and uses a restrictive
-content security policy with local resources. Public collection errors are bounded and redacted.
-These controls are defense in depth, not a guarantee that arbitrary unreviewed prose is safe to publish.
+The consumer controls which facts become public, optional collection credentials, workflow
+permissions, and repository/Pages publication. Relevant boundaries include authored configuration,
+remote canonical content, API responses, captures/history, generated SVG/JSON, runtime archives,
+and browser state. Approved private abstractions are public by design; see [Privacy](PRIVACY.md).
 
-Never add tokens to configuration or fixtures. Keep the optional private-count credential separate
-from normal public collection. Review workflow permissions and immutable action references before
-publishing. Native binaries, WASM build output and caches are not source-controlled.
+Use authenticated matching CLI/browser assets and tooling from the lock's source revision. The
+release lock, reusable-workflow reference, and validation-tool checkout must agree. Raw runtime
+verification happens before profile metadata projection; the deployed manifest records the projected
+digests while retaining source identity. Provenance proves selected origin, not freedom from defects.
+
+Input/reference validation, output escaping, bounded diagnostics, filesystem ownership checks, and
+local browser resources provide defense in depth. Review arbitrary authored prose, credentials,
+permissions, and generated output before publishing. Never add secrets to fixtures or captures,
+disable certificate verification, or grant collection credentials as an implicit private opt-in.
+
+Generation has read-only repository permissions. Publication checks expected HEAD and applies owned
+files; deployment depends on successful publication of the same candidate. Keep those checks and
+publication serialization intact. Preserve interrupted transaction evidence and follow reviewed
+recovery rather than manually mixing file sets. Runtime output and caches stay ignored while the
+complete matched runtime is included in the Pages artifact.

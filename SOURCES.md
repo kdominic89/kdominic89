@@ -1,37 +1,56 @@
 # Primary sources
 
-Checked on 2026-09-05. These sources ground the implementation contracts; local verification proves
-what this checkout actually does. A source citation alone is not evidence that our implementation passes.
+Reviewed on October 8, 2026 against the actual published Sourcefield v0.1.1 source,
+matched authenticated installation, current public canonical manifest and preserved personal
+authorship/history. Contracts and actual test evidence remain separate; see [Validation](VALIDATION-REPORT.md).
 
-| Decision | Primary source |
+## Consumer contracts
+
+The upstream links below select the exact `source_commit` in the authenticated consumer lock.
+The canonical manifest link separately selects its captured organization commit.
+
+| Contract | Primary source |
 | --- | --- |
-| Pinned dependencies for an executable workspace | [Cargo manifest and lockfile](https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html) |
-| Native targets and separate doctests | [Cargo test](https://doc.rust-lang.org/cargo/commands/cargo-test.html) |
-| Document public APIs | [rustc missing_docs lint](https://doc.rust-lang.org/rustc/lints/listing/allowed-by-default.html#missing-docs) |
-| Useful executable API examples | [Rustdoc tests](https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html) |
-| Stable formatting settings; semantic blank lines require review | [rustfmt configuration](https://github.com/rust-lang/rustfmt/blob/main/Configurations.md) |
-| Explicit browser launch and cleanup with an existing runtime | [Playwright library](https://playwright.dev/docs/library) and [BrowserType.launch](https://playwright.dev/docs/api/class-browsertype#browser-type-launch) |
-| Browser module initialization | [wasm-bindgen without a bundler](https://wasm-bindgen.github.io/wasm-bindgen/examples/without-a-bundler.html) |
-| Radial cubic endpoints follow their endpoint control handles | [SVG 2 cubic Bezier commands](https://www.w3.org/TR/SVG2/paths.html#PathDataCubicBezierCommands) |
-| Original bridge color stops and local paint references | [SVG 2 linear gradients](https://www.w3.org/TR/SVG2/pservers.html#LinearGradients) |
-| Independent sibling rings use opposite animation directions | [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/#animation-direction) |
-| SVG images do not provide inline interaction | [SVG 2 secure animated mode](https://www.w3.org/TR/SVG2/conform.html#secure-animated-mode) |
-| WASM-specific compilation permission | [Content Security Policy Level 3](https://www.w3.org/TR/CSP3/#directive-script-src) |
-| Pause for nonessential automatic motion | [WCAG 2.2 Pause, Stop, Hide](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html) |
-| Honor system motion preference | [W3C technique C39](https://www.w3.org/WAI/WCAG22/Techniques/css/C39) |
-| Discover NuGet search resources from service index | [NuGet SearchQueryService](https://learn.microsoft.com/en-us/nuget/api/search-query-service-resource) |
-| GitHub user aggregate scope | [GitHub GraphQL users](https://docs.github.com/en/graphql/reference/users) |
-| Exclusive filesystem creation | [OpenOptions::create_new](https://doc.rust-lang.org/std/fs/struct.OpenOptions.html#method.create_new) |
-| Exact processor name | [AMD processor announcement](https://ir.amd.com/news-events/press-releases/detail/1232/amd-announces-expanded-consumer-and-commercial-ai-pc-portfolio-at-ces) |
+| Matched CLI/browser assets, authenticated installation, caller/private-count wiring, and publication | [Sourcefield distribution](https://github.com/kdominic89/sourcefield/blob/b12eb4c72d60fbc075776a6ccc4bc15736db28af/docs/distribution.md) |
+| Explicit destinations, validation, offline/locked replay, migration, history, and recovery | [Sourcefield operations](https://github.com/kdominic89/sourcefield/blob/b12eb4c72d60fbc075776a6ccc4bc15736db28af/docs/operations.md) |
+| Native lifecycle, actual-browser gates, and limits of mocked wrapper checks | [Sourcefield verification](https://github.com/kdominic89/sourcefield/blob/b12eb4c72d60fbc075776a6ccc4bc15736db28af/docs/verification.md) |
+| Remote imports, canonical order, shared technology bindings, local affinities, and stack text | [Sourcefield configuration](https://github.com/kdominic89/sourcefield/blob/b12eb4c72d60fbc075776a6ccc4bc15736db28af/docs/configuration.md) |
+| Built-in Sourcefield and database-safe icons | [Sourcefield icons](https://github.com/kdominic89/sourcefield/blob/b12eb4c72d60fbc075776a6ccc4bc15736db28af/docs/icons.md) |
+| Caller-owned schedule, permissions, checked publication, and deployment order | [Sourcefield consumer template](https://github.com/kdominic89/sourcefield/blob/b12eb4c72d60fbc075776a6ccc4bc15736db28af/docs/consumer-workflow.yml.template) |
+| CLI/runtime and input trust boundaries | [Sourcefield security policy](https://github.com/kdominic89/sourcefield/blob/b12eb4c72d60fbc075776a6ccc4bc15736db28af/SECURITY.md) |
+| Personal root README placement | [GitHub profile README](https://docs.github.com/en/account-and-profile/how-tos/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme) |
+| Typed reusable-workflow inputs, named secrets, and SHA references | [GitHub reusable workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows) |
+| Selected Actions/reusable-workflow policy | [GitHub Actions settings](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) |
+| Pages artifacts and deployment jobs | [GitHub Pages custom workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) |
+| Public contributions and owned private repository aggregate | [GitHub GraphQL User](https://docs.github.com/en/graphql/reference/objects#user) |
+| NuGet owner/family discovery, prereleases, and pagination | [NuGet SearchQueryService](https://learn.microsoft.com/en-us/nuget/api/search-query-service-resource) |
+| Published package versions | [NuGet PackageBaseAddress](https://learn.microsoft.com/en-us/nuget/api/package-base-address-resource) |
 
-The local toolchain installation resolved Rust 1.98.0, published 2026-08-20, and the matching
-`wasm32-unknown-unknown` standard library. This is the declared and tested compiler floor for this
-checkout; the earlier unverified Rust 1.85 claim is not retained. Action sources are in [ACTION-PINS.md](ACTION-PINS.md).
+## Authored facts and captured inputs
 
-Profile membership, personal hardware capacity and professional context are owner-provided facts.
-The published package URLs are authoritative identities, not a claim that their download counts or
-versions never change. Private-project descriptions intentionally omit internal implementation detail.
+Dominic K.'s identity, headline, professional context, hardware capacity, interests, memberships,
+private-project abstractions, and technology affinities are owner-approved facts in
+`config/profile.toml`. They are not inferred from package metadata or private source.
 
-The build tool is wasm-pack 0.15.0, verified against its [official release](https://github.com/wasm-bindgen/wasm-pack/releases/tag/v0.15.0)
-and [locked dependencies](https://github.com/wasm-bindgen/wasm-pack/blob/v0.15.0/Cargo.lock).
-The workspace locks wasm-bindgen 0.2.128; generated browser glue must match that crate version.
+Shared organization facts come from the actual public
+[doka-labs canonical manifest](https://github.com/doka-labs/.github/blob/bc6f2f2360581eb87b35262dfa376a56f0427b01/config/organization.toml).
+The reviewed personal capture resolves that source to commit
+`bc6f2f2360581eb87b35262dfa376a56f0427b01`, with manifest SHA-256
+`421fb355b1d18e644d14d03efe1640cfae7608f1351d19cf7023c06ee648ba2d`.
+The capture's manifest bytes and digest establish its exact input; the ref remains a deliberate
+online refresh choice. A personal-derived extraction is not a replacement for that canonical source.
+
+Canonical content includes the approved SafeMigrations safe motif and
+[SQL Server adapter](https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.SqlServer/).
+Registry package URLs identify publication; dated version/count observations do not establish a
+permanent current version. The
+[official SQL Server version list](https://api.nuget.org/v3-flatcontainer/doka.entityframeworkcore.safemigrations.sqlserver/index.json)
+is the version source. Versions belong in collected observations rather than authored stack text.
+
+The 24 legacy archives used for migration were captured from published history. The original local
+working index was empty; its existence does not prove those archives were stored locally. Keep that
+provenance distinction in migration and recovery evidence.
+
+Official Action identities are recorded in [Action pins](ACTION-PINS.md). The consumer's own
+configuration and local checks are described in [Architecture](ARCHITECTURE.md) and
+[Maintenance](MAINTAINING.md).

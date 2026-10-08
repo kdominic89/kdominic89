@@ -1,44 +1,35 @@
 # Contributing
 
-Use US English for source, documentation, tests, and public copy. The profile content in
-`config/profile.toml` is deliberately curated; private projects expose only approved names,
-purpose, and stack. Do not expand that content by inspecting their implementation.
+Contributions here cover approved personal content, consumer configuration, documentation, workflows,
+and consumer tests. Sourcefield's generator and browser runtime are maintained
+[upstream](https://github.com/kdominic89/sourcefield). Use ASCII US English for new text and follow
+`.editorconfig`. Preserve existing approved branding copy exactly when its characters are intentional.
 
-## Formatting and documentation
+Personal facts and presentation belong in `config/profile.toml`. Shared doka-labs facts belong in
+the organization-owned canonical manifest. Preserve the remote import, explicit technology bindings,
+and consumer-owned affinities and geometry. Keep full project/package identities in links and stacks
+in the generated Projects table. Approved private abstractions expose no private repository URLs or
+implementation details. Do not inspect private source to embellish their descriptions.
 
-The `.editorconfig` is based on the shared ai-devsecops configuration. Rust uses four spaces
-and a 100-column limit; JavaScript/Python use four spaces and 120 columns; TOML, JSON, YAML,
-HTML, CSS and shell use two spaces. `rustfmt.toml` uses stable settings.
-
-Leave a blank line after a completed control-flow block when another logical statement follows.
-Keep `else`/`else if` attached to their corresponding `if`; the blank line goes after the complete
-chain. Likewise separate a multiline variable initialization from the following operation.
-Use a blank line between test setup, the operation under test, and assertions. These semantic
-boundaries require review; rustfmt does not infer them from program intent.
-
-All public Rust APIs, including fields and enum variants, have rustdoc. Internal functions and
-types have documentation when it helps IDE users understand contracts. JavaScript and Python
-helpers follow the same principle with JSDoc/docstrings. Comments explain a non-obvious reason,
-constraint or invariant; avoid merely restating the next line of code. Do not suppress a lint
-instead of addressing its cause.
-
-## Verification
+Keep changes limited to their purpose. Add or update tests for meaningful contracts and rejected
+inputs, such as composition, privacy selection, stale provenance, history preservation, and workflow
+publication. Separate setup, operation, and assertions with blank lines. Run:
 
 ```sh
-./scripts/generate-preview.sh
-./scripts/verify.sh
-./scripts/build-wasm.sh
-python3 scripts/validate_artifact.py --require-wasm
+python3 -B -m unittest discover -s tests -p 'test_*.py'
 ```
 
-Write positive and negative tests for meaningful contracts: malformed input, partial collection,
-unsafe links, deterministic output, history corruption, and browser interactions. Keep Arrange,
-Act, and Assert visibly separate. Documentation tests are run separately from all-target tests.
+Installed-runtime probes require `SOURCEFIELD_INSTALLATION`; report any skips. Preview with the
+reviewed shared tooling and matching installation in a separate directory; see [Setup](SETUP.md).
+Candidate tooling copies tracked inputs, so review new untracked files explicitly. Changes to
+generated behavior belong upstream and require the consumer's release upgrade to use them.
 
-For page or rendering changes, also run `make verify-browser` with an existing Playwright/Chromium
-runtime after building WASM. This checks the loaded page rather than the Node helper host. See
-[Real-browser setup](SETUP.md#real-browser-verification) for runtime overrides and evidence output.
+Inspect SVGs, both managed sections of the root README, and actual browser current/history views,
+mobile layout, keyboard/touch interaction, pause, and reduced motion when changing content or
+presentation. Offline consumer CI does not establish strict live collection or public deployment.
 
-Do not add dependencies, publish artifacts, or mutate Git history as an incidental cleanup.
-Generated native binaries, WASM modules/glue, caches, screenshots, and distribution archives stay
-out of version control. Generated SVG/JSON are intentional public text artifacts.
+Keep runtime installations, compiled WASM/glue, caches, screenshots, and distribution archives out
+of Git. Intentional public SVG/JSON, captured input records, and ownership/history data remain
+tracked. Do not repair generated output by hand or add a new dependency as incidental cleanup.
+Generator upgrades change the authenticated lock and all matching workflow references together
+after review. See [Maintenance](MAINTAINING.md) for that procedure.

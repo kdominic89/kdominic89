@@ -1,8 +1,0 @@
-[build]
-incremental = true
-
-[term]
-color = "always"
-
-[target.wasm32-unknown-unknown]
-rustflags = ["-C", "target-feature=+bulk-memory"]

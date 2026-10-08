@@ -27,6 +27,7 @@ const motionButton = document.querySelector('#motion-button');
 
 const app = {
     state: null,
+    dirty: true,
     nodes: [],
     edges: [],
     nodeById: new Map(),
@@ -35,7 +36,13 @@ const app = {
     engine: 'JAVASCRIPT FALLBACK',
     layer: 'overview',
     domain: 'all',
-    domainCycle: ['all', 'personal', 'doka-labs'],
+    domainCycle: ['all'],
+    domainLabels: new Map(),
+    organizationDomains: new Set(),
+    domainNodes: [],
+    detailsOpen: false,
+    returnFocus: null,
+    palette: null,
     selected: null,
     hovered: null,
     running: !mediaReducedMotion.matches,
@@ -58,13 +65,16 @@ async function boot() {
     LOGICAL_WIDTH = app.state.canvas.width;
     LOGICAL_HEIGHT = app.state.canvas.height;
     app.nodes = app.state.nodes;
+    configureIdentity(app.state);
     document.querySelector('#mobile-identity').textContent = app.state.profile?.tagline ?? '';
     app.edges = app.state.edges;
     app.nodeById = new Map(app.nodes.map((node, index) => [node.id, { node, index }]));
     app.positions = new Float32Array(app.nodes.flatMap(node => [node.x, node.y]));
 
     app.simulator = await createSimulator();
+    app.engine = app.simulator.engineLabel;
     app.renderer = createRenderer(glCanvas);
+    app.palette = readPalette();
     detailPanel.inert = true;
     engineLabel.textContent = `${app.engine} / ${app.renderer.name}`;
     stateLabel.textContent = `STATE ${formatHash(app.state.semantic_hash)} / ${app.state.mode.toUpperCase()}`;
@@ -76,6 +86,77 @@ async function boot() {
     updateMotionButton();
     resize();
     requestAnimationFrame(frame);
+}
+
+/** Apply public identity using DOM text APIs so authored labels cannot inject markup. */
+function configureIdentity(state) {
+    app.dirty = true;
+    const profile = state.profile;
+    const root = document.documentElement;
+    const previousVariant = root.dataset.profileVariant;
+    root.dataset.profileVariant = profile.variant;
+
+    // CSS keeps organization chrome distinct without coupling presentation to an owner's handle.
+    if (previousVariant !== profile.variant && app.palette) {
+        app.palette = readPalette();
+        app.renderer?.setTheme(app.palette);
+    }
+
+    const organization = profile.variant === 'organization';
+    const handle = organization ? profile.organization : profile.username;
+    const identity = document.querySelector('.identity');
+    const url = `https://github.com/${encodeURIComponent(handle)}`;
+    identity.href = url;
+    identity.querySelector('small').textContent = `/ ${handle}`;
+    document.title = `SOURCEFIELD / ${handle}`;
+    document.querySelector('#mobile-identity').textContent = profile.tagline ?? '';
+    app.neighbors = new Map(state.nodes.map(node => [node.id, new Set()]));
+
+    for (const edge of state.edges) {
+        app.neighbors.get(edge.from).add(edge.to);
+        app.neighbors.get(edge.to).add(edge.from);
+    }
+
+    app.domainLabels = new Map();
+    app.organizationDomains = new Set();
+    app.domainNodes = state.nodes.filter(node => node.kind === 'domain');
+
+    for (const node of app.domainNodes) {
+        if (!node.domain) continue;
+
+        app.domainLabels.set(node.domain, node.label);
+
+        if (node.scope === 'organization') app.organizationDomains.add(node.domain);
+    }
+
+    app.domainCycle = ['all', ...app.domainLabels.keys()];
+    app.domain = 'all';
+    domainLabel.textContent = 'All namespaces';
+    domainButton.hidden = app.domainLabels.size < 2;
+    const links = document.querySelector('.footer-links');
+    links.replaceChildren();
+    const items = [[handle, url], ['SOURCE', profile.source_url]];
+
+    if (organization && profile.maintainer) {
+        items.push([`${profile.maintainer.username} / ${profile.maintainer.role}`, profile.maintainer.url]);
+    }
+
+    for (const node of state.nodes) {
+        if (node.kind === 'domain' && node.scope === 'organization' &&
+            (!organization || node.url !== url)) {
+            items.push([node.label, node.url]);
+        }
+    }
+
+    for (const [label, href] of items) {
+        if (!safePublicUrl(href)) continue;
+
+        const link = document.createElement('a');
+        link.textContent = label;
+        link.href = href;
+        link.rel = 'noreferrer';
+        links.append(link);
+    }
 }
 
 /** Prefer the generated Rust module; explicitly label the independent JavaScript fallback. */
@@ -107,20 +188,28 @@ async function createSimulator(state = app.state, nodes = app.nodes, edges = app
             state.canvas.width,
             state.canvas.height,
         );
-        app.engine = 'RUST/WASM FIELD';
+        simulator.engineLabel = 'RUST/WASM FIELD';
+
         return simulator;
     } catch (error) {
         // Keep the fallback visibly distinct: a missing binary must never look like WASM evidence.
-        app.engine = 'JAVASCRIPT FALLBACK';
-        return new FallbackSimulator(positions, anchors, pairs, weights, seed, state.canvas.width, state.canvas.height);
+        const simulator = new FallbackSimulator(positions, anchors, pairs, weights, seed, state.canvas.width, state.canvas.height);
+        simulator.engineLabel = 'JAVASCRIPT FALLBACK';
+
+        return simulator;
     }
 }
 
 /** Bind controls and isolate navigation from canvas gestures. */
 function bindEvents() {
     window.addEventListener('resize', resize, { passive: true });
+    document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) syncProfileAnimations();
+    });
     mediaLight.addEventListener?.('change', () => {
-        app.renderer?.setTheme(readPalette());
+        app.dirty = true;
+        app.palette = readPalette();
+        app.renderer?.setTheme(app.palette);
         loadProfile();
     });
 
@@ -144,7 +233,7 @@ function bindEvents() {
         const current = app.domainCycle.indexOf(app.domain);
         app.domain = app.domainCycle[(current + 1) % app.domainCycle.length];
         domainLabel.textContent = app.domain === 'all' ? 'All namespaces' :
-            app.domain === 'personal' ? 'Personal account' : 'Doka Labs';
+            app.domainLabels.get(app.domain) ?? app.domain;
         renderNavigation();
         updateProfileFilter();
         intro.classList.add('is-muted');
@@ -209,7 +298,11 @@ function bindEvents() {
     stage.addEventListener('lostpointercapture', cancelPointer);
 
     stage.addEventListener('pointerleave', () => {
-        if (!app.pointer.down) app.hovered = null;
+        if (!app.pointer.down && app.hovered !== null) {
+            app.hovered = null;
+            // Paused exploration draws only invalidated frames; clearing focus changes its opacity.
+            app.dirty = true;
+        }
     });
 
     stage.addEventListener('wheel', event => {
@@ -244,6 +337,7 @@ function bindEvents() {
 
 /** Restore canonical anchors, camera scale, and selection. */
 function resetView() {
+    app.dirty = true;
     app.camera.x = 0;
     app.camera.y = 0;
     app.camera.zoom = 1;
@@ -256,6 +350,7 @@ function resetView() {
 
 /** Keep actual motion, accessibility state, and the initial system preference consistent. */
 function updateMotionButton() {
+    app.dirty = true;
     if (app.reducedMotion) app.running = false;
 
     document.body.classList.toggle('motion-paused', !app.running);
@@ -279,14 +374,16 @@ function renderMetrics() {
     status.textContent = `${app.state.mode} metadata / ${app.state.generated_at ?? 'date unavailable'}`;
 
     const signals = [
-        ['PERSONAL', stats.personal_public_repositories],
+        ...(app.state.profile?.variant === 'organization' ? [] : [['PERSONAL', stats.personal_public_repositories]]),
         ['ORG', stats.organization_public_repositories],
         ['PACKAGES', stats.package_count],
-        ['FOLLOWERS', stats.followers],
+        ...(app.state.profile?.variant === 'organization'
+            ? [['DOWNLOADS', stats.package_downloads], ...(stats.followers == null ? [] : [['FOLLOWERS', stats.followers]])]
+            : [['FOLLOWERS', stats.followers]]),
     ];
 
     // Absence means collection was disabled or unavailable; a known zero is still an observation.
-    if (stats.private_repository_count != null) {
+    if (app.state.profile?.variant !== 'organization' && stats.private_repository_count != null) {
         signals.push(['TOKEN-VISIBLE OWNED PRIVATE', stats.private_repository_count]);
     }
 
@@ -302,6 +399,7 @@ function renderMetrics() {
 
 /** Project declared canvas dimensions into the actual stage and device pixel ratio. */
 function resize() {
+    app.dirty = true;
     if (window.matchMedia('(max-width: 700px)').matches) {
         document.querySelector('.semantic-profile details').open = true;
     }
@@ -330,15 +428,21 @@ function frame(now) {
     app.lastTime = now;
     // The approved overview uses fixed radial endpoints; only its rings and signals animate.
     // Simulation belongs to the exploratory layers, where nodes and edges share live coordinates.
-    if (app.layer !== 'overview') {
+    if (app.layer !== 'overview' && (app.dirty || (app.running && !app.reducedMotion))) {
         if (app.running && !app.reducedMotion) {
-            app.positions = Float32Array.from(app.simulator.tick(delta));
+            app.simulator.advance(delta);
+
+            // Scalar reads avoid unsafe views invalidated by WASM memory growth and frame copies.
+            for (let index = 0; index < app.positions.length; index++) {
+                app.positions[index] = app.simulator.coordinate(index);
+            }
         }
 
-        const palette = readPalette();
+        const palette = app.palette ?? readPalette();
         const visual = buildVisualFrame(now / 1000, palette);
         app.renderer.render(visual, palette, app.size);
         drawOverlay(visual, palette, now / 1000);
+        app.dirty = false;
     }
 
     requestAnimationFrame(frame);
@@ -346,59 +450,78 @@ function frame(now) {
 
 /** Resolve graph positions, visibility, and particles for either graphics backend. */
 function buildVisualFrame(time, palette) {
-    const nodes = [];
-    const visibility = new Map();
+    const frame = app.visualFrame ??= { nodes: [], edges: [], particles: [] };
+    const nodePool = app.visualNodes ??= [];
+    const edgePool = app.visualEdges ??= [];
+    const particlePool = app.visualParticles ??= [];
+    const { nodes, edges, particles } = frame;
+    nodes.length = 0;
+    edges.length = 0;
+    particles.length = 0;
+    if (app.visibility?.length !== app.nodes.length) {
+        app.visibility = new Float32Array(app.nodes.length);
+    }
+
+    const visibility = app.visibility;
+
     for (let index = 0; index < app.nodes.length; index++) {
         const node = app.nodes[index];
         const alpha = nodeAlpha(node);
-        visibility.set(node.id, alpha);
+        visibility[index] = alpha;
         if (alpha <= .005) continue;
-        const screen = logicalToScreen(app.positions[index * 2], app.positions[index * 2 + 1]);
+
+        const item = nodePool[index] ??= {};
+        projectPosition(app.positions[index * 2], app.positions[index * 2 + 1], item);
         const selected = app.selected?.id === node.id;
         const hovered = app.hovered?.id === node.id;
         const connected = isConnectedToFocus(node.id);
-        const color = nodeColor(node, palette);
         const dim = (app.selected || app.hovered) && !selected && !hovered && !connected ? .18 : 1;
-        nodes.push({
-            node, index, x: screen.x, y: screen.y,
-            size: nodeSize(node) * app.size.fit * app.camera.zoom,
-            color, alpha: alpha * dim,
-            selected, hovered, connected,
-        });
+        item.node = node;
+        item.index = index;
+        item.size = nodeSize(node) * app.size.fit * app.camera.zoom;
+        item.color = nodeColor(node, palette);
+        item.alpha = alpha * dim;
+        item.selected = selected;
+        item.hovered = hovered;
+        item.connected = connected;
+        nodes.push(item);
     }
 
-    const edges = [];
     for (let index = 0; index < app.edges.length; index++) {
         const edge = app.edges[index];
         const fromRef = app.nodeById.get(edge.from);
         const toRef = app.nodeById.get(edge.to);
         if (!fromRef || !toRef) continue;
-        const alpha = Math.min(visibility.get(edge.from) ?? 0, visibility.get(edge.to) ?? 0);
+        const alpha = Math.min(visibility[fromRef.index], visibility[toRef.index]);
         if (alpha <= .01) continue;
-        const from = logicalToScreen(app.positions[fromRef.index * 2], app.positions[fromRef.index * 2 + 1]);
-        const to = logicalToScreen(app.positions[toRef.index * 2], app.positions[toRef.index * 2 + 1]);
+        const item = edgePool[index] ??= { from: {}, to: {} };
+        projectPosition(app.positions[fromRef.index * 2], app.positions[fromRef.index * 2 + 1], item.from);
+        projectPosition(app.positions[toRef.index * 2], app.positions[toRef.index * 2 + 1], item.to);
         const focused = isFocusedEdge(edge);
         const dim = (app.selected || app.hovered) && !focused ? .08 : 1;
-        edges.push({ edge, from, to, color: edgeColor(edge, palette), alpha: alpha * dim * edgeAlpha(edge), index });
+        item.edge = edge;
+        item.color = edgeColor(edge, palette);
+        item.alpha = alpha * dim * edgeAlpha(edge);
+        item.index = index;
+        edges.push(item);
     }
 
-    const particles = [];
     if (app.running && !app.reducedMotion) {
         for (const item of edges) {
             if (item.alpha < .06 || item.index % 2) continue;
             const speed = .035 + ((item.index * 17) % 11) * .002;
             const t = (time * speed + seededFraction(app.state.semantic_hash, item.index)) % 1;
-            particles.push({
-                x: lerp(item.from.x, item.to.x, t),
-                y: lerp(item.from.y, item.to.y, t),
-                size: item.edge.kind === 'publishes' ? 4.2 : 3.2,
-                color: item.color,
-                alpha: Math.min(1, item.alpha * 2.4),
-            });
+            const particle = particlePool[item.index] ??= {};
+            particle.x = lerp(item.from.x, item.to.x, t);
+            particle.y = lerp(item.from.y, item.to.y, t);
+            particle.size = item.edge.kind === 'publishes' ? 4.2 : 3.2;
+            particle.color = item.color;
+            particle.alpha = Math.min(1, item.alpha * 2.4);
+            particles.push(particle);
         }
     }
 
-    return { nodes, edges, particles };
+    return frame;
 }
 
 /** Resolve layer and namespace visibility without changing canonical state. */
@@ -431,6 +554,7 @@ function nodeAlpha(node) {
 function edgeAlpha(edge) {
     if (app.layer === 'overview') return edge.show_in_readme ? .58 : .10;
     if (app.layer === 'systems') return ['component', 'publishes', 'contains'].includes(edge.kind) ? .62 : .18;
+
     return ['implemented-with', 'integrates', 'targets', 'shared-capability', 'affinity']
         .includes(edge.kind) ? .48 : .12;
 }
@@ -451,23 +575,33 @@ function nodeSize(node) {
 /** Map ownership and kind to the active theme. */
 function nodeColor(node, palette) {
     if (node.kind === 'technology' && node.domain == null) return palette.shared;
-    if (node.domain === 'doka-labs') return node.kind === 'package' ? palette.doka2 : palette.doka;
+    if (app.organizationDomains.has(node.domain)) return node.kind === 'package' ? palette.organization2 : palette.organization;
     if (node.kind === 'component' || node.kind === 'technology') return palette.personal2;
+
     return palette.personal;
 }
 
 /** Color relationships consistently across both graphics backends. */
 function edgeColor(edge, palette) {
     if (edge.kind === 'shared-capability') return palette.shared;
-    if (edge.kind === 'publishes') return palette.doka2;
+    if (edge.kind === 'publishes') return palette.organization2;
     const to = app.nodeById.get(edge.to)?.node;
-    if (to?.domain === 'doka-labs') return palette.doka;
+    if (app.organizationDomains.has(to?.domain)) return palette.organization;
+
     return edge.kind === 'implemented-with' ? palette.personal2 : palette.quiet;
+}
+
+/** Write projected coordinates into retained frame objects to avoid animation garbage. */
+function projectPosition(x, y, output) {
+    const scale = app.size.fit * app.camera.zoom;
+    output.x = (x - LOGICAL_WIDTH / 2) * scale + app.size.width / 2 + app.camera.x;
+    output.y = (y - LOGICAL_HEIGHT / 2) * scale + app.size.height / 2 + app.camera.y;
 }
 
 /** Convert canonical coordinates through camera pan and zoom. */
 function logicalToScreen(x, y) {
     const scale = app.size.fit * app.camera.zoom;
+
     return {
         x: (x - LOGICAL_WIDTH / 2) * scale + app.size.width / 2 + app.camera.x,
         y: (y - LOGICAL_HEIGHT / 2) * scale + app.size.height / 2 + app.camera.y,
@@ -477,6 +611,7 @@ function logicalToScreen(x, y) {
 /** Invert the camera transform for cursor-centered zoom. */
 function screenToLogical(x, y) {
     const scale = app.size.fit * app.camera.zoom;
+
     return {
         x: (x - app.size.width / 2 - app.camera.x) / scale + LOGICAL_WIDTH / 2,
         y: (y - app.size.height / 2 - app.camera.y) / scale + LOGICAL_HEIGHT / 2,
@@ -504,6 +639,7 @@ function hitTest(x, y) {
 
 /** Refresh visual focus only when the pointer changes its nearest node. */
 function updateHover() {
+    app.dirty = true;
     const next = hitTest(app.pointer.x, app.pointer.y);
     if (next?.id !== app.hovered?.id) {
         app.hovered = next;
@@ -515,18 +651,20 @@ function updateHover() {
 function isConnectedToFocus(nodeId) {
     const focus = app.selected?.id ?? app.hovered?.id;
     if (!focus) return false;
-    return app.edges.some(edge =>
-        (edge.from === focus && edge.to === nodeId) || (edge.to === focus && edge.from === nodeId));
+
+    return app.neighbors?.get(focus)?.has(nodeId) ?? false;
 }
 
 /** Determine whether a relationship touches the current focus. */
 function isFocusedEdge(edge) {
     const focus = app.selected?.id ?? app.hovered?.id;
+
     return !focus || edge.from === focus || edge.to === focus;
 }
 
 /** Present approved node content using text nodes and safe public links. */
 function openDetails(node) {
+    app.dirty = true;
     app.selected = node;
     detailKind.textContent = `${node.kind}${node.scope ? ` / ${node.scope}` : ''}`;
     detailTitle.textContent = node.label;
@@ -534,31 +672,61 @@ function openDetails(node) {
     detailTags.replaceChildren(...(node.tags ?? []).slice(0, 12).map(value => {
         const element = document.createElement('span');
         element.textContent = value;
+
         return element;
     }));
     detailList.replaceChildren(...(node.details ?? []).map(value => {
         const element = document.createElement('li');
         element.textContent = value;
+
         return element;
     }));
+    const maintainer = app.state?.organizations?.find(organization => organization.id === node.domain)?.maintainer;
+
+    if (maintainer && safePublicUrl(maintainer.url)) {
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = maintainer.url;
+        link.rel = 'noreferrer';
+        link.textContent = `${maintainer.username} / ${maintainer.role}`;
+        item.append(link);
+        detailList.append(item);
+    }
+
     detailLink.hidden = !node.url;
     if (node.url && safePublicUrl(node.url)) detailLink.href = node.url;
     else detailLink.hidden = true;
     detailPanel.classList.add('is-open');
     detailPanel.setAttribute('aria-hidden', 'false');
     detailPanel.inert = false;
-    app.returnFocus = document.activeElement;
+    // Selecting another node inside the open inspector must retain its external initiator.
+    if (!app.detailsOpen || !detailPanel.contains(document.activeElement)) {
+        app.returnFocus = document.activeElement;
+    }
+
+    app.detailsOpen = true;
     document.querySelector('#detail-close').focus({ preventScroll: true });
     intro.classList.add('is-muted');
 }
 
 /** Hide details from pointer and keyboard navigation, restoring the initiating focus. */
 function closeDetails() {
+    app.dirty = true;
     app.selected = null;
     detailPanel.classList.remove('is-open');
     detailPanel.setAttribute('aria-hidden', 'true');
     detailPanel.inert = true;
-    app.returnFocus?.focus?.({ preventScroll: true });
+    const wasOpen = app.detailsOpen;
+    const initiator = app.returnFocus;
+    app.detailsOpen = false;
+    app.returnFocus = null;
+
+    if (wasOpen) {
+        // History can replace navigation while details are open; never focus detached or inert nodes.
+        const target = initiator?.isConnected && !detailPanel.contains(initiator)
+            ? initiator : document.querySelector('[data-layer="systems"]');
+        target?.focus?.({ preventScroll: true });
+    }
 }
 
 /** Draw stable labels and selected-node outlines over the graphics layer. */
@@ -571,7 +739,7 @@ function drawOverlay(visual, palette, time) {
 
     // Large field contours remain deliberately subtle; they make the two
     // namespaces legible without turning the layout into two isolated boxes.
-    for (const node of app.nodes.filter(node => node.kind === 'domain')) {
+    for (const node of app.domainNodes) {
         drawFieldContour(context, node.x, node.y, LOGICAL_WIDTH * .18, LOGICAL_HEIGHT * .14,
             nodeColor(node, palette), .08);
     }
@@ -595,7 +763,7 @@ function drawOverlay(visual, palette, time) {
         context.textAlign = 'center';
         context.textBaseline = 'middle';
         const project = node.kind === 'project' || node.kind === 'publication';
-        const font = getComputedStyle(document.documentElement).getPropertyValue('--mono');
+        const font = palette.mono;
         context.font = `${project ? 600 : 500} ${project ? 12 : 9}px ${font}`;
         context.fillStyle = palette.text;
         context.globalAlpha = Math.min(1, alpha * (selected || hovered ? 1.25 : .92));
@@ -604,7 +772,7 @@ function drawOverlay(visual, palette, time) {
         context.fillText(label.toUpperCase(), x, y + yOffset);
 
         if ((node.kind === 'project' || node.kind === 'publication') && app.layer !== 'capabilities') {
-            context.font = `8px ${getComputedStyle(document.documentElement).getPropertyValue('--mono')}`;
+            context.font = `8px ${palette.mono}`;
             context.fillStyle = palette.quiet;
             context.globalAlpha = alpha * .8;
             context.fillText(node.label.toUpperCase(), x, y + yOffset + 16);
@@ -647,6 +815,7 @@ function labelVisible(node, selected, hovered) {
 function createRenderer(canvas) {
     const gl = canvas.getContext('webgl2', { alpha: true, antialias: true, premultipliedAlpha: true });
     if (!gl) return new CanvasFallbackRenderer(canvas);
+
     return new WebGLRenderer(gl);
 }
 
@@ -686,53 +855,85 @@ class WebGLRenderer {
         };
 
         this.buffer = gl.createBuffer();
+        this.vertexData = new Float32Array(0);
+        this.colorCache = new Map();
         gl.enable(gl.BLEND);
         gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
     }
+
     /** Theme values are supplied with each frame; no backend cache is required. */
-    setTheme() {}
+    setTheme() { this.colorCache.clear(); }
     /** Update the backend viewport after a device or layout resize. */
     resize(size) { this.gl.viewport(0, 0, Math.round(size.width * size.dpr), Math.round(size.height * size.dpr)); }
-    /** Draw a complete visual frame using the current palette and viewport. */
+    /** Draw a complete frame using reusable CPU and GPU capacity. */
     render(frame, palette, size) {
         const gl = this.gl;
         gl.clearColor(0, 0, 0, 0);
         gl.clear(gl.COLOR_BUFFER_BIT);
         gl.useProgram(this.program);
-        this.drawLines(frame.edges, size);
-        this.drawPoints([...frame.nodes, ...frame.particles], size);
-    }
-    /** Upload and draw graph edges as line segments. */
-    drawLines(edges, size) {
-        const values = [];
-        for (const item of edges) {
-            const rgba = cssColor(item.color, item.alpha);
-            values.push(...clip(item.from.x, item.from.y, size), ...rgba, 1);
-            values.push(...clip(item.to.x, item.to.y, size), ...rgba, 1);
+        const vertices = Math.max(frame.edges.length * 2, frame.nodes.length + frame.particles.length);
+        this.reserve(vertices * 7);
+        let offset = 0;
+
+        for (const item of frame.edges) {
+            offset = this.vertex(offset, item.from, item.color, item.alpha, 1, size);
+            offset = this.vertex(offset, item.to, item.color, item.alpha, 1, size);
         }
 
-        this.upload(values);
-        this.gl.uniform1f(this.locations.points, 0);
-        this.gl.drawArrays(this.gl.LINES, 0, values.length / 7);
-    }
-    /** Upload and draw nodes and particles as glowing points. */
-    drawPoints(items, size) {
-        const values = [];
-        for (const item of items) {
-            const rgba = cssColor(item.color, item.alpha);
-            values.push(...clip(item.x, item.y, size), ...rgba, Math.max(2, item.size * size.dpr));
+        this.upload(offset);
+        gl.uniform1f(this.locations.points, 0);
+        gl.drawArrays(gl.LINES, 0, offset / 7);
+        offset = 0;
+
+        for (const items of [frame.nodes, frame.particles]) {
+            for (const item of items) {
+                offset = this.vertex(offset, item, item.color, item.alpha, Math.max(2, item.size * size.dpr), size);
+            }
         }
 
-        this.upload(values);
-        this.gl.uniform1f(this.locations.points, 1);
-        this.gl.drawArrays(this.gl.POINTS, 0, values.length / 7);
+        this.upload(offset);
+        gl.uniform1f(this.locations.points, 1);
+        gl.drawArrays(gl.POINTS, 0, offset / 7);
     }
-    /** Replace the transient interleaved position, color, and size buffer. */
-    upload(values) {
+
+    /** Grow only at graph changes; ordinary frames retain their backing storage. */
+    reserve(length) {
+        if (length <= this.vertexData.length) return;
+
+        this.vertexData = new Float32Array(Math.max(length, this.vertexData.length * 2, 256));
+        this.gl.bindBuffer(this.gl.ARRAY_BUFFER, this.buffer);
+        this.gl.bufferData(this.gl.ARRAY_BUFFER, this.vertexData.byteLength, this.gl.DYNAMIC_DRAW);
+    }
+
+    /** Write one interleaved vertex without temporary coordinate/color arrays. */
+    vertex(offset, point, color, alpha, radius, size) {
+        let rgb = this.colorCache.get(color);
+
+        if (!rgb) {
+            rgb = cssColor(color);
+            this.colorCache.set(color, rgb);
+        }
+
+        const data = this.vertexData;
+        data[offset++] = point.x / size.width * 2 - 1;
+        data[offset++] = 1 - point.y / size.height * 2;
+        data[offset++] = rgb[0];
+        data[offset++] = rgb[1];
+        data[offset++] = rgb[2];
+        data[offset++] = alpha;
+        data[offset++] = radius;
+
+        return offset;
+    }
+
+    /** Upload the used prefix without reallocating the GPU buffer or a JS view. */
+    upload(length) {
         const gl = this.gl;
         const stride = 7 * 4;
         gl.bindBuffer(gl.ARRAY_BUFFER, this.buffer);
-        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(values), gl.DYNAMIC_DRAW);
+
+        if (length > 0) gl.bufferSubData(gl.ARRAY_BUFFER, 0, this.vertexData, 0, length);
+
         gl.enableVertexAttribArray(this.locations.position);
         gl.vertexAttribPointer(this.locations.position, 2, gl.FLOAT, false, stride, 0);
         gl.enableVertexAttribArray(this.locations.color);
@@ -787,6 +988,7 @@ function makeProgram(gl, vertexSource, fragmentSource) {
         gl.shaderSource(shader, source);
         gl.compileShader(shader);
         if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(shader));
+
         return shader;
     };
 
@@ -795,22 +997,19 @@ function makeProgram(gl, vertexSource, fragmentSource) {
     gl.attachShader(program, compile(gl.FRAGMENT_SHADER, fragmentSource));
     gl.linkProgram(program);
     if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(program));
+
     return program;
 }
 
-/** Convert screen pixels into WebGL clip coordinates. */
-function clip(x, y, size) {
-    return [x / size.width * 2 - 1, 1 - y / size.height * 2];
-}
-
-/** Read the active CSS theme once for a visual frame. */
+/** Capture CSS tokens at startup and on theme changes; animation frames reuse this snapshot. */
 function readPalette() {
     const style = getComputedStyle(document.documentElement);
     const value = name => style.getPropertyValue(name).trim();
+
     return {
-        text: value('--text'), muted: value('--muted'), quiet: value('--quiet'),
+        mono: value('--mono'), text: value('--text'), muted: value('--muted'), quiet: value('--quiet'),
         personal: value('--personal'), personal2: value('--personal-2'),
-        doka: value('--doka'), doka2: value('--doka-2'), shared: value('--shared'),
+        organization: value('--organization'), organization2: value('--organization-2'), shared: value('--shared'),
     };
 }
 
@@ -818,6 +1017,7 @@ function readPalette() {
 function cssColor(value, alpha = 1) {
     const hex = value.replace('#', '');
     const number = Number.parseInt(hex.length === 3 ? hex.split('').map(c => c + c).join('') : hex, 16);
+
     return [((number >> 16) & 255) / 255, ((number >> 8) & 255) / 255, (number & 255) / 255, alpha];
 }
 
@@ -825,6 +1025,7 @@ function cssColor(value, alpha = 1) {
 function seededFraction(hash, index) {
     let value = (Number.parseInt(hash.slice(0, 8), 16) ^ Math.imul(index, 0x9e3779b9)) >>> 0;
     value ^= value << 13; value ^= value >>> 17; value ^= value << 5;
+
     return (value >>> 0) % 10000 / 10000;
 }
 
@@ -847,6 +1048,7 @@ function safePublicUrl(value) {
 
 /** Update coordinates on every gesture boundary; taps need no preceding move. */
 function updatePointer(event) {
+    app.dirty = true;
     const rect = stage.getBoundingClientRect();
     app.pointer.x = event.clientX - rect.left;
     app.pointer.y = event.clientY - rect.top;
@@ -890,7 +1092,7 @@ function renderNavigation() {
     const presentation = app.state.presentation ?? {};
     const context = document.querySelector('#profile-context');
     context.replaceChildren();
-    const groups = [
+    const groups = app.state.profile.variant === 'organization' ? [] : [
         ['Languages and tools', [...(presentation.main_stack ?? []), ...(presentation.supporting_stack ?? [])]],
         ['Interests', (app.state.interests ?? []).map(value => value.label)],
         ['Learning', (app.state.learning ?? []).map(value => value.label)],
@@ -908,7 +1110,7 @@ function renderNavigation() {
         context.append(heading, text);
     }
 
-    for (const note of [presentation.platform_note, presentation.learning_note]) {
+    for (const note of app.state.profile.variant === 'organization' ? [] : [presentation.platform_note, presentation.learning_note]) {
         if (!note) continue;
 
         const text = document.createElement('p');
@@ -916,7 +1118,7 @@ function renderNavigation() {
         context.append(text);
     }
 
-    for (const membership of app.state.learning ?? []) {
+    for (const membership of app.state.profile.variant === 'organization' ? [] : app.state.learning ?? []) {
         if (!safePublicUrl(membership.url)) continue;
 
         const link = document.createElement('a');
@@ -933,7 +1135,43 @@ function renderNavigation() {
 function parseProfileSvg(source) {
     // Chromium evaluates SVG style policy during XML parsing, before the detached tree is imported.
     // The browser owns these animations in its external stylesheet, so remove the generated CSS first.
-    const markup = source.replace(/<style(?:\s[^>]*)?>[\s\S]*?<\/style\s*>/gi, '');
+    const retained = [];
+    let cursor = 0;
+    let styleOpen = false;
+
+    for (const match of source.matchAll(/<style(?:\s[^<>]*)?>|<\/style\s*>/gi)) {
+        if (match[0].startsWith('</')) {
+            if (!styleOpen) throw new Error('Invalid profile SVG');
+
+            cursor = match.index + match[0].length;
+            styleOpen = false;
+        } else {
+            if (styleOpen) throw new Error('Invalid profile SVG');
+
+            retained.push(source.slice(cursor, match.index));
+            styleOpen = true;
+        }
+    }
+
+    if (styleOpen) throw new Error('Invalid profile SVG');
+
+    retained.push(source.slice(cursor));
+    const markup = retained.join('');
+
+    // Reject style syntax left or recreated by deletion, including qualified XML names.
+    // DTD expansion and stylesheet instructions must not bypass this pre-parse boundary.
+    if (/<\/?(?:[^<>\s]*:)?style(?:[\s/>]|$)/i.test(markup) ||
+        /<!DOCTYPE|<\?xml-stylesheet\b/i.test(markup)) {
+        throw new Error('Invalid profile SVG');
+    }
+
+    // Attribute styles also trigger CSP during XML parsing; quoted values are not attribute names.
+    for (const tag of markup.matchAll(/<(?![/?!\s])(?:[^<>"']|"[^"<]*"|'[^'<]*')*>/g)) {
+        for (const attribute of tag[0].matchAll(/"[^"]*"|'[^']*'|(\s(?:[^\s"'=<>]*:)?style\s*=)/gi)) {
+            if (attribute[1]) throw new Error('Invalid profile SVG');
+        }
+    }
+
     const parsed = new DOMParser().parseFromString(markup, 'image/svg+xml');
     const svg = parsed.documentElement;
 
@@ -993,6 +1231,14 @@ function configureProfileAnimations(svg, baseSeconds) {
             case 'pulse':
                 duration = 6;
                 break;
+            case 'icon-signal': {
+                const phase = target.classList.contains('icon-signal-phase-2') ? 2 :
+                    target.classList.contains('icon-signal-phase-1') ? 1 : 0;
+
+                animation.effect.updateTiming({ duration: 5400, delay: phase === 0 ? 0 : -1800 * phase });
+                continue;
+            }
+
             case 'signal': {
                 const value = target.dataset.signalDelay ?? '';
                 const delay = /^-?(?:\d+(?:\.\d+)?|\.\d+)$/.test(value) ? Number(value) * 1000 : NaN;
@@ -1005,6 +1251,7 @@ function configureProfileAnimations(svg, baseSeconds) {
 
                 continue;
             }
+
             default:
                 continue;
         }
@@ -1063,6 +1310,7 @@ function updateProfileFilter() {
 
 /** Keep the approved profile primary and the exploratory graph an explicit layer. */
 function updateLayer() {
+    app.dirty = true;
     const overview = app.layer === 'overview';
     if (window.matchMedia('(max-width: 700px)').matches) {
         document.querySelector('.semantic-profile details').open = true;
@@ -1083,26 +1331,51 @@ function updateLayer() {
     resize();
 }
 
+/** Validate the complete producer protocol before publishing any selectable history entries. */
+function validatedHistoryEntries(index) {
+    if (index?.schema_version !== 3 || !Array.isArray(index.states) || index.states.length > 256) {
+        throw new Error('Unsupported history format or capacity; run the explicit migration tool');
+    }
+
+    const identities = new Set();
+
+    for (const entry of index.states) {
+        if (typeof entry?.hash !== 'string' || !/^[a-f0-9]{16,64}$/i.test(entry.hash)) {
+            throw new Error('Invalid history hash');
+        }
+
+        // Native semantic identifiers are uppercase; archive filenames are canonical lowercase.
+        const identity = entry.hash.toLowerCase();
+
+        if (entry.file !== `${identity}.json` || identities.has(identity)) {
+            throw new Error('Invalid history filename or duplicate identity');
+        }
+
+        identities.add(identity);
+    }
+
+    return index.states;
+}
+
 /** Load only validated local snapshot names; history never redirects fetches. */
 async function loadHistory() {
     const select = document.querySelector('#history-select');
+    const files = new Map();
 
     try {
         const response = await fetch('./history/index.json');
 
         if (!response.ok) return;
 
-        const index = await response.json();
-        const entries = Array.isArray(index) ? index : index.states ?? index.entries ?? [];
+        const entries = validatedHistoryEntries(await response.json());
 
         for (const entry of entries) {
-            const hash = entry.semantic_hash ?? entry.hash;
-
-            if (typeof hash !== 'string' || !/^[a-f0-9]{16,64}$/i.test(hash)) continue;
+            const hash = entry.hash.toLowerCase();
+            files.set(hash, entry.file);
 
             const option = document.createElement('option');
             option.value = hash.toLowerCase();
-            option.textContent = `${entry.generated_at ?? entry.generatedAt ?? 'Snapshot'} / ${hash.slice(0, 8)}`;
+            option.textContent = `${entry.generated_at ?? 'Snapshot'} / ${hash.slice(0, 8)}`;
             select.append(option);
         }
     } catch {
@@ -1114,14 +1387,19 @@ async function loadHistory() {
 
     select.addEventListener('change', async () => {
         const currentRequest = ++request;
-        const path = select.value ? `./history/${select.value}.json` : './profile-state.json';
+        const selected = select.value;
 
         try {
+            if (selected && !files.has(selected)) throw new Error('Unknown history selection');
+
+            const path = selected ? `./history/${files.get(selected)}` : './profile-state.json';
             const response = await fetch(path);
 
             if (!response.ok) throw new Error('Snapshot unavailable');
 
             const state = validateState(await response.json());
+            if (selected && state.semantic_hash.toLowerCase() !== selected) throw new Error('Snapshot identity mismatch');
+
             const simulator = await createSimulator(state, state.nodes, state.edges);
 
             if (currentRequest !== request) {
@@ -1132,7 +1410,9 @@ async function loadHistory() {
             document.querySelector('[data-layer="overview"]').disabled = Boolean(select.value);
             app.simulator.free?.();
             app.simulator = simulator;
+            app.engine = simulator.engineLabel;
             app.state = state;
+            configureIdentity(state);
             LOGICAL_WIDTH = state.canvas.width;
             LOGICAL_HEIGHT = state.canvas.height;
             app.nodes = state.nodes;
@@ -1150,6 +1430,8 @@ async function loadHistory() {
             resetView();
             updateLayer();
         } catch {
+            if (currentRequest !== request) return;
+
             stateLabel.textContent = 'SNAPSHOT UNAVAILABLE';
         }
     });
@@ -1158,15 +1440,25 @@ async function loadHistory() {
 
 /** Reject invalid snapshot geometry before replacing the active engine or graph. */
 function validateState(state) {
-    if (!state || !Array.isArray(state.nodes) || !Array.isArray(state.edges) || !state.canvas ||
-        !state.profile || !state.stats || typeof state.mode !== 'string' ||
+    if (!state || state.schema_version !== 3 || !Array.isArray(state.nodes) || !Array.isArray(state.edges) || !state.canvas ||
+        !state.profile || !['personal', 'organization'].includes(state.profile.variant) ||
+        !state.stats || typeof state.mode !== 'string' || state.nodes.length > 512 || state.edges.length > 8192 ||
         !/^[a-f0-9]{16,64}$/i.test(state.semantic_hash ?? '')) {
         throw new Error('Invalid state');
     }
 
+    if (state.profile.variant === 'organization' && (
+        (state.interests?.length ?? 0) > 0 || (state.learning?.length ?? 0) > 0 ||
+        (state.presentation?.hardware?.length ?? 0) > 0 || (state.presentation?.platforms?.length ?? 0) > 0 ||
+        state.stats.private_repository_count != null ||
+        state.nodes.some(node => node.kind === 'interest' ||
+            (node.kind === 'domain' && node.scope !== 'organization')))) {
+        throw new Error('Organization state contains personal content');
+    }
+
     const { width, height } = state.canvas;
 
-    if (![width, height].every(value => Number.isFinite(value) && value > 0)) {
+    if (![width, height].every(value => Number.isFinite(value) && value > 0 && value <= 100000)) {
         throw new Error('Invalid canvas');
     }
 

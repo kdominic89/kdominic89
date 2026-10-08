@@ -1,4 +1,4 @@
-# Rust build output and generated WebAssembly bindings.
+# Generated browser runtime and local release/preview output.
 target/
 /dist/
 /docs/pkg/
@@ -9,6 +9,8 @@ target/
 
 # Interrupted generator writes must never become published state.
 .sourcefield.lock
+/.sourcefield-lock
+/.sourcefield-transaction/
 *.tmp
 *.tmp-[0-9]*
 
@@ -59,3 +61,10 @@ node_modules/
 Thumbs.db
 Desktop.ini
 .directory
+
+# Runtime identity is recreated with the matching ignored WASM bundle.
+/docs/runtime-manifest.json
+/.sourcefield-tools/
+/.sourcefield/
+/.sourcefield-staging/
+/.sourcefield-owned.json.tmp

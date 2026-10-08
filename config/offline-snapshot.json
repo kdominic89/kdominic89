@@ -1,112 +1,132 @@
 {
-  "mode": "preview",
+  "contributions": null,
   "fetched_at": "2026-09-03T00:00:00Z",
-  "user": {
-    "login": "kdominic89",
-    "display_name": "Dominic K.",
-    "profile_url": "https://github.com/kdominic89",
-    "public_repositories": 10,
-    "followers": 6
-  },
+  "mode": "preview",
   "organizations": [
     {
-      "login": "doka-labs",
       "display_name": "Doka Labs",
+      "followers": 0,
+      "login": "doka-labs",
       "profile_url": "https://github.com/doka-labs",
-      "public_repositories": 2,
-      "followers": 0
+      "public_repositories": 2
     }
   ],
+  "packages": [
+    {
+      "id": "Doka.EntityFrameworkCore.MySql",
+      "owner": "doka-labs",
+      "total_downloads": 3668,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql/",
+      "version": "10.4.4"
+    },
+    {
+      "id": "Doka.EntityFrameworkCore.MySql.NetTopologySuite",
+      "owner": "doka-labs",
+      "total_downloads": 2330,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql.NetTopologySuite/",
+      "version": "10.4.4"
+    },
+    {
+      "id": "Doka.EntityFrameworkCore.SafeMigrations",
+      "owner": "doka-labs",
+      "total_downloads": 2364,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations/",
+      "version": "10.4.5"
+    },
+    {
+      "id": "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
+      "owner": "doka-labs",
+      "total_downloads": 1680,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.PostgreSql/",
+      "version": "10.4.5"
+    },
+    {
+      "id": "Doka.EntityFrameworkCore.SafeMigrations.MySql",
+      "owner": "doka-labs",
+      "total_downloads": 1997,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.MySql/",
+      "version": "10.4.5"
+    },
+    {
+      "id": "Doka.Caching.MySql",
+      "owner": "doka-labs",
+      "total_downloads": 1561,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.Caching.MySql/",
+      "version": "10.4.4"
+    },
+    {
+      "id": "Doka.EntityFrameworkCore.SafeMigrations.Sqlite",
+      "owner": "doka-labs",
+      "total_downloads": 180,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.Sqlite/",
+      "version": "10.4.5"
+    },
+    {
+      "id": "Doka.EntityFrameworkCore.NestedSet",
+      "owner": "doka-labs",
+      "total_downloads": 0,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet/",
+      "version": "10.0.0-rc.1"
+    },
+    {
+      "id": "Doka.NestedSet",
+      "owner": "doka-labs",
+      "total_downloads": 0,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.NestedSet/",
+      "version": "10.0.0-rc.1"
+    }
+  ],
+  "private_repository_count": null,
   "repositories": [
     {
-      "owner": "doka-labs",
-      "name": "Doka.EntityFrameworkCore.MySql",
-      "full_name": "doka-labs/Doka.EntityFrameworkCore.MySql",
-      "url": "https://github.com/doka-labs/Doka.EntityFrameworkCore.MySql",
+      "archived": false,
       "description": "Entity Framework Core provider and related data infrastructure for MySQL and MariaDB.",
+      "fork": false,
+      "forks": 0,
+      "full_name": "doka-labs/Doka.EntityFrameworkCore.MySql",
+      "name": "Doka.EntityFrameworkCore.MySql",
+      "owner": "doka-labs",
       "primary_language": "C#",
+      "pushed_at": null,
+      "stars": 0,
       "topics": [
         "entity-framework-core",
         "mysql",
         "mariadb",
         "dotnet"
       ],
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "pushed_at": null
+      "url": "https://github.com/doka-labs/Doka.EntityFrameworkCore.MySql"
     },
     {
-      "owner": "doka-labs",
-      "name": "Doka.EntityFrameworkCore.SafeMigrations",
-      "full_name": "doka-labs/Doka.EntityFrameworkCore.SafeMigrations",
-      "url": "https://github.com/doka-labs/Doka.EntityFrameworkCore.SafeMigrations",
+      "archived": false,
       "description": "Convergent and deterministic migration safety extensions for Entity Framework Core.",
+      "fork": false,
+      "forks": 0,
+      "full_name": "doka-labs/Doka.EntityFrameworkCore.SafeMigrations",
+      "name": "Doka.EntityFrameworkCore.SafeMigrations",
+      "owner": "doka-labs",
       "primary_language": "C#",
+      "pushed_at": null,
+      "stars": 0,
       "topics": [
         "entity-framework-core",
         "migrations",
         "mysql",
         "postgresql"
       ],
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "pushed_at": null
+      "url": "https://github.com/doka-labs/Doka.EntityFrameworkCore.SafeMigrations"
     }
   ],
-  "contributions": null,
-  "private_repository_count": null,
-  "packages": [
-    {
-      "id": "Doka.Caching.MySql",
-      "version": "10.3.0",
-      "total_downloads": null,
-      "updated_at": null,
-      "url": "https://www.nuget.org/packages/Doka.Caching.MySql/"
-    },
-    {
-      "id": "Doka.EntityFrameworkCore.MySql",
-      "version": "10.3.0",
-      "total_downloads": null,
-      "updated_at": null,
-      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql/"
-    },
-    {
-      "id": "Doka.EntityFrameworkCore.MySql.NetTopologySuite",
-      "version": "10.3.0",
-      "total_downloads": null,
-      "updated_at": null,
-      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql.NetTopologySuite/"
-    },
-    {
-      "id": "Doka.EntityFrameworkCore.SafeMigrations",
-      "version": "10.2.1",
-      "total_downloads": null,
-      "updated_at": null,
-      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations/"
-    },
-    {
-      "id": "Doka.EntityFrameworkCore.SafeMigrations.MySql",
-      "version": "10.2.1",
-      "total_downloads": null,
-      "updated_at": null,
-      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.MySql/"
-    },
-    {
-      "id": "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
-      "version": "10.2.1",
-      "total_downloads": null,
-      "updated_at": null,
-      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.PostgreSql/"
-    }
-  ],
-  "warnings": [
-    "Offline preview: metadata is a historical sample, not current live data.",
-    "Private project names and summaries are manually approved public content; private repository collection is disabled."
-  ],
+  "schema_version": 1,
   "sources": [
     {
       "source": "github:user",
@@ -118,10 +138,6 @@
     },
     {
       "source": "github:repositories",
-      "status": "preview"
-    },
-    {
-      "source": "nuget:doka.caching.mysql",
       "status": "preview"
     },
     {
@@ -137,12 +153,43 @@
       "status": "preview"
     },
     {
+      "source": "nuget:doka.entityframeworkcore.safemigrations.postgresql",
+      "status": "preview"
+    },
+    {
       "source": "nuget:doka.entityframeworkcore.safemigrations.mysql",
       "status": "preview"
     },
     {
-      "source": "nuget:doka.entityframeworkcore.safemigrations.postgresql",
+      "source": "nuget:doka.caching.mysql",
+      "status": "preview"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.safemigrations.sqlite",
+      "status": "preview"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.nestedset",
+      "status": "preview"
+    },
+    {
+      "source": "nuget:doka.nestedset",
+      "status": "preview"
+    },
+    {
+      "source": "nuget:owner:doka-labs",
       "status": "preview"
     }
+  ],
+  "user": {
+    "display_name": "Dominic K.",
+    "followers": 6,
+    "login": "kdominic89",
+    "profile_url": "https://github.com/kdominic89",
+    "public_repositories": 10
+  },
+  "warnings": [
+    "Offline preview: metadata is a historical sample, not current live data.",
+    "Private project names and summaries are manually approved public content; private repository collection is disabled."
   ]
 }

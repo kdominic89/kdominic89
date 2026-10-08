@@ -11,8 +11,8 @@
   --quiet: #65708f;
   --personal: #8b7cff;
   --personal-2: #4de7c2;
-  --doka: #ffb86b;
-  --doka-2: #5ec8ff;
+  --organization: #ffb86b;
+  --organization-2: #5ec8ff;
   --shared: #d582ff;
   --success: #73e6a4;
   --mono: "SFMono-Regular", "Cascadia Code", "Roboto Mono", Menlo, Consolas, monospace;
@@ -33,12 +33,17 @@
     --quiet: #8993a8;
     --personal: #6657e8;
     --personal-2: #008e79;
-    --doka: #c66b16;
-    --doka-2: #1d7fbc;
+    --organization: #c66b16;
+    --organization-2: #1d7fbc;
     --shared: #9846c6;
     --success: #13864b;
   }
 
+}
+
+:root[data-profile-variant="organization"] {
+  --personal: var(--organization);
+  --personal-2: var(--organization-2);
 }
 
 * {
@@ -54,7 +59,7 @@ html, body {
 body {
   background:
   radial-gradient(circle at 20% 15%, color-mix(in srgb, var(--personal) 10%, transparent), transparent 34rem),
-  radial-gradient(circle at 84% 72%, color-mix(in srgb, var(--doka) 8%, transparent), transparent 38rem),
+  radial-gradient(circle at 84% 72%, color-mix(in srgb, var(--organization) 8%, transparent), transparent 38rem),
   var(--bg);
   color: var(--text);
   font-family: var(--sans);
@@ -687,6 +692,29 @@ because shrinking long package labels makes a graph unreadable. */
 
 }
 
+#profile-view .icon-signal {
+  animation: icon-signal 5.4s ease-in-out infinite;
+}
+
+#profile-view .icon-signal-phase-1 {
+  animation-delay: -1.8s;
+}
+
+#profile-view .icon-signal-phase-2 {
+  animation-delay: -3.6s;
+}
+
+@keyframes icon-signal {
+  0%, 100% {
+    opacity: .35;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+}
+
 #profile-view [data-node-id][role="button"] {
   cursor: pointer;
 }
@@ -871,7 +899,8 @@ because shrinking long package labels makes a graph unreadable. */
 }
 
 @media (prefers-reduced-motion: reduce) {
-  #profile-view .rotate, #profile-view .flow, #profile-view .pulse, #profile-view .signal {
+  #profile-view .rotate, #profile-view .flow, #profile-view .pulse, #profile-view .signal,
+  #profile-view .icon-signal {
     animation: none !important;
   }
 

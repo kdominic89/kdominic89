@@ -1,0 +1,15 @@
+{
+  "schema_version": 2,
+  "generator_version": "0.1.1",
+  "source_revision": "b12eb4c72d60fbc075776a6ccc4bc15736db28af",
+  "generator_fingerprint": "56d3b9d25c2f7f9a156144a41db8b65b27f4355b5b779d11ff35f66e38693cfe",
+  "authored_config_sha256": "7e7516eacef9370e93ea02ab0d2782b561dd9a30d86e7d0edd4f052aebeaaf2e",
+  "inputs": {
+    "import-capture.json": "7fbe594ad1642053feec4cc854ea5e1fc0f535c1770eac1e7f796ca27eb6d3d4",
+    "layout.json": "2f4bb56fcdbb1a073b9ad5624f968d802ed95238f303b2e16a449445fa5ca28c",
+    "profile-state.json": "aa66a96040639297a0d2dcc7cdc5a9cb4c937a8f0cd15d157d1d4383c8c8555c",
+    "render-snapshot.json": "38217a8861cd212e5e2ffdf451e12f64516d6facd23611c7c2f8ec5a2276b426",
+    "resolved-config.json": "cc281f7b182896dce990dc2f110442dfcbb0af67b5951e0061792936e174145a",
+    "source-snapshot.json": "165991a8e96531a202aa3d8a4df98eb55b775251f0aa112038ef4cb8f3d08926"
+  }
+}
