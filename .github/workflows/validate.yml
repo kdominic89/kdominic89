@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: kdominic89/sourcefield
-          ref: b12eb4c72d60fbc075776a6ccc4bc15736db28af
+          ref: cd2e2b6779c82a3f64346a47d40da4967fcc0dc5
           path: .sourcefield-tools
           persist-credentials: false
       - name: Verify the consumer lock and workflow reference
@@ -26,7 +26,7 @@ jobs:
           python3 -B .sourcefield-tools/scripts/check_pin.py
           --lock sourcefield.lock.json
           --workflow .github/workflows/update-profile.yml
-          --own-commit b12eb4c72d60fbc075776a6ccc4bc15736db28af
+          --own-commit cd2e2b6779c82a3f64346a47d40da4967fcc0dc5
       - name: Verify the released CLI and matching browser runtime
         env:
           GH_TOKEN: ${{ github.token }}

@@ -6,7 +6,7 @@ when that repository feature is available. Do not put credentials, private-proje
 or sensitive exploit payloads in public issues.
 
 For Sourcefield CLI, collection, imports, generation, installation, or browser-runtime defects,
-follow the upstream [security policy](https://github.com/kdominic89/sourcefield/blob/b12eb4c72d60fbc075776a6ccc4bc15736db28af/SECURITY.md).
+follow the upstream [security policy](https://github.com/kdominic89/sourcefield/blob/cd2e2b6779c82a3f64346a47d40da4967fcc0dc5/SECURITY.md).
 Include the exact release/source revision, minimal reproduction, input an attacker controls,
 prerequisites, and expected impact. Use synthetic inputs and redact sensitive captures. This
 consumer does not establish a separate response-time or support guarantee.

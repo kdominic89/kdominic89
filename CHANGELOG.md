@@ -1,5 +1,15 @@
 # Changelog
 
+## Sourcefield v0.1.2 adoption
+
+- Select the authenticated released CLI/runtime and matching update/validation pins.
+- Show owner repository totals on the personal hub and inherit Doka selected-project counts
+  from its canonical manifest, with matching accessible labels.
+- Preserve the prior opted-in aggregate, current dated source capture, all retained archives,
+  project geometry, approved content, README, and default private-count policy.
+- Keep absent-date tests explicit as temporary legacy fixtures so scheduled refreshes do not
+  invalidate them; document current provenance, caption ownership, and complete rollback.
+
 ## Personal consumer migration
 
 - Use the published Sourcefield v0.1.1 CLI/runtime and one matched release lock instead of a copied Rust workspace.

@@ -188,15 +188,19 @@ class InstalledGenerationTests(unittest.TestCase):
         self.assertEqual(len(read_json(self.root / "docs/history/index.json")["states"]), 24)
 
     def test_offline_preview_preserves_absent_source_date_and_records_distinct_effective_input(self):
-        """Preview preserves the actual undated Live capture and binds its distinct effective rendering input."""
+        """Preview preserves an explicitly undated Live fixture and binds its distinct effective rendering input."""
         # Arrange
         source_path = self.root / "assets/source-snapshot.json"
-        source_bytes = source_path.read_bytes()
         captured = read_json(source_path)
+        # Scheduled refreshes date the real capture; keep this legacy fixture explicitly undated.
+        captured["fetched_at"] = ""
+        captured["private_repository_count"] = None
+        source_path.write_text(json.dumps(captured) + "\n", encoding="utf-8")
+        source_bytes = source_path.read_bytes()
         history = self._history()
 
         # Act
-        state = self._generate()
+        state = self._generate("--adopt-existing")
 
         # Assert
         self.assertEqual(captured["mode"], "live")
@@ -217,13 +221,17 @@ class InstalledGenerationTests(unittest.TestCase):
         self.assertEqual(self._history(), history)
 
     def test_locked_replay_preserves_absent_source_date_and_recorded_effective_preview(self):
-        """Replay retains the actual missing retrieval date, captured Preview, and original history."""
+        """Replay retains an explicitly missing retrieval date, captured Preview, and original history."""
         # Arrange
         source_path = self.root / "assets/source-snapshot.json"
-        source_bytes = source_path.read_bytes()
         captured = read_json(source_path)
+        # Scheduled refreshes date the real capture; keep this legacy fixture explicitly undated.
+        captured["fetched_at"] = ""
+        captured["private_repository_count"] = None
+        source_path.write_text(json.dumps(captured) + "\n", encoding="utf-8")
+        source_bytes = source_path.read_bytes()
         history = self._history()
-        self._generate()
+        self._generate("--adopt-existing")
         render_path = self.root / "assets/render-snapshot.json"
         render_bytes = render_path.read_bytes()
         outputs = self._owned_outputs()

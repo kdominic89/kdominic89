@@ -8,16 +8,16 @@ from its public canonical manifest.
 ## Repository automation
 
 Select **Settings > Pages > Build and deployment > GitHub Actions** and review the `github-pages`
-environment. The repository Actions policy was inspected on October 8, 2026 and permits all actions;
+environment. The repository Actions policy was inspected on October 9, 2026 and permits all actions;
 no new allowlist entry is required under that policy. If selected-actions policy is introduced later,
 allow the exact reusable workflow below together with the configured official Actions:
 
 ```text
-kdominic89/sourcefield/.github/workflows/generate.yml@b12eb4c72d60fbc075776a6ccc4bc15736db28af
+kdominic89/sourcefield/.github/workflows/generate.yml@cd2e2b6779c82a3f64346a47d40da4967fcc0dc5
 ```
 
 `Update SOURCEFIELD` retains the 03:17 UTC daily schedule and manual dispatch. Its full source SHA
-matches `sourcefield.lock.json`, selecting immutable `v0.1.1`. The generator produces a candidate
+matches `sourcefield.lock.json`, selecting immutable `v0.1.2`. The generator produces a candidate
 under read-only permissions. Strict live collection and required remote imports must succeed before
 publication. The caller uploads the complete Pages artifact before applying owned output against
 the expected repository HEAD. Pages deploys that same artifact after successful repository publication.
@@ -36,16 +36,21 @@ does not enable it; selected intent without a token warns and continues public c
 Keep `collect_private_repository_count=false` in the normal authored configuration.
 See [Privacy](PRIVACY.md) for the exact disclosure boundary.
 
+The account caption uses `owner-repositories`; it shows available public totals and the approved
+private aggregate only when enabled. The imported Doka caption uses its canonical `selected-projects`
+setting, so RelationalLab is counted as a private abstraction in both profiles. Counts never add
+project circles automatically. Caption wording belongs in configuration, not generator code.
+
 ## Optional local preview
 
-Use Python 3.11+ and shared tooling checked out at exactly `b12eb4c72d60fbc075776a6ccc4bc15736db28af`.
+Use Python 3.11+ and shared tooling checked out at exactly `cd2e2b6779c82a3f64346a47d40da4967fcc0dc5`.
 Reuse one matching verified Sourcefield installation across profile repositories. No per-repository
 manual installation or Rust build is required. If this machine has no matching installation, bootstrap
 once into a new directory with GitHub CLI release/attestation verification support:
 
 ```sh
 SOURCEFIELD_SOURCE=/path/to/pinned/sourcefield
-export SOURCEFIELD_INSTALLATION=/path/to/shared/sourcefield-v0.1.1
+export SOURCEFIELD_INSTALLATION=/path/to/shared/sourcefield-v0.1.2
 CONSUMER_REPOSITORY=/path/to/kdominic89
 
 python3 -B "$SOURCEFIELD_SOURCE/scripts/bootstrap_release.py" \
@@ -80,7 +85,9 @@ and does not substitute the authoring seed when the retained capture is missing.
 `assets/render-snapshot.json` separately records undated, policy-filtered Preview input. Track both
 snapshots and the generation record. Envelope schema 2 binds six inputs; locked offline replay
 checks them and the generator identity and uses the recorded effective input without selecting new
-credentials. Regenerate with the matched pair after a generator upgrade.
+credentials. Regenerate with the matched pair after a generator upgrade. An explicit local
+`--private-counts` preview also requires a nonempty `PROFILE_TOKEN`; without it, the request warns
+and continues public-only. Replay of already recorded inputs requires neither flag nor credential.
 
 Omit `--offline` for a strict online refresh. The first online collection may start without a prior
 capture or authoring seed. Malformed existing captures fail; an undated legacy capture or Preview

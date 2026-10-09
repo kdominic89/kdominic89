@@ -120,6 +120,7 @@ kind = "account"
 label = "kdominic89"
 owner = "kdominic89"
 summary = "Personal projects."
+repository_caption = { source = "owner-repositories" }
 
 [[interests]]
 id = "other"

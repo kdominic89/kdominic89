@@ -88,9 +88,10 @@ capture and required imports; they never substitute the empty `config/offline-sn
 That seed remains an initial direct-native-authoring input. Failed strict collection publishes no
 output; observation fallback never substitutes for a failed required canonical import.
 
-Migration converts the 24 captured published legacy archives to schema 3 while retaining their
+Initial migration converted 24 captured published legacy archives to schema 3 while retaining their
 facts, hashes, and timestamps. These archives were captured from published history, not from the
-empty original local history index. Offline, locked replay, and `--no-history` preserve indexed
+empty original local history index. Subsequent live refreshes keep rolling history. Offline, locked
+replay, and `--no-history` preserve indexed
 history bytes. Allowed live updates apply rolling `history_limit = 24` retention.
 
 History admission rejects a supplied empty or whitespace-only maintainer role, including in archives

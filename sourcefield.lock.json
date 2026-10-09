@@ -2,32 +2,32 @@
   "assets": {
     "aarch64-apple-darwin": {
       "name": "sourcefield-aarch64-apple-darwin.zip",
-      "sha256": "380c2a6c0c28414a3834795bcd5c1424a99665002601fb2755ad811afa2ed940"
+      "sha256": "7659e246eab4a6ba1e4ed0b0f90c2cd1c77e97fff5810319e56d24b559d73726"
     },
     "aarch64-unknown-linux-gnu": {
       "name": "sourcefield-aarch64-unknown-linux-gnu.zip",
-      "sha256": "86bc2f66d335e8abf4d6ed2956daf0b72c9f2f6c83f12ece1a6c915db60b7fe2"
+      "sha256": "0a9f3f5e20eb9ba4d70d19497c9ade161bac8b4a579cf630ae2bd9923bf3d62b"
     },
     "browser": {
       "name": "sourcefield-browser.zip",
-      "sha256": "836bfcddbaf638f0874f4a825219182d2574a2885506e9deb4af3e1a45fa33c8"
+      "sha256": "a419176befa98884cf2b980b00d1caef8afd8915bf14c18511b80c780538314b"
     },
     "x86_64-apple-darwin": {
       "name": "sourcefield-x86_64-apple-darwin.zip",
-      "sha256": "4fa813cf776eb2eb4fd749ced5c4eb07b3953ed8c838b33aa0626cb449d04235"
+      "sha256": "12c6f0c6cd97fa4581f6e2aa053e7e3d819155a482af09b5c12cb306142f36da"
     },
     "x86_64-pc-windows-msvc": {
       "name": "sourcefield-x86_64-pc-windows-msvc.zip",
-      "sha256": "207257f7d9c062d6a3fffac62e5665f1eebd614785ffefd8efd59b2c19491474"
+      "sha256": "afb2254bb1301f4dbcb47e4a96d2eb830c139d72b5763e2ed1b8ebbbed5b883c"
     },
     "x86_64-unknown-linux-gnu": {
       "name": "sourcefield-x86_64-unknown-linux-gnu.zip",
-      "sha256": "0fb4df4424b6744c5e46274d7485e22322b7fe1afe29a7484f7d2ed0bcad698b"
+      "sha256": "522c8607134bd0d884c4f1d699ab385c76462776893509fac7a724531b6c74ae"
     }
   },
-  "release": "v0.1.1",
+  "release": "v0.1.2",
   "repository": "kdominic89/sourcefield",
   "schema_version": 1,
-  "source_commit": "b12eb4c72d60fbc075776a6ccc4bc15736db28af",
+  "source_commit": "cd2e2b6779c82a3f64346a47d40da4967fcc0dc5",
   "workflow": ".github/workflows/release.yml"
 }

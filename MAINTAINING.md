@@ -67,15 +67,36 @@ or trust configuration instead of deleting warnings or labeling old data live. T
 aggregate retains the intent/token separation in [Privacy](PRIVACY.md). Missing optional caller
 credentials warn and continue public collection; actual required public-source failures still fail.
 
-The migrated legacy source capture has no recorded retrieval date. That absence remains empty;
-it cannot authorize live fallback. A successful future live refresh will record genuine collection
-provenance. Offline Preview and migrated history never fabricate a missing date.
+The current published source capture has a genuine retrieval date from its successful live refresh.
+Preserve that date during offline generation. Older captures or archives may have no retrieval date;
+that absence remains empty and cannot authorize live fallback. Preview never fabricates a date.
 
-The 24 migration archives came from captured published history. Their facts, hashes, and timestamps
-must survive conversion. Offline, locked replay, and `--no-history` preserve the indexed archives and
+Initial migration preserved 24 captured published legacy archives. Subsequent live updates apply
+rolling retention; the currently indexed states are the retained history to protect. Offline, locked
+replay, and `--no-history` preserve the indexed archives and
 index byte for byte, even when the configured limit is lowered. Allowed live history updates apply
 rolling `history_limit = 24` retention, including when the current semantic hash is already archived.
 Rolling history is not an all-time archive.
+
+## Repository captions
+
+The personal account domain uses `repository_caption = { source = "owner-repositories" }`.
+It describes the observed account totals without changing the selected project circles. The private
+part consumes only an already approved owned aggregate; normal policy keeps it unavailable rather
+than displaying zero. Keep `collect_private_repository_count=false` and the existing manual/variable
+intent plus optional `PROFILE_TOKEN` wiring. See [Privacy](PRIVACY.md).
+
+Doka owns `repository_caption = { source = "selected-projects" }` in its canonical manifest.
+The same setting reaches both profiles through their existing imports. RelationalLab remains
+private-abstract and unlinked; selected project totals are independent from account-wide observations.
+Caption text and its SVG accessible label agree. Edit organization wording at its canonical source
+and refresh normally; no further generator release is needed for supported caption changes.
+
+Offline generation reuses the captured canonical version; a normal online refresh resolves `main`
+again. An offline preview explicitly supplied with `--private-counts` and a nonempty `PROFILE_TOKEN`
+can retain the previously approved aggregate without new collection. Without that credential, the
+explicit request warns and continues public-only. Locked replay uses its recorded effective input, even
+when today's private collection policy is off. Preview is not new live evidence.
 
 ## Generator upgrades
 
@@ -84,8 +105,8 @@ Obtain a new authenticated lock from an actual reviewed immutable release. Use i
 directory. Inspect the prepared lock and workflow together, and update the validation workflow's
 tool checkout and identity checks to that same source SHA. Review [Action pins](ACTION-PINS.md).
 
-Bootstrap a new matching installation, then verify candidates and replay boundaries before adopting
-the change. Update only this repository's exact reusable-workflow allowlist entry if its selected-actions
+Reuse one matching authenticated installation across both profile repositories. Bootstrap only when
+that released pair is unavailable, then verify candidates and replay boundaries before adopting the change. Update only this repository's exact reusable-workflow allowlist entry if its selected-actions
 policy requires it. Ordinary profile refreshes do not upgrade the generator. Do not substitute a
 development version, fabricated archive digest, or old release for the selected implementation.
 
@@ -113,3 +134,8 @@ Restore the complete matching configuration, data, history index, and runtime se
 Include the retained source snapshot, effective render snapshot, and matching generation record.
 Actions artifacts are temporary copies; retain recovery evidence separately when it must survive
 artifact expiration.
+
+Sourcefield v0.1.1 cannot read caption fields in configuration, current states, or history archives.
+A rollback must restore the complete compatible revision and matched installation, including captures,
+outputs, ownership, and history. Pin a remote `main` import to a compatible older manifest before an
+old generator's next online refresh. Changing only the release lock is insufficient.

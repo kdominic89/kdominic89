@@ -1,92 +1,121 @@
 # Validation
 
-Verified locally on October 8, 2026 using the actual published Sourcefield `v0.1.1` CLI and
-matching browser runtime at `b12eb4c72d60fbc075776a6ccc4bc15736db28af`. The existing shared
-installation was authenticated during the organization upgrade against the immutable release,
-both archive digests and GitHub attestations. Its current files and source identity were checked
-again for this consumer. No copied generator was compiled or substituted.
+Verified locally on October 9, 2026 with the published Sourcefield `v0.1.2` CLI and matching
+browser runtime at `cd2e2b6779c82a3f64346a47d40da4967fcc0dc5`. The existing shared installation
+was authenticated against the immutable release, both archive digests, and GitHub attestations
+for the Doka upgrade. This consumer reuses that exact pair and verbatim release lock; no additional
+installation, dependency, upstream build, or implementation suite was introduced.
 
-## Preserved inputs and current output
+## Retained inputs and captions
 
-The preview is `70DE915F5859E081`: 63 nodes, 92 edges, ten projects, ten NuGet package positions
-and a 1800 by 1885 canvas. All 30 personal technologies, 15 doka-labs affinities, three canonical
-bindings, personal identity, private abstractions, learning, hardware and original project geometry
-are retained. Sourcefield is the sixth personal project; the imported SafeMigrations motif and
-SQL Server adapter use canonical organization facts.
+The starting point is the actual published personal revision
+`928fa496b98859319b1f3098e7e2d8651c31ff56`. The previously clean local branch was behind generated
+refreshes and was fast-forwarded to it before this upgrade. No published history was rewritten.
 
-The actual public canonical capture resolves `doka-labs/.github:config/organization.toml` at
-`bc6f2f2360581eb87b35262dfa376a56f0427b01`, with SHA256
-`421fb355b1d18e644d14d03efe1640cfae7608f1351d19cf7023c06ee648ba2d`.
-The authored ref remains `main` for future refreshes; offline replay uses captured bytes.
+The personal account domain now selects `owner-repositories`. The canonical Doka manifest selects
+`selected-projects`; the personal authored configuration contains no duplicate organization caption.
+The exact public manifest is captured from `doka-labs/.github` at
+`84b8d8766fbb5b3c4dc162a276aafd1b721ba49d`, SHA-256
+`05c1f97d5fc4e1340a092dab337527f8eed6b4585032b074ae985e889e478aef`.
+Its bytes were verified against that public Git commit/blob before explicit isolated offline adoption.
+The import's authored ref stays `main`. Normal online updates resolve it again; offline replay uses
+its captured bytes.
 
-Migration uses published personal inputs from `845a43a7f230f795b687b1ef8670933fece6c41e`
-together with previously approved local authorship. All 24 real historical states retain every
-original field, semantic hash, ordering and timestamp. Conversion adds only the required schema,
-explicit personal variant and organization identities derived from recorded nodes. Complete
-original working/runtime files and verified original/published Git bundles are retained externally;
-restoring the original 93-file tree was rehearsed and checked byte for byte.
+The staged output is Preview `1D9A389991A0A7E3`: 63 nodes, 92 edges, ten projects, ten packages,
+and the approved 1800 by 1885 canvas. It retains the previously published, explicitly opted-in
+aggregate: `12 public / 9 private repos`. The ordinary public-only candidate instead shows
+`12 public repos`. Doka shows `3 public / 1 private repos` in both personal candidates and the
+actual published organization profile. RelationalLab remains private-abstract and unlinked.
+Visible SVG captions and their accessible labels agree. The selected project circles do not change.
 
-The legacy source capture has six observed package records, Live status and an empty retrieval date.
-Migration adds its required snapshot schema without inventing a date or new observations. Subsequent
-offline generation preserves those migrated bytes exactly. Four newer authored packages therefore
-have no retained version observation in this preview. A successful online refresh obtains current
-observations. The separate effective render input is undated Preview, and the generator's deterministic
-Preview timestamp is an epoch sentinel rather than a collection date. Schema-2 generation records
-bind exactly six inputs and the current authored digest.
+Private collection remains false in authored configuration. The existing manual boolean, repository
+variable, optional named `PROFILE_TOKEN`, schedule, permissions, and publication ordering are
+unchanged. An explicit offline private preview also requires a nonempty credential; an existing
+authenticated owner credential was held only in memory for that process. It was neither logged nor
+persisted, and offline execution performed no observation collection. The credential-free public
+wrapper and locked replay were checked separately.
 
-## Executed acceptance
+The raw source capture remains byte-identical, including its genuine retrieval timestamp
+`2026-10-08T14:15:32.105853809+00:00`, source statuses, package versions, and approved aggregate.
+README, authored layout, offline seed, all 24 current archives, and the complete history index remain
+byte-identical to the published baseline. Identity, stacks, hardware, learning, private abstractions,
+all 30 technologies, 15 organization affinities, and three canonical bindings are preserved.
+
+The effective input is explicitly undated Preview. Its `1970-01-01T00:00:00Z` generation timestamp
+is a deterministic sentinel, not a collection date. Schema-2 provenance binds exactly six captured
+inputs and current authored bytes; every digest and generated-file ownership entry was checked.
+Locked replay without credentials reproduces the already recorded private Preview exactly.
+
+## Executed checks
 
 | Check | Result |
 | --- | --- |
-| Released native migration and current validation | Passed; approved authorship and all historical facts preserved |
-| Installed consumer tests | 42 passed, zero skipped: 12 authored, 27 installed generation, 3 workflow |
-| Composition, privacy and rejected inputs | Passed; full technology/affinity inventory, unlinked private abstractions, stale/tampered captures, replay and atomicity |
-| Lock, workflow/tooling source and artifact checks | Passed; actual v0.1.1 identity and complete runtime |
-| Update and validate workflow syntax | Both passed actionlint |
-| Actual Chromium runtime | Passed; WASM, fallback, motifs, themes, geometry, interaction, pause and reduced motion |
-| Historical browser views | All 24 archives load; node counts match and current view restores |
-| README and mobile comparison | Before/after SVGs inspected at 820 and 343 content pixels |
-| Shared candidate and publication tools | Two fresh isolated Git clones pass; source/history preserved, ignored WASM restored and never staged, repeated output is a no-op |
-| Missing optional private token | Actual wrapper warns and generates the public candidate when the private boolean is selected without PROFILE_TOKEN |
-| Strict live collection and rolling retention | Isolated unpublished public run passed; ten genuine package observations, dated capture, 24 states, 23 older archives unchanged and only the expired owned archive removed |
-| Recovery, provenance and scope | Original/published bundles verify; six replay digests, ownership and release files checked; Sourcefield and doka-labs remain unchanged |
-| Source and documentation discipline | ASCII authored files, intentional preserved branding, Python/docstrings, local links and whitespace checked |
+| Existing consumer tests | All 42 covered successfully: 41 passed in the suite; one local-proxy test was blocked by the socket sandbox and passed alone with local socket permission. Zero skipped. |
+| Test changes | Existing release expectations updated; two absent-date tests now explicitly construct temporary legacy captures. No test added or removed. |
+| Release lock and workflow/tooling identity | Verbatim authenticated lock; update, validation checkout, and validation identity argument all match the selected source SHA. |
+| Native validation and artifact checks | Passed for retained-private and public-only candidates; the published Doka artifact also passes with matching restored runtime. |
+| Workflow syntax | Update and validation both pass actionlint. |
+| Provenance, ownership, and locked replay | Six input hashes and all owned files match; replay preserves every tracked candidate byte. |
+| Preserved data | Current source, README, layout, offline seed, 24 archives, and index match the published baseline byte for byte. |
+| Real Chromium | Private, public-only, and published Doka views pass WASM/ARIA, desktop dark and mobile light, no horizontal overflow, and reduced motion. |
+| Affected browser behavior | Mobile keyboard opening and reachable close, pause, JavaScript fallback, one retained historical view and return to the current captions all pass. |
+| README comparison | Before/after screenshots at 820 and 343 content pixels; captions do not overlap project text. |
+| Repository Actions policy | Enabled and allows all actions; no additional reusable-workflow allowance or settings write is required. |
 
-The live retention fixture is independent evidence and is not substituted for preserved migration
-output. No private credential or private repository enumeration was used. Public read authentication
-was supplied only to the isolated process and was never logged.
-
-Representative commands actually executed, with external paths abbreviated:
+Commands actually executed, with external candidate/installation paths abbreviated:
 
 ```sh
-sourcefield migrate --source /path/to/reconciled-legacy-input \
-  --destination /path/to/new-migration --variant personal
-
-SOURCEFIELD_INSTALLATION=/path/to/authenticated/shared-installation \
+SOURCEFIELD_INSTALLATION=/path/to/existing/authenticated-installation \
   python3 -B -m unittest discover -s tests -p 'test_*.py' -v
+
+# Only the socket-blocked case was repeated with local test-server permission.
+python3 -B -m unittest \
+  test_consumer_generation.InstalledGenerationTests.test_locked_replay_restores_outputs_with_remote_transport_unavailable -v
+
+sourcefield generate --root /path/to/candidate --offline --no-history \
+  --fallback-snapshot assets/source-snapshot.json --runtime /path/to/matching/runtime \
+  --readme README.md --private-counts
+
+sourcefield generate --root /path/to/candidate --offline --locked --no-history \
+  --runtime /path/to/matching/runtime --readme README.md
+
+sourcefield validate --root /path/to/candidate
 
 python3 -B "$SOURCEFIELD_SOURCE/scripts/check_pin.py" \
   --lock sourcefield.lock.json --workflow .github/workflows/update-profile.yml \
-  --own-commit b12eb4c72d60fbc075776a6ccc4bc15736db28af
+  --own-commit cd2e2b6779c82a3f64346a47d40da4967fcc0dc5
+
+python3 -B "$SOURCEFIELD_SOURCE/scripts/consumer_candidate.py" \
+  --source /path/to/prepared-consumer --destination /path/to/public-preview \
+  --installation /path/to/existing/authenticated-installation \
+  --readmes '["README.md"]' --offline
 
 python3 -B "$SOURCEFIELD_SOURCE/scripts/validate_artifact.py" \
-  --root /path/to/candidate --workflow-root /path/to/consumer --require-wasm
+  --root /path/to/candidate --workflow-root /path/to/prepared-consumer --require-wasm
 
 actionlint .github/workflows/update-profile.yml .github/workflows/validate.yml
-
-node "$SOURCEFIELD_SOURCE/scripts/verify-browser.mjs" \
-  --site /path/to/candidate/docs --output /path/to/external/evidence \
-  --playwright-module /path/to/existing/playwright/index.mjs \
-  --browser /path/to/existing/chromium
 ```
 
-Detailed logs, recovery, immutable identities, screenshots and publication fixtures are kept outside
-the repository. Intentional SVG/JSON/captured inputs remain tracked; runtime binaries, build caches,
-browser tooling and recovery files are excluded.
+The initial isolated capture edit was correctly rejected as modified owned input; its verified
+public bytes were then adopted once with `--adopt-existing` in that external preparation tree.
+Subsequent ordinary generation, replay, and corruption tests keep the normal ownership guard.
+An external browser probe initially expected the abbreviation `JS`; the deliberate runtime label
+is `JAVASCRIPT FALLBACK`. Correcting that probe required no product runtime edit. Original failures,
+final logs, exact input/output hashes, command arguments, and screenshots remain in the external
+`reviews/git-profile` evidence directory.
 
-## Remaining publication steps
+## Publication and rollback
 
-Local implementation is ready for review. Commit, push, hosted `Validate SOURCEFIELD`, the next
-`Update SOURCEFIELD` run and Pages deployment remain separate steps. Local acceptance and the isolated
-live probe do not establish a public deployment or the upgraded consumer's hosted Ubuntu result.
-The repository currently permits all actions; no allowlist change was required or made.
+Local adoption is ready for commit review. Commit, push, the upgraded hosted `Validate SOURCEFIELD`,
+`Update SOURCEFIELD`, and Pages publication are separate steps; local acceptance does not certify
+those hosted results. No GitHub settings were changed and neither other product repository was edited.
+
+A later live update uses the unchanged private intent/token selection and current public APIs.
+It can change observations and rolling history naturally. This offline upgrade does not establish
+fresh live data or invent missing historical dates. Initial migration converted published legacy
+history; the retained set now also contains genuine later refreshes.
+
+Sourcefield v0.1.1 rejects caption fields in authored configuration, states, and history archives.
+Rollback requires the complete compatible revision, data, ownership, matched CLI/runtime and pins.
+An older generator must also use a compatible fixed Doka manifest revision before live collection;
+changing only the lock while continuing to import the new canonical `main` is insufficient.
