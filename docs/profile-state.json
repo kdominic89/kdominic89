@@ -82,77 +82,77 @@
   "sources": [
     {
       "source": "github:contributions",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "github:org:doka-labs",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "github:private-count",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "github:repositories:doka-labs",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "github:repositories:kdominic89",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "github:user",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.caching.mysql",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.mysql",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.mysql.nettopologysuite",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.nestedset",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.safemigrations",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.safemigrations.mysql",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.safemigrations.postgresql",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.safemigrations.sqlite",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.entityframeworkcore.safemigrations.sqlserver",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:doka.nestedset",
-      "status": "preview"
+      "status": "live"
     },
     {
       "source": "nuget:owner:doka-labs",
-      "status": "preview"
+      "status": "live"
     }
   ],
   "schema_version": 3,
-  "mode": "preview",
-  "generated_at": "1970-01-01T00:00:00Z",
-  "semantic_hash": "1D9A389991A0A7E3",
+  "mode": "live",
+  "generated_at": "2026-10-09T05:01:45.697692779+00:00",
+  "semantic_hash": "E11D6B19DBABEC18",
   "canvas": {
     "show_activity_orbit": true,
     "show_state_hash": true,
@@ -180,7 +180,7 @@
     "followers": 7,
     "package_count": 10,
     "package_downloads": 13780,
-    "contribution_total": 2808,
+    "contribution_total": 2812,
     "private_repository_count": 9
   },
   "nodes": [
@@ -2497,11 +2497,6 @@
   ],
   "activity": [
     {
-      "date": "2025-10-09",
-      "count": 1,
-      "level": 1
-    },
-    {
       "date": "2025-10-10",
       "count": 2,
       "level": 1
@@ -4320,6 +4315,11 @@
       "date": "2026-10-08",
       "count": 11,
       "level": 1
+    },
+    {
+      "date": "2026-10-09",
+      "count": 5,
+      "level": 1
     }
   ],
   "packages": [
@@ -4404,7 +4404,5 @@
       "url": "https://www.nuget.org/packages/Doka.NestedSet/"
     }
   ],
-  "warnings": [
-    "Offline preview: public signals are replaced on the first successful live workflow."
-  ]
+  "warnings": []
 }

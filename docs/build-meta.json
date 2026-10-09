@@ -3,9 +3,9 @@
   "source_revision": "cd2e2b6779c82a3f64346a47d40da4967fcc0dc5",
   "generator_fingerprint": "da6f913896a6e00f35d0bbf1d1479a82ebbca9c85b082c2628278c2449baa467",
   "generator": "sourcefield-rust",
-  "semantic_hash": "1D9A389991A0A7E3",
-  "generated_at": "1970-01-01T00:00:00Z",
-  "mode": "preview",
+  "semantic_hash": "E11D6B19DBABEC18",
+  "generated_at": "2026-10-09T05:01:45.697692779+00:00",
+  "mode": "live",
   "node_count": 63,
   "edge_count": 92
 }
