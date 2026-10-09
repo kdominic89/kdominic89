@@ -10,6 +10,10 @@
       "status": "live"
     },
     {
+      "source": "github:private-count",
+      "status": "live"
+    },
+    {
       "source": "github:repositories:doka-labs",
       "status": "live"
     },
@@ -67,7 +71,7 @@
     }
   ],
   "mode": "live",
-  "fetched_at": "2026-10-09T10:31:30.212693106+00:00",
+  "fetched_at": "2026-10-09T16:53:48.851868745+00:00",
   "user": {
     "login": "kdominic89",
     "display_name": "Dominic",
@@ -97,7 +101,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-08T23:34:59Z"
+      "pushed_at": "2026-10-09T16:41:11Z"
     },
     {
       "owner": "doka-labs",
@@ -161,7 +165,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-09T09:34:40Z"
+      "pushed_at": "2026-10-09T16:29:08Z"
     },
     {
       "owner": "doka-labs",
@@ -230,7 +234,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-09T05:01:59Z"
+      "pushed_at": "2026-10-09T10:31:50Z"
     },
     {
       "owner": "kdominic89",
@@ -298,12 +302,12 @@
     }
   ],
   "contributions": {
-    "total": 2820,
-    "commits": 414,
+    "total": 2829,
+    "commits": 415,
     "issues": 0,
-    "pull_requests": 87,
+    "pull_requests": 88,
     "reviews": 14,
-    "restricted": 2303,
+    "restricted": 2310,
     "days": [
       {
         "date": "2025-10-10",
@@ -2127,12 +2131,12 @@
       },
       {
         "date": "2026-10-09",
-        "count": 13,
+        "count": 22,
         "level": 1
       }
     ]
   },
-  "private_repository_count": null,
+  "private_repository_count": 9,
   "packages": [
     {
       "owner": "doka-labs",
@@ -2161,7 +2165,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.NestedSet",
-      "version": "10.0.0-rc.1",
+      "version": "10.0.0",
       "total_downloads": 0,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet/"
@@ -2209,7 +2213,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.NestedSet",
-      "version": "10.0.0-rc.1",
+      "version": "10.0.0",
       "total_downloads": 0,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.NestedSet/"

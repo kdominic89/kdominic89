@@ -89,6 +89,10 @@
       "status": "live"
     },
     {
+      "source": "github:private-count",
+      "status": "live"
+    },
+    {
       "source": "github:repositories:doka-labs",
       "status": "live"
     },
@@ -147,8 +151,8 @@
   ],
   "schema_version": 3,
   "mode": "live",
-  "generated_at": "2026-10-09T10:31:33.274088364+00:00",
-  "semantic_hash": "8009C0F973AD9CE6",
+  "generated_at": "2026-10-09T16:53:52.352190949+00:00",
+  "semantic_hash": "986841EE38B6B7C2",
   "canvas": {
     "show_activity_orbit": true,
     "show_state_hash": true,
@@ -176,8 +180,8 @@
     "followers": 7,
     "package_count": 10,
     "package_downloads": 13780,
-    "contribution_total": 2820,
-    "private_repository_count": null
+    "contribution_total": 2829,
+    "private_repository_count": 9
   },
   "nodes": [
     {
@@ -207,7 +211,7 @@
       "family": null
     },
     {
-      "repository_caption": "12 public repos",
+      "repository_caption": "12 public / 9 private repos",
       "display_stack": [],
       "label_prefix": null,
       "id": "domain:personal",
@@ -788,7 +792,7 @@
       "summary": "Ordered hierarchies, queries, and mutations",
       "details": [
         "Family: hierarchy",
-        "Observed version: 10.0.0-rc.1",
+        "Observed version: 10.0.0",
         "Downloads: 0"
       ],
       "tags": [
@@ -817,7 +821,7 @@
       "summary": "EF-independent node and bounds contracts",
       "details": [
         "Family: hierarchy",
-        "Observed version: 10.0.0-rc.1",
+        "Observed version: 10.0.0",
         "Downloads: 0"
       ],
       "tags": [
@@ -4314,7 +4318,7 @@
     },
     {
       "date": "2026-10-09",
-      "count": 13,
+      "count": 22,
       "level": 1
     }
   ],
@@ -4346,7 +4350,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.NestedSet",
-      "version": "10.0.0-rc.1",
+      "version": "10.0.0",
       "total_downloads": 0,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet/"
@@ -4394,7 +4398,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.NestedSet",
-      "version": "10.0.0-rc.1",
+      "version": "10.0.0",
       "total_downloads": 0,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.NestedSet/"
