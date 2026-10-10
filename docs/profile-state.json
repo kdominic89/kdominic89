@@ -89,10 +89,6 @@
       "status": "live"
     },
     {
-      "source": "github:private-count",
-      "status": "live"
-    },
-    {
       "source": "github:repositories:doka-labs",
       "status": "live"
     },
@@ -151,8 +147,8 @@
   ],
   "schema_version": 3,
   "mode": "live",
-  "generated_at": "2026-10-09T16:53:52.352190949+00:00",
-  "semantic_hash": "986841EE38B6B7C2",
+  "generated_at": "2026-10-10T09:49:01.432744548+00:00",
+  "semantic_hash": "70AEF5DE4A859281",
   "canvas": {
     "show_activity_orbit": true,
     "show_state_hash": true,
@@ -180,8 +176,8 @@
     "followers": 7,
     "package_count": 10,
     "package_downloads": 13780,
-    "contribution_total": 2829,
-    "private_repository_count": 9
+    "contribution_total": 2827,
+    "private_repository_count": null
   },
   "nodes": [
     {
@@ -211,7 +207,7 @@
       "family": null
     },
     {
-      "repository_caption": "12 public / 9 private repos",
+      "repository_caption": "12 public repos",
       "display_stack": [],
       "label_prefix": null,
       "id": "domain:personal",
@@ -2497,11 +2493,6 @@
   ],
   "activity": [
     {
-      "date": "2025-10-10",
-      "count": 2,
-      "level": 1
-    },
-    {
       "date": "2025-10-11",
       "count": 0,
       "level": 0
@@ -4320,6 +4311,11 @@
       "date": "2026-10-09",
       "count": 22,
       "level": 1
+    },
+    {
+      "date": "2026-10-10",
+      "count": 0,
+      "level": 0
     }
   ],
   "packages": [
