@@ -147,8 +147,8 @@
   ],
   "schema_version": 3,
   "mode": "live",
-  "generated_at": "2026-10-12T10:46:57.740666652+00:00",
-  "semantic_hash": "F61B76E07EA4608C",
+  "generated_at": "2026-10-13T10:33:51.829105266+00:00",
+  "semantic_hash": "B9BD96A811C753EE",
   "canvas": {
     "show_activity_orbit": true,
     "show_state_hash": true,
@@ -176,7 +176,7 @@
     "followers": 7,
     "package_count": 10,
     "package_downloads": 13780,
-    "contribution_total": 2834,
+    "contribution_total": 2847,
     "private_repository_count": null
   },
   "nodes": [
@@ -876,7 +876,7 @@
       "summary": "Core package",
       "details": [
         "Family: migrations",
-        "Observed version: 10.4.9",
+        "Observed version: 10.4.10",
         "Downloads: 2364"
       ],
       "tags": [
@@ -905,7 +905,7 @@
       "summary": "MySQL and MariaDB adapter",
       "details": [
         "Family: migrations",
-        "Observed version: 10.4.9",
+        "Observed version: 10.4.10",
         "Downloads: 1997"
       ],
       "tags": [
@@ -934,7 +934,7 @@
       "summary": "PostgreSQL adapter",
       "details": [
         "Family: migrations",
-        "Observed version: 10.4.9",
+        "Observed version: 10.4.10",
         "Downloads: 1680"
       ],
       "tags": [
@@ -963,7 +963,7 @@
       "summary": "SQL Server adapter",
       "details": [
         "Family: migrations",
-        "Observed version: 10.4.9",
+        "Observed version: 10.4.10",
         "Downloads: 0"
       ],
       "tags": [
@@ -992,7 +992,7 @@
       "summary": "SQLite adapter",
       "details": [
         "Family: migrations",
-        "Observed version: 10.4.9",
+        "Observed version: 10.4.10",
         "Downloads: 180"
       ],
       "tags": [
@@ -2492,11 +2492,6 @@
     }
   ],
   "activity": [
-    {
-      "date": "2025-10-13",
-      "count": 0,
-      "level": 0
-    },
     {
       "date": "2025-10-14",
       "count": 5,
@@ -4314,7 +4309,12 @@
     },
     {
       "date": "2026-10-12",
-      "count": 1,
+      "count": 12,
+      "level": 1
+    },
+    {
+      "date": "2026-10-13",
+      "count": 2,
       "level": 1
     }
   ],
@@ -4354,7 +4354,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations",
-      "version": "10.4.9",
+      "version": "10.4.10",
       "total_downloads": 2364,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations/"
@@ -4362,7 +4362,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.MySql",
-      "version": "10.4.9",
+      "version": "10.4.10",
       "total_downloads": 1997,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.MySql/"
@@ -4370,7 +4370,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
-      "version": "10.4.9",
+      "version": "10.4.10",
       "total_downloads": 1680,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.PostgreSql/"
@@ -4378,7 +4378,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.SqlServer",
-      "version": "10.4.9",
+      "version": "10.4.10",
       "total_downloads": 0,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.SqlServer/"
@@ -4386,7 +4386,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.Sqlite",
-      "version": "10.4.9",
+      "version": "10.4.10",
       "total_downloads": 180,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.Sqlite/"
