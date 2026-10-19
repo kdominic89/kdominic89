@@ -1,0 +1,4404 @@
+{
+  "organizations": [
+    {
+      "id": "doka-labs",
+      "owner": "doka-labs",
+      "label": "doka-labs",
+      "maintainer": {
+        "username": "kdominic89",
+        "role": "Administrator & Core Maintainer",
+        "url": "https://github.com/kdominic89"
+      }
+    }
+  ],
+  "presentation": {
+    "main_stack": [
+      "C#",
+      ".NET",
+      "Rust",
+      "Go",
+      "TypeScript",
+      "Angular"
+    ],
+    "supporting_stack": [
+      "Python",
+      "PHP",
+      "Lua",
+      "Shell",
+      "HTML",
+      "CSS",
+      "SQL"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Linux"
+    ],
+    "platform_note": "MacBook for work and personal use.",
+    "learning_note": "Member of both.\nLearning when I have the time.",
+    "hardware": [
+      {
+        "label": "MacBook Pro",
+        "detail": "M5 Pro / 64 GB"
+      },
+      {
+        "label": "AMD Ryzen™ AI Max+ 395",
+        "detail": "128 GB unified memory"
+      },
+      {
+        "label": "Proxmox host",
+        "detail": "For self-hosting."
+      }
+    ]
+  },
+  "interests": [
+    {
+      "id": "other",
+      "label": "AI, self-hosting, Grafana, security.",
+      "summary": "Personal interests.",
+      "show_in_readme": true
+    },
+    {
+      "id": "functional-programming",
+      "label": "Elixir / Erlang / OCaml",
+      "summary": "Languages I want to explore.",
+      "show_in_readme": true
+    }
+  ],
+  "learning": [
+    {
+      "id": "hacking-akademie",
+      "label": "Hacking Akademie",
+      "url": "https://hacking-akademie.de/",
+      "interest": "other"
+    },
+    {
+      "id": "cybersec-academy",
+      "label": "Cybersec Academy",
+      "url": "https://cybersec-academy.de/",
+      "interest": "other"
+    }
+  ],
+  "sources": [
+    {
+      "source": "github:contributions",
+      "status": "live"
+    },
+    {
+      "source": "github:org:doka-labs",
+      "status": "live"
+    },
+    {
+      "source": "github:repositories:doka-labs",
+      "status": "live"
+    },
+    {
+      "source": "github:repositories:kdominic89",
+      "status": "live"
+    },
+    {
+      "source": "github:user",
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.caching.mysql",
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.mysql",
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.mysql.nettopologysuite",
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.nestedset",
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.safemigrations",
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.safemigrations.mysql",
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.safemigrations.postgresql",
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.safemigrations.sqlite",
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.entityframeworkcore.safemigrations.sqlserver",
+      "status": "live"
+    },
+    {
+      "source": "nuget:doka.nestedset",
+      "status": "live"
+    },
+    {
+      "source": "nuget:owner:doka-labs",
+      "status": "live"
+    }
+  ],
+  "schema_version": 3,
+  "mode": "live",
+  "generated_at": "2026-10-19T08:50:39.076280795+00:00",
+  "semantic_hash": "762120E1B905645F",
+  "canvas": {
+    "show_activity_orbit": true,
+    "show_state_hash": true,
+    "show_interests_in_readme": true,
+    "show_technology_labels": true,
+    "show_details": false,
+    "width": 1800,
+    "height": 1885,
+    "motion_seconds": 32
+  },
+  "profile": {
+    "variant": "personal",
+    "maintainer": null,
+    "username": "kdominic89",
+    "display_name": "Dominic K.",
+    "organization": "doka-labs",
+    "headline": ".NET, developer tools, and open source.",
+    "tagline": "Dominic K. · .NET, developer tools, and open source.",
+    "pages_url": "https://kdominic89.github.io/kdominic89/",
+    "source_url": "https://github.com/kdominic89/kdominic89"
+  },
+  "stats": {
+    "personal_public_repositories": 12,
+    "organization_public_repositories": 4,
+    "followers": 6,
+    "package_count": 10,
+    "package_downloads": 13780,
+    "contribution_total": 2860,
+    "private_repository_count": null
+  },
+  "nodes": [
+    {
+      "repository_caption": "3 public / 1 private repos",
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "domain:doka-labs",
+      "label": "doka-labs",
+      "surface_label": "doka-labs",
+      "kind": "domain",
+      "domain": "doka-labs",
+      "x": 1260.0,
+      "y": 519.0,
+      "radius": 61.0,
+      "weight": 1.0,
+      "summary": "3 public / 1 private",
+      "details": [],
+      "tags": [
+        "organization",
+        "doka-labs"
+      ],
+      "url": "https://github.com/doka-labs",
+      "visibility": null,
+      "show_in_readme": true,
+      "visual": "field",
+      "scope": "organization",
+      "family": null
+    },
+    {
+      "repository_caption": "12 public repos",
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "domain:personal",
+      "label": "kdominic89",
+      "surface_label": "kdominic89",
+      "kind": "domain",
+      "domain": "personal",
+      "x": 451.0,
+      "y": 522.0,
+      "radius": 61.0,
+      "weight": 1.0,
+      "summary": "1 public / 5 private",
+      "details": [],
+      "tags": [
+        "account",
+        "kdominic89"
+      ],
+      "url": "https://github.com/kdominic89",
+      "visibility": null,
+      "show_in_readme": true,
+      "visual": "field",
+      "scope": "personal",
+      "family": null
+    },
+    {
+      "display_stack": [
+        "Rust",
+        "6 MCP endpoints"
+      ],
+      "label_prefix": null,
+      "id": "project:ai-devops",
+      "label": "ai-devops",
+      "surface_label": "ai-devops",
+      "kind": "project",
+      "domain": "personal",
+      "x": 315.0,
+      "y": 298.0,
+      "radius": 55.0,
+      "weight": 0.8,
+      "summary": "Hooks, skills, and rules\nfor coding agents",
+      "details": [
+        "Experience: Reusable experience.",
+        "Graph: Code context.",
+        "Knowledge: Reusable knowledge.",
+        "Memory: Project memory.",
+        "Telemetry: Development telemetry.",
+        "Workflow: Development workflows."
+      ],
+      "tags": [],
+      "url": null,
+      "visibility": "private-abstract",
+      "show_in_readme": true,
+      "visual": "core",
+      "scope": "active",
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "component:ai-devops:experience-mcp",
+      "label": "Experience",
+      "surface_label": "Experience",
+      "kind": "component",
+      "domain": "personal",
+      "x": 373.43134,
+      "y": 224.36728,
+      "radius": 13.4,
+      "weight": 0.35,
+      "summary": "Reusable experience.",
+      "details": [],
+      "tags": [],
+      "url": null,
+      "visibility": "private-abstract",
+      "show_in_readme": false,
+      "visual": "mcp",
+      "scope": "global-and-project",
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "component:ai-devops:graph-mcp",
+      "label": "Graph",
+      "surface_label": "Graph",
+      "kind": "component",
+      "domain": "personal",
+      "x": 407.9835,
+      "y": 311.78665,
+      "radius": 13.4,
+      "weight": 0.35,
+      "summary": "Code context.",
+      "details": [],
+      "tags": [],
+      "url": null,
+      "visibility": "private-abstract",
+      "show_in_readme": false,
+      "visual": "mcp",
+      "scope": "project",
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "component:ai-devops:knowledge-mcp",
+      "label": "Knowledge",
+      "surface_label": "Knowledge",
+      "kind": "component",
+      "domain": "personal",
+      "x": 349.55212,
+      "y": 385.41937,
+      "radius": 13.4,
+      "weight": 0.35,
+      "summary": "Reusable knowledge.",
+      "details": [],
+      "tags": [],
+      "url": null,
+      "visibility": "private-abstract",
+      "show_in_readme": false,
+      "visual": "mcp",
+      "scope": "global-and-project",
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "component:ai-devops:memory-mcp",
+      "label": "Memory",
+      "surface_label": "Memory",
+      "kind": "component",
+      "domain": "personal",
+      "x": 256.56863,
+      "y": 371.63272,
+      "radius": 13.4,
+      "weight": 0.35,
+      "summary": "Project memory.",
+      "details": [],
+      "tags": [],
+      "url": null,
+      "visibility": "private-abstract",
+      "show_in_readme": false,
+      "visual": "mcp",
+      "scope": "project",
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "component:ai-devops:telemetry-mcp",
+      "label": "Telemetry",
+      "surface_label": "Telemetry",
+      "kind": "component",
+      "domain": "personal",
+      "x": 222.01651,
+      "y": 284.21335,
+      "radius": 13.4,
+      "weight": 0.35,
+      "summary": "Development telemetry.",
+      "details": [],
+      "tags": [],
+      "url": null,
+      "visibility": "private-abstract",
+      "show_in_readme": false,
+      "visual": "mcp",
+      "scope": "project",
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "component:ai-devops:workflow-mcp",
+      "label": "Workflow",
+      "surface_label": "Workflow",
+      "kind": "component",
+      "domain": "personal",
+      "x": 280.44788,
+      "y": 210.5806,
+      "radius": 13.4,
+      "weight": 0.35,
+      "summary": "Development workflows.",
+      "details": [],
+      "tags": [],
+      "url": null,
+      "visibility": "private-abstract",
+      "show_in_readme": false,
+      "visual": "mcp",
+      "scope": "project",
+      "family": null
+    },
+    {
+      "display_stack": [
+        "Go",
+        "SQLCipher",
+        "age"
+      ],
+      "label_prefix": null,
+      "id": "project:budget-board",
+      "label": "BudgetBoard",
+      "surface_label": "BudgetBoard",
+      "kind": "project",
+      "domain": "personal",
+      "x": 159.0,
+      "y": 529.0,
+      "radius": 43.0,
+      "weight": 0.8,
+      "summary": "Personal finance with\nencrypted storage and backups",
+      "details": [],
+      "tags": [],
+      "url": null,
+      "visibility": "private-abstract",
+      "show_in_readme": true,
+      "visual": "finance",
+      "scope": "active",
+      "family": null
+    },
+    {
+      "display_stack": [
+        "C#",
+        ".NET",
+        "EF Core"
+      ],
+      "label_prefix": "Doka.EntityFrameworkCore.",
+      "id": "project:doka-labs/mysql",
+      "label": "Doka.EntityFrameworkCore.MySql",
+      "surface_label": "MySql",
+      "kind": "project",
+      "domain": "doka-labs",
+      "x": 1090.0,
+      "y": 318.0,
+      "radius": 48.0,
+      "weight": 0.8,
+      "summary": "Provider, spatial support & caching",
+      "details": [],
+      "tags": [],
+      "url": "https://github.com/doka-labs/Doka.EntityFrameworkCore.MySql",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "provider",
+      "scope": "active",
+      "family": null
+    },
+    {
+      "display_stack": [
+        "C#",
+        ".NET",
+        "EF Core"
+      ],
+      "label_prefix": "Doka.EntityFrameworkCore.",
+      "id": "project:doka-labs/nested-set",
+      "label": "Doka.EntityFrameworkCore.NestedSet",
+      "surface_label": "NestedSet",
+      "kind": "project",
+      "domain": "doka-labs",
+      "x": 1525.0,
+      "y": 726.0,
+      "radius": 48.0,
+      "weight": 0.8,
+      "summary": "Ordered hierarchies for EF Core",
+      "details": [],
+      "tags": [],
+      "url": "https://github.com/doka-labs/Doka.EntityFrameworkCore.NestedSet",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "hierarchy",
+      "scope": "active",
+      "family": null
+    },
+    {
+      "display_stack": [
+        "C#",
+        ".NET",
+        "JavaScript"
+      ],
+      "label_prefix": null,
+      "id": "project:doka-labs/relational-lab",
+      "label": "RelationalLab",
+      "surface_label": "RelationalLab",
+      "kind": "project",
+      "domain": "doka-labs",
+      "x": 1080.0,
+      "y": 766.0,
+      "radius": 42.0,
+      "weight": 0.8,
+      "summary": "A test lab for relational databases",
+      "details": [],
+      "tags": [],
+      "url": null,
+      "visibility": "private-abstract",
+      "show_in_readme": true,
+      "visual": "lab",
+      "scope": "active",
+      "family": null
+    },
+    {
+      "icon": "builtin:database-safe",
+      "display_stack": [
+        "C#",
+        ".NET",
+        "EF Core"
+      ],
+      "label_prefix": "Doka.EntityFrameworkCore.",
+      "id": "project:doka-labs/safe-migrations",
+      "label": "Doka.EntityFrameworkCore.SafeMigrations",
+      "surface_label": "SafeMigrations",
+      "kind": "project",
+      "domain": "doka-labs",
+      "x": 1530.0,
+      "y": 358.0,
+      "radius": 51.0,
+      "weight": 0.8,
+      "summary": "MySQL / MariaDB / PostgreSQL / SQLite / SQL Server",
+      "details": [],
+      "tags": [],
+      "url": "https://github.com/doka-labs/Doka.EntityFrameworkCore.SafeMigrations",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "migrations",
+      "scope": "active",
+      "family": null
+    },
+    {
+      "display_stack": [
+        "Zsh",
+        "Neovim",
+        "Git",
+        "Starship"
+      ],
+      "label_prefix": null,
+      "id": "project:dotconfig",
+      "label": "DotConfig",
+      "surface_label": "DotConfig",
+      "kind": "project",
+      "domain": "personal",
+      "x": 227.0,
+      "y": 754.0,
+      "radius": 36.0,
+      "weight": 0.8,
+      "summary": "Shell, editor, and Git configuration",
+      "details": [],
+      "tags": [],
+      "url": null,
+      "visibility": "private-abstract",
+      "show_in_readme": true,
+      "visual": "dotfiles",
+      "scope": "active",
+      "family": null
+    },
+    {
+      "icon": "builtin:sourcefield",
+      "display_stack": [
+        "Rust",
+        "WebAssembly"
+      ],
+      "label_prefix": null,
+      "id": "project:sourcefield",
+      "label": "Sourcefield",
+      "surface_label": "Sourcefield",
+      "kind": "project",
+      "domain": "personal",
+      "x": 547.0,
+      "y": 267.0,
+      "radius": 47.0,
+      "weight": 0.8,
+      "summary": "GitHub profile diagrams",
+      "details": [],
+      "tags": [],
+      "url": "https://github.com/kdominic89/sourcefield",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "core",
+      "scope": "active",
+      "family": null
+    },
+    {
+      "display_stack": [
+        "Rust",
+        "Swift",
+        "SQLite"
+      ],
+      "label_prefix": null,
+      "id": "project:state-trace",
+      "label": "StateTrace",
+      "surface_label": "StateTrace",
+      "kind": "project",
+      "domain": "personal",
+      "x": 607.0,
+      "y": 688.0,
+      "radius": 48.0,
+      "weight": 0.8,
+      "summary": "Filesystem monitoring",
+      "details": [],
+      "tags": [],
+      "url": null,
+      "visibility": "private-abstract",
+      "show_in_readme": true,
+      "visual": "trace",
+      "scope": "active",
+      "family": null
+    },
+    {
+      "display_stack": [
+        "TypeScript",
+        "JSON"
+      ],
+      "label_prefix": null,
+      "id": "project:vscode-theme",
+      "label": "vscode-theme",
+      "surface_label": "vscode-theme",
+      "kind": "project",
+      "domain": "personal",
+      "x": 704.0,
+      "y": 366.0,
+      "radius": 37.0,
+      "weight": 0.8,
+      "summary": "DotConfig Mocha,\nbased on Catppuccin",
+      "details": [],
+      "tags": [],
+      "url": null,
+      "visibility": "private-abstract",
+      "show_in_readme": true,
+      "visual": "theme",
+      "scope": "active",
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "publication:doka-labs/mysql",
+      "label": "Doka.EntityFrameworkCore.MySql",
+      "surface_label": "Doka.EntityFrameworkCore.MySql",
+      "kind": "publication",
+      "domain": "doka-labs",
+      "x": 76.0,
+      "y": 1017.0,
+      "radius": 76.0,
+      "weight": 1.0,
+      "summary": "Published NuGet packages.",
+      "details": [
+        "Doka.Caching.MySql",
+        "Doka.EntityFrameworkCore.MySql",
+        "Doka.EntityFrameworkCore.MySql.NetTopologySuite"
+      ],
+      "tags": [
+        "nuget"
+      ],
+      "url": "https://github.com/doka-labs/Doka.EntityFrameworkCore.MySql",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package-field",
+      "scope": "nuget",
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "package:Doka.Caching.MySql",
+      "label": "Doka.Caching.MySql",
+      "surface_label": "Doka.Caching.MySql",
+      "kind": "package",
+      "domain": "doka-labs",
+      "x": 92.0,
+      "y": 1247.0,
+      "radius": 15.0,
+      "weight": 0.45,
+      "summary": "Distributed caching with MySQL",
+      "details": [
+        "Family: cache",
+        "Observed version: 10.5.0",
+        "Downloads: 1561"
+      ],
+      "tags": [
+        "nuget",
+        "cache"
+      ],
+      "url": "https://www.nuget.org/packages/Doka.Caching.MySql/",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package",
+      "scope": "nuget",
+      "family": "cache"
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "package:Doka.EntityFrameworkCore.MySql",
+      "label": "Doka.EntityFrameworkCore.MySql",
+      "surface_label": "MySql",
+      "kind": "package",
+      "domain": "doka-labs",
+      "x": 92.0,
+      "y": 1067.0,
+      "radius": 15.0,
+      "weight": 0.45,
+      "summary": "EF Core provider for MySQL and MariaDB",
+      "details": [
+        "Family: provider",
+        "Observed version: 10.5.0",
+        "Downloads: 3668"
+      ],
+      "tags": [
+        "nuget",
+        "provider"
+      ],
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql/",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package",
+      "scope": "nuget",
+      "family": "provider"
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "package:Doka.EntityFrameworkCore.MySql.NetTopologySuite",
+      "label": "Doka.EntityFrameworkCore.MySql.NetTopologySuite",
+      "surface_label": "MySql.NetTopologySuite",
+      "kind": "package",
+      "domain": "doka-labs",
+      "x": 92.0,
+      "y": 1157.0,
+      "radius": 15.0,
+      "weight": 0.45,
+      "summary": "Spatial support",
+      "details": [
+        "Family: spatial",
+        "Observed version: 10.5.0",
+        "Downloads: 2330"
+      ],
+      "tags": [
+        "nuget",
+        "spatial"
+      ],
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql.NetTopologySuite/",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package",
+      "scope": "nuget",
+      "family": "spatial"
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "publication:doka-labs/nested-set",
+      "label": "Doka.EntityFrameworkCore.NestedSet",
+      "surface_label": "Doka.EntityFrameworkCore.NestedSet",
+      "kind": "publication",
+      "domain": "doka-labs",
+      "x": 1224.0,
+      "y": 1017.0,
+      "radius": 76.0,
+      "weight": 1.0,
+      "summary": "Published NuGet packages.",
+      "details": [
+        "Doka.EntityFrameworkCore.NestedSet",
+        "Doka.NestedSet"
+      ],
+      "tags": [
+        "nuget"
+      ],
+      "url": "https://github.com/doka-labs/Doka.EntityFrameworkCore.NestedSet",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package-field",
+      "scope": "nuget",
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "package:Doka.EntityFrameworkCore.NestedSet",
+      "label": "Doka.EntityFrameworkCore.NestedSet",
+      "surface_label": "EntityFrameworkCore.NestedSet",
+      "kind": "package",
+      "domain": "doka-labs",
+      "x": 1240.0,
+      "y": 1157.0,
+      "radius": 15.0,
+      "weight": 0.45,
+      "summary": "Ordered hierarchies, queries, and mutations",
+      "details": [
+        "Family: hierarchy",
+        "Observed version: 10.0.0",
+        "Downloads: 0"
+      ],
+      "tags": [
+        "nuget",
+        "hierarchy"
+      ],
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet/",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package",
+      "scope": "nuget",
+      "family": "hierarchy"
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "package:Doka.NestedSet",
+      "label": "Doka.NestedSet",
+      "surface_label": "Doka.NestedSet",
+      "kind": "package",
+      "domain": "doka-labs",
+      "x": 1240.0,
+      "y": 1067.0,
+      "radius": 15.0,
+      "weight": 0.45,
+      "summary": "EF-independent node and bounds contracts",
+      "details": [
+        "Family: hierarchy",
+        "Observed version: 10.0.0",
+        "Downloads: 0"
+      ],
+      "tags": [
+        "nuget",
+        "hierarchy"
+      ],
+      "url": "https://www.nuget.org/packages/Doka.NestedSet/",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package",
+      "scope": "nuget",
+      "family": "hierarchy"
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "publication:doka-labs/safe-migrations",
+      "label": "Doka.EntityFrameworkCore.SafeMigrations",
+      "surface_label": "Doka.EntityFrameworkCore.SafeMigrations",
+      "kind": "publication",
+      "domain": "doka-labs",
+      "x": 650.0,
+      "y": 1017.0,
+      "radius": 76.0,
+      "weight": 1.0,
+      "summary": "Published NuGet packages.",
+      "details": [
+        "Doka.EntityFrameworkCore.SafeMigrations",
+        "Doka.EntityFrameworkCore.SafeMigrations.MySql",
+        "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
+        "Doka.EntityFrameworkCore.SafeMigrations.SqlServer",
+        "Doka.EntityFrameworkCore.SafeMigrations.Sqlite"
+      ],
+      "tags": [
+        "nuget"
+      ],
+      "url": "https://github.com/doka-labs/Doka.EntityFrameworkCore.SafeMigrations",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package-field",
+      "scope": "nuget",
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "package:Doka.EntityFrameworkCore.SafeMigrations",
+      "label": "Doka.EntityFrameworkCore.SafeMigrations",
+      "surface_label": "Core",
+      "kind": "package",
+      "domain": "doka-labs",
+      "x": 666.0,
+      "y": 1067.0,
+      "radius": 15.0,
+      "weight": 0.45,
+      "summary": "Core package",
+      "details": [
+        "Family: migrations",
+        "Observed version: 10.5.0",
+        "Downloads: 2364"
+      ],
+      "tags": [
+        "nuget",
+        "migrations"
+      ],
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations/",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package",
+      "scope": "nuget",
+      "family": "migrations"
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "package:Doka.EntityFrameworkCore.SafeMigrations.MySql",
+      "label": "Doka.EntityFrameworkCore.SafeMigrations.MySql",
+      "surface_label": "MySql",
+      "kind": "package",
+      "domain": "doka-labs",
+      "x": 666.0,
+      "y": 1157.0,
+      "radius": 15.0,
+      "weight": 0.45,
+      "summary": "MySQL and MariaDB adapter",
+      "details": [
+        "Family: migrations",
+        "Observed version: 10.5.0",
+        "Downloads: 1997"
+      ],
+      "tags": [
+        "nuget",
+        "migrations"
+      ],
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.MySql/",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package",
+      "scope": "nuget",
+      "family": "migrations"
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "package:Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
+      "label": "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
+      "surface_label": "PostgreSql",
+      "kind": "package",
+      "domain": "doka-labs",
+      "x": 666.0,
+      "y": 1247.0,
+      "radius": 15.0,
+      "weight": 0.45,
+      "summary": "PostgreSQL adapter",
+      "details": [
+        "Family: migrations",
+        "Observed version: 10.5.0",
+        "Downloads: 1680"
+      ],
+      "tags": [
+        "nuget",
+        "migrations"
+      ],
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.PostgreSql/",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package",
+      "scope": "nuget",
+      "family": "migrations"
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "package:Doka.EntityFrameworkCore.SafeMigrations.SqlServer",
+      "label": "Doka.EntityFrameworkCore.SafeMigrations.SqlServer",
+      "surface_label": "SQL Server",
+      "kind": "package",
+      "domain": "doka-labs",
+      "x": 666.0,
+      "y": 1427.0,
+      "radius": 15.0,
+      "weight": 0.45,
+      "summary": "SQL Server adapter",
+      "details": [
+        "Family: migrations",
+        "Observed version: 10.5.0",
+        "Downloads: 0"
+      ],
+      "tags": [
+        "nuget",
+        "migrations"
+      ],
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.SqlServer/",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package",
+      "scope": "nuget",
+      "family": "migrations"
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "package:Doka.EntityFrameworkCore.SafeMigrations.Sqlite",
+      "label": "Doka.EntityFrameworkCore.SafeMigrations.Sqlite",
+      "surface_label": "Sqlite",
+      "kind": "package",
+      "domain": "doka-labs",
+      "x": 666.0,
+      "y": 1337.0,
+      "radius": 15.0,
+      "weight": 0.45,
+      "summary": "SQLite adapter",
+      "details": [
+        "Family: migrations",
+        "Observed version: 10.5.0",
+        "Downloads: 180"
+      ],
+      "tags": [
+        "nuget",
+        "migrations"
+      ],
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.Sqlite/",
+      "visibility": "public",
+      "show_in_readme": true,
+      "visual": "package",
+      "scope": "nuget",
+      "family": "migrations"
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:age",
+      "label": "age",
+      "surface_label": "age",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 456.10693,
+      "y": 324.83057,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "age capability in the security layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "security"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "security",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:angular",
+      "label": "Angular",
+      "surface_label": "Angular",
+      "kind": "technology",
+      "domain": null,
+      "x": 624.9526,
+      "y": 629.743,
+      "radius": 22.0,
+      "weight": 0.55,
+      "summary": "Angular capability in the frontend layer.",
+      "details": [
+        "Affinity: doka-labs",
+        "Affinity: personal"
+      ],
+      "tags": [
+        "frontend"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": true,
+      "visual": "frontend",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:csharp",
+      "label": "C#",
+      "surface_label": "C#",
+      "kind": "technology",
+      "domain": "doka-labs",
+      "x": 1515.6924,
+      "y": 401.0197,
+      "radius": 22.0,
+      "weight": 0.55,
+      "summary": "C# capability in the language layer.",
+      "details": [
+        "Affinity: doka-labs"
+      ],
+      "tags": [
+        "language"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": true,
+      "visual": "language",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:css",
+      "label": "CSS",
+      "surface_label": "CSS",
+      "kind": "technology",
+      "domain": null,
+      "x": 833.5866,
+      "y": 681.6526,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "CSS capability in the structural-target layer.",
+      "details": [
+        "Affinity: doka-labs",
+        "Affinity: personal"
+      ],
+      "tags": [
+        "structural-target"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "structural-target",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:docker",
+      "label": "Docker",
+      "surface_label": "Docker",
+      "kind": "technology",
+      "domain": null,
+      "x": 566.00757,
+      "y": 464.44574,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "Docker capability in the platform layer.",
+      "details": [
+        "Affinity: doka-labs",
+        "Affinity: personal"
+      ],
+      "tags": [
+        "platform"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "platform",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:dotnet",
+      "label": ".NET",
+      "surface_label": ".NET",
+      "kind": "technology",
+      "domain": "doka-labs",
+      "x": 1130.9424,
+      "y": 695.59607,
+      "radius": 22.0,
+      "weight": 0.55,
+      "summary": ".NET capability in the runtime layer.",
+      "details": [
+        "Affinity: doka-labs"
+      ],
+      "tags": [
+        "runtime"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": true,
+      "visual": "runtime",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:go",
+      "label": "Go",
+      "surface_label": "Go",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 437.37607,
+      "y": 710.132,
+      "radius": 22.0,
+      "weight": 0.55,
+      "summary": "Go capability in the language layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "language"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": true,
+      "visual": "language",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:google-drive",
+      "label": "Google Drive",
+      "surface_label": "Google Drive",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 682.94025,
+      "y": 579.75085,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "Google Drive capability in the integration layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "integration"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "integration",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:html",
+      "label": "HTML",
+      "surface_label": "HTML",
+      "kind": "technology",
+      "domain": null,
+      "x": 582.5831,
+      "y": 477.94492,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "HTML capability in the structural-target layer.",
+      "details": [
+        "Affinity: doka-labs",
+        "Affinity: personal"
+      ],
+      "tags": [
+        "structural-target"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "structural-target",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:javascript",
+      "label": "JavaScript",
+      "surface_label": "JavaScript",
+      "kind": "technology",
+      "domain": null,
+      "x": 736.5125,
+      "y": 395.47803,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "JavaScript capability in the language layer.",
+      "details": [
+        "Affinity: doka-labs",
+        "Affinity: personal"
+      ],
+      "tags": [
+        "language"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "language",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:linux",
+      "label": "Linux",
+      "surface_label": "Linux",
+      "kind": "technology",
+      "domain": null,
+      "x": 896.51416,
+      "y": 695.77496,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "Linux capability in the platform layer.",
+      "details": [
+        "Affinity: doka-labs",
+        "Affinity: personal"
+      ],
+      "tags": [
+        "platform"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "platform",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:lua",
+      "label": "Lua",
+      "surface_label": "Lua",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 597.27435,
+      "y": 702.4408,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "Lua capability in the language-target layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "language-target"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "language-target",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:macos",
+      "label": "macOS",
+      "surface_label": "macOS",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 236.25658,
+      "y": 375.67944,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "macOS capability in the platform layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "platform"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "platform",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:mariadb",
+      "label": "MariaDB",
+      "surface_label": "MariaDB",
+      "kind": "technology",
+      "domain": "doka-labs",
+      "x": 1298.4208,
+      "y": 342.0786,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "MariaDB capability in the database layer.",
+      "details": [
+        "Affinity: doka-labs"
+      ],
+      "tags": [
+        "database"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "database",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:mcp",
+      "label": "MCP",
+      "surface_label": "MCP",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 226.35252,
+      "y": 628.67444,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "MCP capability in the protocol layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "protocol"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "protocol",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:mysql",
+      "label": "MySQL",
+      "surface_label": "MySQL",
+      "kind": "technology",
+      "domain": "doka-labs",
+      "x": 1485.2281,
+      "y": 415.29996,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "MySQL capability in the database layer.",
+      "details": [
+        "Affinity: doka-labs"
+      ],
+      "tags": [
+        "database"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "database",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:ollama",
+      "label": "Ollama",
+      "surface_label": "Ollama",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 341.29715,
+      "y": 386.86243,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "Ollama capability in the ai-runtime layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "ai-runtime"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "ai-runtime",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:php",
+      "label": "PHP",
+      "surface_label": "PHP",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 275.29776,
+      "y": 410.82733,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "PHP capability in the language-target layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "language-target"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "language-target",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:postgresql",
+      "label": "PostgreSQL",
+      "surface_label": "PostgreSQL",
+      "kind": "technology",
+      "domain": "doka-labs",
+      "x": 1550.4878,
+      "y": 470.83124,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "PostgreSQL capability in the database layer.",
+      "details": [
+        "Affinity: doka-labs"
+      ],
+      "tags": [
+        "database"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "database",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:python",
+      "label": "Python",
+      "surface_label": "Python",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 557.12024,
+      "y": 336.28717,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "Python capability in the language-target layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "language-target"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "language-target",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:roslyn",
+      "label": "Roslyn",
+      "surface_label": "Roslyn",
+      "kind": "technology",
+      "domain": null,
+      "x": 960.4412,
+      "y": 330.11414,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "Roslyn capability in the code-intelligence layer.",
+      "details": [
+        "Affinity: doka-labs",
+        "Affinity: personal"
+      ],
+      "tags": [
+        "code-intelligence"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "code-intelligence",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:rust",
+      "label": "Rust",
+      "surface_label": "Rust",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 183.95712,
+      "y": 464.7502,
+      "radius": 22.0,
+      "weight": 0.55,
+      "summary": "Rust capability in the language layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "language"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": true,
+      "visual": "language",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:rust-analyzer",
+      "label": "rust-analyzer",
+      "surface_label": "rust-analyzer",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 702.13245,
+      "y": 536.20654,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "rust-analyzer capability in the code-intelligence layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "code-intelligence"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "code-intelligence",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:shell",
+      "label": "Bash / Zsh",
+      "surface_label": "Bash / Zsh",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 568.03076,
+      "y": 374.08975,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "Bash / Zsh capability in the structural-target layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "structural-target"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "structural-target",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:sql-dialects",
+      "label": "SQL dialects",
+      "surface_label": "SQL dialects",
+      "kind": "technology",
+      "domain": null,
+      "x": 871.9197,
+      "y": 687.407,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "SQL dialects capability in the structural-target layer.",
+      "details": [
+        "Affinity: doka-labs",
+        "Affinity: personal"
+      ],
+      "tags": [
+        "structural-target"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "structural-target",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:sqlcipher",
+      "label": "SQLCipher",
+      "surface_label": "SQLCipher",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 707.9639,
+      "y": 455.39285,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "SQLCipher capability in the security layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "security"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "security",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:sqlite",
+      "label": "SQLite",
+      "surface_label": "SQLite",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 488.97974,
+      "y": 722.9875,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "SQLite capability in the database layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "database"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "database",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:swift",
+      "label": "Swift",
+      "surface_label": "Swift",
+      "kind": "technology",
+      "domain": null,
+      "x": 809.0201,
+      "y": 368.0213,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "Swift capability in the language layer.",
+      "details": [
+        "Affinity: doka-labs",
+        "Affinity: personal"
+      ],
+      "tags": [
+        "language"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "language",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:typescript",
+      "label": "TypeScript",
+      "surface_label": "TypeScript",
+      "kind": "technology",
+      "domain": null,
+      "x": 845.9682,
+      "y": 342.45795,
+      "radius": 9.0,
+      "weight": 0.18,
+      "summary": "TypeScript capability in the language layer.",
+      "details": [
+        "Affinity: doka-labs",
+        "Affinity: personal"
+      ],
+      "tags": [
+        "language"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": false,
+      "visual": "language",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "technology:wasm",
+      "label": "WebAssembly",
+      "surface_label": "WebAssembly",
+      "kind": "technology",
+      "domain": "personal",
+      "x": 221.6364,
+      "y": 510.3734,
+      "radius": 22.0,
+      "weight": 0.55,
+      "summary": "WebAssembly capability in the runtime layer.",
+      "details": [
+        "Affinity: personal"
+      ],
+      "tags": [
+        "runtime"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": true,
+      "visual": "runtime",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "interest:other",
+      "label": "AI, self-hosting, Grafana, security.",
+      "surface_label": "AI, self-hosting, Grafana, security.",
+      "kind": "interest",
+      "domain": null,
+      "x": 650.0,
+      "y": 1805.0,
+      "radius": 10.0,
+      "weight": 0.18,
+      "summary": "Personal interests.",
+      "details": [],
+      "tags": [
+        "interest"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": true,
+      "visual": "horizon",
+      "scope": null,
+      "family": null
+    },
+    {
+      "display_stack": [],
+      "label_prefix": null,
+      "id": "interest:functional-programming",
+      "label": "Elixir / Erlang / OCaml",
+      "surface_label": "Elixir / Erlang / OCaml",
+      "kind": "interest",
+      "domain": null,
+      "x": 800.0,
+      "y": 1805.0,
+      "radius": 10.0,
+      "weight": 0.18,
+      "summary": "Languages I want to explore.",
+      "details": [],
+      "tags": [
+        "interest"
+      ],
+      "url": null,
+      "visibility": null,
+      "show_in_readme": true,
+      "visual": "horizon",
+      "scope": null,
+      "family": null
+    }
+  ],
+  "edges": [
+    {
+      "from": "domain:personal",
+      "to": "project:ai-devops",
+      "kind": "contains",
+      "weight": 0.8,
+      "show_in_readme": true
+    },
+    {
+      "from": "project:ai-devops",
+      "to": "component:ai-devops:experience-mcp",
+      "kind": "component",
+      "weight": 0.55,
+      "show_in_readme": true
+    },
+    {
+      "from": "project:ai-devops",
+      "to": "component:ai-devops:graph-mcp",
+      "kind": "component",
+      "weight": 0.55,
+      "show_in_readme": true
+    },
+    {
+      "from": "project:ai-devops",
+      "to": "component:ai-devops:knowledge-mcp",
+      "kind": "component",
+      "weight": 0.55,
+      "show_in_readme": true
+    },
+    {
+      "from": "project:ai-devops",
+      "to": "component:ai-devops:memory-mcp",
+      "kind": "component",
+      "weight": 0.55,
+      "show_in_readme": true
+    },
+    {
+      "from": "project:ai-devops",
+      "to": "component:ai-devops:telemetry-mcp",
+      "kind": "component",
+      "weight": 0.55,
+      "show_in_readme": true
+    },
+    {
+      "from": "project:ai-devops",
+      "to": "component:ai-devops:workflow-mcp",
+      "kind": "component",
+      "weight": 0.55,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:rust",
+      "to": "project:ai-devops",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:personal",
+      "to": "project:budget-board",
+      "kind": "contains",
+      "weight": 0.8,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:go",
+      "to": "project:budget-board",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "project:doka-labs/mysql",
+      "kind": "contains",
+      "weight": 0.8,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:csharp",
+      "to": "project:doka-labs/mysql",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:dotnet",
+      "to": "project:doka-labs/mysql",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "project:doka-labs/nested-set",
+      "kind": "contains",
+      "weight": 0.8,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:csharp",
+      "to": "project:doka-labs/nested-set",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:dotnet",
+      "to": "project:doka-labs/nested-set",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "project:doka-labs/relational-lab",
+      "kind": "contains",
+      "weight": 0.8,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:csharp",
+      "to": "project:doka-labs/relational-lab",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:dotnet",
+      "to": "project:doka-labs/relational-lab",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:javascript",
+      "to": "project:doka-labs/relational-lab",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "project:doka-labs/safe-migrations",
+      "kind": "contains",
+      "weight": 0.8,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:csharp",
+      "to": "project:doka-labs/safe-migrations",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:dotnet",
+      "to": "project:doka-labs/safe-migrations",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:personal",
+      "to": "project:dotconfig",
+      "kind": "contains",
+      "weight": 0.8,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:lua",
+      "to": "project:dotconfig",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:shell",
+      "to": "project:dotconfig",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:personal",
+      "to": "project:sourcefield",
+      "kind": "contains",
+      "weight": 0.8,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:rust",
+      "to": "project:sourcefield",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:personal",
+      "to": "project:state-trace",
+      "kind": "contains",
+      "weight": 0.8,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:rust",
+      "to": "project:state-trace",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:swift",
+      "to": "project:state-trace",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:personal",
+      "to": "project:vscode-theme",
+      "kind": "contains",
+      "weight": 0.8,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:typescript",
+      "to": "project:vscode-theme",
+      "kind": "implemented-with",
+      "weight": 0.75,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "publication:doka-labs/mysql",
+      "kind": "contains",
+      "weight": 1.0,
+      "show_in_readme": true
+    },
+    {
+      "from": "publication:doka-labs/mysql",
+      "to": "package:Doka.Caching.MySql",
+      "kind": "publishes",
+      "weight": 0.5,
+      "show_in_readme": true
+    },
+    {
+      "from": "publication:doka-labs/mysql",
+      "to": "package:Doka.EntityFrameworkCore.MySql",
+      "kind": "publishes",
+      "weight": 0.5,
+      "show_in_readme": true
+    },
+    {
+      "from": "publication:doka-labs/mysql",
+      "to": "package:Doka.EntityFrameworkCore.MySql.NetTopologySuite",
+      "kind": "publishes",
+      "weight": 0.5,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:csharp",
+      "to": "publication:doka-labs/mysql",
+      "kind": "implemented-with",
+      "weight": 0.7,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:dotnet",
+      "to": "publication:doka-labs/mysql",
+      "kind": "implemented-with",
+      "weight": 0.7,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "publication:doka-labs/nested-set",
+      "kind": "contains",
+      "weight": 1.0,
+      "show_in_readme": true
+    },
+    {
+      "from": "publication:doka-labs/nested-set",
+      "to": "package:Doka.EntityFrameworkCore.NestedSet",
+      "kind": "publishes",
+      "weight": 0.5,
+      "show_in_readme": true
+    },
+    {
+      "from": "publication:doka-labs/nested-set",
+      "to": "package:Doka.NestedSet",
+      "kind": "publishes",
+      "weight": 0.5,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:csharp",
+      "to": "publication:doka-labs/nested-set",
+      "kind": "implemented-with",
+      "weight": 0.7,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:dotnet",
+      "to": "publication:doka-labs/nested-set",
+      "kind": "implemented-with",
+      "weight": 0.7,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "publication:doka-labs/safe-migrations",
+      "kind": "contains",
+      "weight": 1.0,
+      "show_in_readme": true
+    },
+    {
+      "from": "publication:doka-labs/safe-migrations",
+      "to": "package:Doka.EntityFrameworkCore.SafeMigrations",
+      "kind": "publishes",
+      "weight": 0.5,
+      "show_in_readme": true
+    },
+    {
+      "from": "publication:doka-labs/safe-migrations",
+      "to": "package:Doka.EntityFrameworkCore.SafeMigrations.MySql",
+      "kind": "publishes",
+      "weight": 0.5,
+      "show_in_readme": true
+    },
+    {
+      "from": "publication:doka-labs/safe-migrations",
+      "to": "package:Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
+      "kind": "publishes",
+      "weight": 0.5,
+      "show_in_readme": true
+    },
+    {
+      "from": "publication:doka-labs/safe-migrations",
+      "to": "package:Doka.EntityFrameworkCore.SafeMigrations.SqlServer",
+      "kind": "publishes",
+      "weight": 0.5,
+      "show_in_readme": true
+    },
+    {
+      "from": "publication:doka-labs/safe-migrations",
+      "to": "package:Doka.EntityFrameworkCore.SafeMigrations.Sqlite",
+      "kind": "publishes",
+      "weight": 0.5,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:csharp",
+      "to": "publication:doka-labs/safe-migrations",
+      "kind": "implemented-with",
+      "weight": 0.7,
+      "show_in_readme": true
+    },
+    {
+      "from": "technology:dotnet",
+      "to": "publication:doka-labs/safe-migrations",
+      "kind": "implemented-with",
+      "weight": 0.7,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:age",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:angular",
+      "kind": "shared-capability",
+      "weight": 0.35,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:angular",
+      "kind": "shared-capability",
+      "weight": 0.35,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:csharp",
+      "kind": "affinity",
+      "weight": 0.35,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:css",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:css",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:docker",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:docker",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:dotnet",
+      "kind": "affinity",
+      "weight": 0.35,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:go",
+      "kind": "affinity",
+      "weight": 0.35,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:google-drive",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:html",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:html",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:javascript",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:javascript",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:linux",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:linux",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:lua",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:macos",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:mariadb",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:mcp",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:mysql",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:ollama",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:php",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:postgresql",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:python",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:roslyn",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:roslyn",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:rust",
+      "kind": "affinity",
+      "weight": 0.35,
+      "show_in_readme": true
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:rust-analyzer",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:shell",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:sql-dialects",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:sql-dialects",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:sqlcipher",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:sqlite",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:swift",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:swift",
+      "kind": "affinity",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:doka-labs",
+      "to": "technology:typescript",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:typescript",
+      "kind": "shared-capability",
+      "weight": 0.12,
+      "show_in_readme": false
+    },
+    {
+      "from": "domain:personal",
+      "to": "technology:wasm",
+      "kind": "affinity",
+      "weight": 0.35,
+      "show_in_readme": true
+    }
+  ],
+  "activity": [
+    {
+      "date": "2025-10-20",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2025-10-21",
+      "count": 10,
+      "level": 1
+    },
+    {
+      "date": "2025-10-22",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-10-23",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2025-10-24",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-10-25",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-10-26",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-10-27",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-10-28",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2025-10-29",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2025-10-30",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2025-10-31",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2025-11-01",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-02",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-03",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2025-11-04",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2025-11-05",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2025-11-06",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2025-11-07",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2025-11-08",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-09",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-10",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2025-11-11",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2025-11-12",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2025-11-13",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2025-11-14",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2025-11-15",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-16",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-17",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-18",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-19",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-20",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-21",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-22",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-23",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-24",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-25",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2025-11-26",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-27",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2025-11-28",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2025-11-29",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-11-30",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-01",
+      "count": 12,
+      "level": 1
+    },
+    {
+      "date": "2025-12-02",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2025-12-03",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2025-12-04",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2025-12-05",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2025-12-06",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-07",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-08",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2025-12-09",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2025-12-10",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2025-12-11",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2025-12-12",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2025-12-13",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-14",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-15",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2025-12-16",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-17",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-18",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2025-12-19",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2025-12-20",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-21",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-22",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-23",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-24",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-25",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-26",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-27",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-28",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-29",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-30",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2025-12-31",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-01",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-02",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-03",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-04",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-05",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-06",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-07",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-08",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-09",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-10",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-11",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-12",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-01-13",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-01-14",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-01-15",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-01-16",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-01-17",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-18",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-19",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-01-20",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-01-21",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-01-22",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-01-23",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-24",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-25",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-01-26",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-01-27",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-01-28",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-01-29",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-01-30",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-01-31",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-01",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-02",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-03",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-02-04",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-02-05",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-06",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-02-07",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-08",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-09",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-02-10",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-02-11",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-12",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-13",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-14",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-15",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-16",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-17",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-02-18",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2026-02-19",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-02-20",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-02-21",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-22",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-02-23",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-02-24",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-02-25",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-02-26",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-02-27",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-02-28",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-03-01",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-03-02",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2026-03-03",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-03-04",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-03-05",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-03-06",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-03-07",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-03-08",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-03-09",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2026-03-10",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-03-11",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2026-03-12",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-03-13",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-03-14",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-03-15",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-03-16",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2026-03-17",
+      "count": 26,
+      "level": 2
+    },
+    {
+      "date": "2026-03-18",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-03-19",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-03-20",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-03-21",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-03-22",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-03-23",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-03-24",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-03-25",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2026-03-26",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-03-27",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-03-28",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-03-29",
+      "count": 12,
+      "level": 1
+    },
+    {
+      "date": "2026-03-30",
+      "count": 20,
+      "level": 1
+    },
+    {
+      "date": "2026-03-31",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-04-01",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-04-02",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-04-03",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-04-04",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-04-05",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-04-06",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-04-07",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-04-08",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2026-04-09",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-04-10",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-04-11",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-04-12",
+      "count": 11,
+      "level": 1
+    },
+    {
+      "date": "2026-04-13",
+      "count": 59,
+      "level": 3
+    },
+    {
+      "date": "2026-04-14",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-04-15",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-04-16",
+      "count": 79,
+      "level": 4
+    },
+    {
+      "date": "2026-04-17",
+      "count": 40,
+      "level": 2
+    },
+    {
+      "date": "2026-04-18",
+      "count": 46,
+      "level": 2
+    },
+    {
+      "date": "2026-04-19",
+      "count": 46,
+      "level": 2
+    },
+    {
+      "date": "2026-04-20",
+      "count": 66,
+      "level": 3
+    },
+    {
+      "date": "2026-04-21",
+      "count": 48,
+      "level": 2
+    },
+    {
+      "date": "2026-04-22",
+      "count": 38,
+      "level": 2
+    },
+    {
+      "date": "2026-04-23",
+      "count": 110,
+      "level": 4
+    },
+    {
+      "date": "2026-04-24",
+      "count": 79,
+      "level": 4
+    },
+    {
+      "date": "2026-04-25",
+      "count": 44,
+      "level": 2
+    },
+    {
+      "date": "2026-04-26",
+      "count": 88,
+      "level": 4
+    },
+    {
+      "date": "2026-04-27",
+      "count": 101,
+      "level": 4
+    },
+    {
+      "date": "2026-04-28",
+      "count": 49,
+      "level": 2
+    },
+    {
+      "date": "2026-04-29",
+      "count": 50,
+      "level": 2
+    },
+    {
+      "date": "2026-04-30",
+      "count": 39,
+      "level": 2
+    },
+    {
+      "date": "2026-05-01",
+      "count": 13,
+      "level": 1
+    },
+    {
+      "date": "2026-05-02",
+      "count": 16,
+      "level": 1
+    },
+    {
+      "date": "2026-05-03",
+      "count": 18,
+      "level": 1
+    },
+    {
+      "date": "2026-05-04",
+      "count": 51,
+      "level": 3
+    },
+    {
+      "date": "2026-05-05",
+      "count": 51,
+      "level": 3
+    },
+    {
+      "date": "2026-05-06",
+      "count": 56,
+      "level": 3
+    },
+    {
+      "date": "2026-05-07",
+      "count": 43,
+      "level": 2
+    },
+    {
+      "date": "2026-05-08",
+      "count": 29,
+      "level": 2
+    },
+    {
+      "date": "2026-05-09",
+      "count": 20,
+      "level": 1
+    },
+    {
+      "date": "2026-05-10",
+      "count": 35,
+      "level": 2
+    },
+    {
+      "date": "2026-05-11",
+      "count": 43,
+      "level": 2
+    },
+    {
+      "date": "2026-05-12",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-05-13",
+      "count": 27,
+      "level": 2
+    },
+    {
+      "date": "2026-05-14",
+      "count": 14,
+      "level": 1
+    },
+    {
+      "date": "2026-05-15",
+      "count": 11,
+      "level": 1
+    },
+    {
+      "date": "2026-05-16",
+      "count": 33,
+      "level": 2
+    },
+    {
+      "date": "2026-05-17",
+      "count": 28,
+      "level": 2
+    },
+    {
+      "date": "2026-05-18",
+      "count": 49,
+      "level": 2
+    },
+    {
+      "date": "2026-05-19",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-05-20",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-05-21",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-05-22",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-05-23",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-05-24",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-05-25",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-05-26",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-05-27",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2026-05-28",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-05-29",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-05-30",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-05-31",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-06-01",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-06-02",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-06-03",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-06-04",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-06-05",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-06-06",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-06-07",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-06-08",
+      "count": 10,
+      "level": 1
+    },
+    {
+      "date": "2026-06-09",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-06-10",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-06-11",
+      "count": 13,
+      "level": 1
+    },
+    {
+      "date": "2026-06-12",
+      "count": 14,
+      "level": 1
+    },
+    {
+      "date": "2026-06-13",
+      "count": 12,
+      "level": 1
+    },
+    {
+      "date": "2026-06-14",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2026-06-15",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-06-16",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-06-17",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-06-18",
+      "count": 12,
+      "level": 1
+    },
+    {
+      "date": "2026-06-19",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-06-20",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-06-21",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-06-22",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-06-23",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-06-24",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-06-25",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-06-26",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-06-27",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-06-28",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-06-29",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-06-30",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-07-01",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-07-02",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-07-03",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-07-04",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-07-05",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-07-06",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-07-07",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-07-08",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-07-09",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-07-10",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-07-11",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-07-12",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2026-07-13",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-07-14",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-07-15",
+      "count": 13,
+      "level": 1
+    },
+    {
+      "date": "2026-07-16",
+      "count": 19,
+      "level": 1
+    },
+    {
+      "date": "2026-07-17",
+      "count": 10,
+      "level": 1
+    },
+    {
+      "date": "2026-07-18",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-07-19",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-07-20",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-07-21",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-07-22",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-07-23",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2026-07-24",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-07-25",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-07-26",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-07-27",
+      "count": 15,
+      "level": 1
+    },
+    {
+      "date": "2026-07-28",
+      "count": 12,
+      "level": 1
+    },
+    {
+      "date": "2026-07-29",
+      "count": 13,
+      "level": 1
+    },
+    {
+      "date": "2026-07-30",
+      "count": 11,
+      "level": 1
+    },
+    {
+      "date": "2026-07-31",
+      "count": 12,
+      "level": 1
+    },
+    {
+      "date": "2026-08-01",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-08-02",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-08-03",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-08-04",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2026-08-05",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-08-06",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-08-07",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-08-08",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2026-08-09",
+      "count": 18,
+      "level": 1
+    },
+    {
+      "date": "2026-08-10",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-08-11",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2026-08-12",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2026-08-13",
+      "count": 17,
+      "level": 1
+    },
+    {
+      "date": "2026-08-14",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-08-15",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-08-16",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-08-17",
+      "count": 13,
+      "level": 1
+    },
+    {
+      "date": "2026-08-18",
+      "count": 26,
+      "level": 2
+    },
+    {
+      "date": "2026-08-19",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2026-08-20",
+      "count": 10,
+      "level": 1
+    },
+    {
+      "date": "2026-08-21",
+      "count": 12,
+      "level": 1
+    },
+    {
+      "date": "2026-08-22",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-08-23",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-08-24",
+      "count": 21,
+      "level": 1
+    },
+    {
+      "date": "2026-08-25",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-08-26",
+      "count": 15,
+      "level": 1
+    },
+    {
+      "date": "2026-08-27",
+      "count": 12,
+      "level": 1
+    },
+    {
+      "date": "2026-08-28",
+      "count": 14,
+      "level": 1
+    },
+    {
+      "date": "2026-08-29",
+      "count": 13,
+      "level": 1
+    },
+    {
+      "date": "2026-08-30",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-08-31",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-09-01",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2026-09-02",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-09-03",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-09-04",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-09-05",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-09-06",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-09-07",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-09-08",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-09-09",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-09-10",
+      "count": 10,
+      "level": 1
+    },
+    {
+      "date": "2026-09-11",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-09-12",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-09-13",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-09-14",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-09-15",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-09-16",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-09-17",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-09-18",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-09-19",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-09-20",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-09-21",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-09-22",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-09-23",
+      "count": 11,
+      "level": 1
+    },
+    {
+      "date": "2026-09-24",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-09-25",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-09-26",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-09-27",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-09-28",
+      "count": 18,
+      "level": 1
+    },
+    {
+      "date": "2026-09-29",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2026-09-30",
+      "count": 23,
+      "level": 1
+    },
+    {
+      "date": "2026-10-01",
+      "count": 10,
+      "level": 1
+    },
+    {
+      "date": "2026-10-02",
+      "count": 9,
+      "level": 1
+    },
+    {
+      "date": "2026-10-03",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-10-04",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-10-05",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-10-06",
+      "count": 28,
+      "level": 2
+    },
+    {
+      "date": "2026-10-07",
+      "count": 12,
+      "level": 1
+    },
+    {
+      "date": "2026-10-08",
+      "count": 11,
+      "level": 1
+    },
+    {
+      "date": "2026-10-09",
+      "count": 23,
+      "level": 1
+    },
+    {
+      "date": "2026-10-10",
+      "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-10-11",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-10-12",
+      "count": 12,
+      "level": 1
+    },
+    {
+      "date": "2026-10-13",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-10-14",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-10-15",
+      "count": 10,
+      "level": 1
+    },
+    {
+      "date": "2026-10-16",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-10-17",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-10-18",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-10-19",
+      "count": 3,
+      "level": 1
+    }
+  ],
+  "packages": [
+    {
+      "owner": "doka-labs",
+      "id": "Doka.Caching.MySql",
+      "version": "10.5.0",
+      "total_downloads": 1561,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.Caching.MySql/"
+    },
+    {
+      "owner": "doka-labs",
+      "id": "Doka.EntityFrameworkCore.MySql",
+      "version": "10.5.0",
+      "total_downloads": 3668,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql/"
+    },
+    {
+      "owner": "doka-labs",
+      "id": "Doka.EntityFrameworkCore.MySql.NetTopologySuite",
+      "version": "10.5.0",
+      "total_downloads": 2330,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql.NetTopologySuite/"
+    },
+    {
+      "owner": "doka-labs",
+      "id": "Doka.EntityFrameworkCore.NestedSet",
+      "version": "10.0.0",
+      "total_downloads": 0,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet/"
+    },
+    {
+      "owner": "doka-labs",
+      "id": "Doka.EntityFrameworkCore.SafeMigrations",
+      "version": "10.5.0",
+      "total_downloads": 2364,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations/"
+    },
+    {
+      "owner": "doka-labs",
+      "id": "Doka.EntityFrameworkCore.SafeMigrations.MySql",
+      "version": "10.5.0",
+      "total_downloads": 1997,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.MySql/"
+    },
+    {
+      "owner": "doka-labs",
+      "id": "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
+      "version": "10.5.0",
+      "total_downloads": 1680,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.PostgreSql/"
+    },
+    {
+      "owner": "doka-labs",
+      "id": "Doka.EntityFrameworkCore.SafeMigrations.SqlServer",
+      "version": "10.5.0",
+      "total_downloads": 0,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.SqlServer/"
+    },
+    {
+      "owner": "doka-labs",
+      "id": "Doka.EntityFrameworkCore.SafeMigrations.Sqlite",
+      "version": "10.5.0",
+      "total_downloads": 180,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.Sqlite/"
+    },
+    {
+      "owner": "doka-labs",
+      "id": "Doka.NestedSet",
+      "version": "10.0.0",
+      "total_downloads": 0,
+      "updated_at": null,
+      "url": "https://www.nuget.org/packages/Doka.NestedSet/"
+    }
+  ],
+  "warnings": []
+}
