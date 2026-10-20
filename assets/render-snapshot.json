@@ -67,7 +67,7 @@
     }
   ],
   "mode": "live",
-  "fetched_at": "2026-10-19T08:50:36.047969073+00:00",
+  "fetched_at": "2026-10-20T08:30:40.822922666+00:00",
   "user": {
     "login": "kdominic89",
     "display_name": "Dominic",
@@ -97,7 +97,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-18T08:04:24Z"
+      "pushed_at": "2026-10-19T08:56:35Z"
     },
     {
       "owner": "doka-labs",
@@ -132,7 +132,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-19T04:25:37Z"
+      "pushed_at": "2026-10-20T08:22:31Z"
     },
     {
       "owner": "doka-labs",
@@ -230,7 +230,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-18T08:01:01Z"
+      "pushed_at": "2026-10-19T08:50:52Z"
     },
     {
       "owner": "kdominic89",
@@ -298,18 +298,13 @@
     }
   ],
   "contributions": {
-    "total": 2860,
-    "commits": 425,
+    "total": 2867,
+    "commits": 426,
     "issues": 0,
-    "pull_requests": 96,
+    "pull_requests": 97,
     "reviews": 16,
-    "restricted": 2321,
+    "restricted": 2326,
     "days": [
-      {
-        "date": "2025-10-20",
-        "count": 2,
-        "level": 1
-      },
       {
         "date": "2025-10-21",
         "count": 10,
@@ -2127,7 +2122,12 @@
       },
       {
         "date": "2026-10-19",
-        "count": 3,
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-10-20",
+        "count": 5,
         "level": 1
       }
     ]
@@ -2137,7 +2137,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.Caching.MySql",
-      "version": "10.5.0",
+      "version": "10.6.0",
       "total_downloads": 1561,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.Caching.MySql/"
@@ -2145,7 +2145,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.MySql",
-      "version": "10.5.0",
+      "version": "10.6.0",
       "total_downloads": 3668,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql/"
@@ -2153,7 +2153,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.MySql.NetTopologySuite",
-      "version": "10.5.0",
+      "version": "10.6.0",
       "total_downloads": 2330,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql.NetTopologySuite/"
