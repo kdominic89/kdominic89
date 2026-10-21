@@ -67,7 +67,7 @@
     }
   ],
   "mode": "live",
-  "fetched_at": "2026-10-20T08:30:40.822922666+00:00",
+  "fetched_at": "2026-10-21T08:33:08.849258440+00:00",
   "user": {
     "login": "kdominic89",
     "display_name": "Dominic",
@@ -97,7 +97,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-19T08:56:35Z"
+      "pushed_at": "2026-10-20T08:35:46Z"
     },
     {
       "owner": "doka-labs",
@@ -188,7 +188,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-19T04:39:59Z"
+      "pushed_at": "2026-10-21T07:35:04Z"
     },
     {
       "owner": "kdominic89",
@@ -230,7 +230,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-10-19T08:50:52Z"
+      "pushed_at": "2026-10-20T08:30:58Z"
     },
     {
       "owner": "kdominic89",
@@ -298,18 +298,13 @@
     }
   ],
   "contributions": {
-    "total": 2867,
+    "total": 2860,
     "commits": 426,
     "issues": 0,
-    "pull_requests": 97,
+    "pull_requests": 98,
     "reviews": 16,
-    "restricted": 2326,
+    "restricted": 2318,
     "days": [
-      {
-        "date": "2025-10-21",
-        "count": 10,
-        "level": 1
-      },
       {
         "date": "2025-10-22",
         "count": 0,
@@ -2127,7 +2122,12 @@
       },
       {
         "date": "2026-10-20",
-        "count": 5,
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-10-21",
+        "count": 1,
         "level": 1
       }
     ]
