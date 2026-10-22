@@ -147,8 +147,8 @@
   ],
   "schema_version": 3,
   "mode": "live",
-  "generated_at": "2026-10-21T08:33:11.239126502+00:00",
-  "semantic_hash": "6817AFA97935FEDB",
+  "generated_at": "2026-10-22T08:35:18.266695169+00:00",
+  "semantic_hash": "86AA41B02797637C",
   "canvas": {
     "show_activity_orbit": true,
     "show_state_hash": true,
@@ -176,7 +176,7 @@
     "followers": 6,
     "package_count": 10,
     "package_downloads": 13780,
-    "contribution_total": 2860,
+    "contribution_total": 2862,
     "private_repository_count": null
   },
   "nodes": [
@@ -674,7 +674,7 @@
       "summary": "Distributed caching with MySQL",
       "details": [
         "Family: cache",
-        "Observed version: 10.6.0",
+        "Observed version: 10.6.1",
         "Downloads: 1561"
       ],
       "tags": [
@@ -703,7 +703,7 @@
       "summary": "EF Core provider for MySQL and MariaDB",
       "details": [
         "Family: provider",
-        "Observed version: 10.6.0",
+        "Observed version: 10.6.1",
         "Downloads: 3668"
       ],
       "tags": [
@@ -732,7 +732,7 @@
       "summary": "Spatial support",
       "details": [
         "Family: spatial",
-        "Observed version: 10.6.0",
+        "Observed version: 10.6.1",
         "Downloads: 2330"
       ],
       "tags": [
@@ -2492,11 +2492,6 @@
     }
   ],
   "activity": [
-    {
-      "date": "2025-10-22",
-      "count": 0,
-      "level": 0
-    },
     {
       "date": "2025-10-23",
       "count": 4,
@@ -4316,13 +4311,18 @@
       "date": "2026-10-21",
       "count": 1,
       "level": 1
+    },
+    {
+      "date": "2026-10-22",
+      "count": 2,
+      "level": 1
     }
   ],
   "packages": [
     {
       "owner": "doka-labs",
       "id": "Doka.Caching.MySql",
-      "version": "10.6.0",
+      "version": "10.6.1",
       "total_downloads": 1561,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.Caching.MySql/"
@@ -4330,7 +4330,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.MySql",
-      "version": "10.6.0",
+      "version": "10.6.1",
       "total_downloads": 3668,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql/"
@@ -4338,7 +4338,7 @@
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.MySql.NetTopologySuite",
-      "version": "10.6.0",
+      "version": "10.6.1",
       "total_downloads": 2330,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql.NetTopologySuite/"
