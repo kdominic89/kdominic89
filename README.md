@@ -48,6 +48,10 @@
 
 - [Doka.NestedSet](https://www.nuget.org/packages/Doka.NestedSet/)
 - [Doka.EntityFrameworkCore.NestedSet](https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet/)
+- [Doka.EntityFrameworkCore.NestedSet.MySql](https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet.MySql/)
+- [Doka.EntityFrameworkCore.NestedSet.Postgres](https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet.Postgres/)
+- [Doka.EntityFrameworkCore.NestedSet.SqlServer](https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet.SqlServer/)
+- [Doka.EntityFrameworkCore.NestedSet.Sqlite](https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet.Sqlite/)
 <!-- sourcefield:packages:end -->
 
 </details>
