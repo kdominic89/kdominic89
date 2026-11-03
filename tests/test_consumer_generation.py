@@ -341,6 +341,8 @@ class InstalledGenerationTests(unittest.TestCase):
         # Arrange
         profile = read_toml(self.root / "config/profile.toml")
         saved, organization = captured_organization(self.root)
+        # The checked-in canvas includes package rows beyond the authored minimum height.
+        published_canvas = read_json(ROOT / "assets/profile-state.json")["canvas"]
 
         # Act
         state = self._generate()
@@ -361,7 +363,8 @@ class InstalledGenerationTests(unittest.TestCase):
         self.assertEqual(nodes["project:doka-labs/safe-migrations"]["icon"], "builtin:database-safe")
         self.assertEqual(nodes["project:sourcefield"]["icon"], "builtin:sourcefield")
         self.assertEqual(nodes["project:sourcefield"]["url"], "https://github.com/kdominic89/sourcefield")
-        self.assertEqual(state["canvas"]["height"], 1885.0)
+        self.assertEqual(state["canvas"], published_canvas)
+        self.assertGreaterEqual(state["canvas"]["height"], profile["render"]["height"])
         self.assertEqual(captured_organization(self.root)[0], saved)
         resolved = read_json(self.root / "assets/resolved-config.json")
         imported = next(domain for domain in resolved["domains"] if domain["id"] == "doka-labs")

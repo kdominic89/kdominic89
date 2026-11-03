@@ -1,6 +1,6 @@
 # Primary sources
 
-Reviewed on October 9, 2026 against the actual published Sourcefield v0.1.2 source,
+Reviewed on November 3, 2026 against the actual published Sourcefield v0.1.3 source,
 matched authenticated installation, current public canonical manifest and preserved personal
 authorship/history. Contracts and actual test evidence remain separate; see [Validation](VALIDATION-REPORT.md).
 
@@ -11,13 +11,13 @@ The canonical manifest link separately selects its captured organization commit.
 
 | Contract | Primary source |
 | --- | --- |
-| Matched CLI/browser assets, authenticated installation, caller/private-count wiring, and publication | [Sourcefield distribution](https://github.com/kdominic89/sourcefield/blob/cd2e2b6779c82a3f64346a47d40da4967fcc0dc5/docs/distribution.md) |
-| Explicit destinations, validation, offline/locked replay, migration, history, and recovery | [Sourcefield operations](https://github.com/kdominic89/sourcefield/blob/cd2e2b6779c82a3f64346a47d40da4967fcc0dc5/docs/operations.md) |
-| Native lifecycle, actual-browser gates, and limits of mocked wrapper checks | [Sourcefield verification](https://github.com/kdominic89/sourcefield/blob/cd2e2b6779c82a3f64346a47d40da4967fcc0dc5/docs/verification.md) |
-| Remote imports, canonical order, shared technology bindings, local affinities, and stack text | [Sourcefield configuration](https://github.com/kdominic89/sourcefield/blob/cd2e2b6779c82a3f64346a47d40da4967fcc0dc5/docs/configuration.md) |
-| Built-in Sourcefield and database-safe icons | [Sourcefield icons](https://github.com/kdominic89/sourcefield/blob/cd2e2b6779c82a3f64346a47d40da4967fcc0dc5/docs/icons.md) |
-| Caller-owned schedule, permissions, checked publication, and deployment order | [Sourcefield consumer template](https://github.com/kdominic89/sourcefield/blob/cd2e2b6779c82a3f64346a47d40da4967fcc0dc5/docs/consumer-workflow.yml.template) |
-| CLI/runtime and input trust boundaries | [Sourcefield security policy](https://github.com/kdominic89/sourcefield/blob/cd2e2b6779c82a3f64346a47d40da4967fcc0dc5/SECURITY.md) |
+| Matched CLI/browser assets, authenticated installation, caller/private-count wiring, and publication | [Sourcefield distribution](https://github.com/kdominic89/sourcefield/blob/ef93cf245ab5dd510132e61ec3cfce64ffafa17a/docs/distribution.md) |
+| Explicit destinations, validation, offline/locked replay, migration, history, and recovery | [Sourcefield operations](https://github.com/kdominic89/sourcefield/blob/ef93cf245ab5dd510132e61ec3cfce64ffafa17a/docs/operations.md) |
+| Native lifecycle, actual-browser gates, and limits of mocked wrapper checks | [Sourcefield verification](https://github.com/kdominic89/sourcefield/blob/ef93cf245ab5dd510132e61ec3cfce64ffafa17a/docs/verification.md) |
+| Remote imports, canonical order, shared technology bindings, local affinities, and stack text | [Sourcefield configuration](https://github.com/kdominic89/sourcefield/blob/ef93cf245ab5dd510132e61ec3cfce64ffafa17a/docs/configuration.md) |
+| Built-in Sourcefield and database-safe icons | [Sourcefield icons](https://github.com/kdominic89/sourcefield/blob/ef93cf245ab5dd510132e61ec3cfce64ffafa17a/docs/icons.md) |
+| Caller-owned schedule, permissions, checked publication, and deployment order | [Sourcefield consumer template](https://github.com/kdominic89/sourcefield/blob/ef93cf245ab5dd510132e61ec3cfce64ffafa17a/docs/consumer-workflow.yml.template) |
+| CLI/runtime and input trust boundaries | [Sourcefield security policy](https://github.com/kdominic89/sourcefield/blob/ef93cf245ab5dd510132e61ec3cfce64ffafa17a/SECURITY.md) |
 | Personal root README placement | [GitHub profile README](https://docs.github.com/en/account-and-profile/how-tos/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme) |
 | Typed reusable-workflow inputs, named secrets, and SHA references | [GitHub reusable workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows) |
 | Selected Actions/reusable-workflow policy | [GitHub Actions settings](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) |

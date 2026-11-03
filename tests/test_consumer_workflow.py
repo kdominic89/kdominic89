@@ -6,7 +6,7 @@ import unittest
 from test_consumer_contract import ROOT, read_json
 
 
-SOURCEFIELD_COMMIT = "cd2e2b6779c82a3f64346a47d40da4967fcc0dc5"
+SOURCEFIELD_COMMIT = "ef93cf245ab5dd510132e61ec3cfce64ffafa17a"
 
 
 def mapping_body(content, key, indent=0):
@@ -68,7 +68,7 @@ class PersonalWorkflowTests(unittest.TestCase):
         # Assert
         self.assertEqual(lock["schema_version"], 1)
         self.assertEqual(lock["repository"], "kdominic89/sourcefield")
-        self.assertEqual(lock["release"], "v0.1.2")
+        self.assertEqual(lock["release"], "v0.1.3")
         self.assertEqual(lock["source_commit"], SOURCEFIELD_COMMIT)
         self.assertIn(
             f"uses: kdominic89/sourcefield/.github/workflows/generate.yml@{SOURCEFIELD_COMMIT}", generate,

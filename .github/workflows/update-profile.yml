@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   generate:
-    uses: kdominic89/sourcefield/.github/workflows/generate.yml@cd2e2b6779c82a3f64346a47d40da4967fcc0dc5
+    uses: kdominic89/sourcefield/.github/workflows/generate.yml@ef93cf245ab5dd510132e61ec3cfce64ffafa17a
     with:
       config: config/profile.toml
       readmes: '["README.md"]'

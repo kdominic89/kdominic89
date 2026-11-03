@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Adopt the authenticated Sourcefield v0.1.3 CLI/browser pair and matching workflow pins.
+- Preserve private-count controls, canonical imports, approved content and published output.
+- Align active release documentation and existing workflow release expectations.
+- Compare generated canvas dimensions with the approved output while retaining the authored minimum.
+- Apply the requested arithmetic-parentheses formatting preference.
+
 ## Sourcefield v0.1.2 adoption
 
 - Select the authenticated released CLI/runtime and matching update/validation pins.

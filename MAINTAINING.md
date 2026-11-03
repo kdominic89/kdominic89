@@ -115,6 +115,12 @@ deployed manifest retains source identity and records projected output digests. 
 runtime files or claim every deployed byte is identical to the raw bundle. Generator, renderer,
 collector, runtime, and release implementation changes belong upstream.
 
+A pin upgrade preserves the existing published output and generation record. Verify a separate
+offline candidate first; the next successful strict live Update SOURCEFIELD refresh publishes the
+new CLI/runtime output and records. Do not replace the current site with an offline Preview just
+to change generator identity. Before creating an upgrade commit, refresh remote references and
+integrate generated updates so the reviewed changes start from the current consumer revision.
+
 ## Publication and recovery
 
 Keep cron `17 3 * * *`, explicit single-README selection, and serialized publication. Upload the

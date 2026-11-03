@@ -45,6 +45,10 @@ publication of the same candidate and uses its saved artifact identity on a depl
 Git source alone omits the ignored runtime files that must be restored from the selected release
 for a complete offline site.
 
+A generator pin update leaves these existing generated files intact. Its isolated candidate
+verifies the new pair before the next normal strict live refresh publishes matching output and
+generation records. The external verification candidate is not substituted for the current site.
+
 ## Local and recovery material
 
 `docs/pkg/`, `docs/runtime-manifest.json`, native installations, caches, `dist/`, browser evidence,

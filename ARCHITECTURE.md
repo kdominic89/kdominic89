@@ -60,6 +60,10 @@ links and the Pages link remain outside the image. The browser supplies Field, S
 Capabilities views, semantic navigation, history selection, keyboard/touch interaction, pause, and
 reduced motion. The personal palette and footer derive from the personal profile variant.
 
+The authored `render.height` is a minimum. Additional publication rows can enlarge the generated
+canvas while retaining approved project anchors. Consumer acceptance compares the generated canvas
+with the checked-in profile baseline and separately enforces that authored minimum.
+
 ## State and publication
 
 Missing data remains distinct from zero. Preview, partial, and dated fallback observations must not
