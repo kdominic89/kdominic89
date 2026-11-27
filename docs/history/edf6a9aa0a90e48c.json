@@ -147,8 +147,8 @@
   ],
   "schema_version": 3,
   "mode": "live",
-  "generated_at": "2026-11-03T10:50:41.847793700+00:00",
-  "semantic_hash": "9166181382A82669",
+  "generated_at": "2026-11-27T12:15:19.734928345+00:00",
+  "semantic_hash": "EDF6A9AA0A90E48C",
   "canvas": {
     "show_activity_orbit": true,
     "show_state_hash": true,
@@ -171,12 +171,12 @@
     "source_url": "https://github.com/kdominic89/kdominic89"
   },
   "stats": {
-    "personal_public_repositories": 12,
-    "organization_public_repositories": 4,
-    "followers": 6,
+    "personal_public_repositories": 14,
+    "organization_public_repositories": 6,
+    "followers": 5,
     "package_count": 14,
-    "package_downloads": 28428,
-    "contribution_total": 2909,
+    "package_downloads": 43902,
+    "contribution_total": 3084,
     "private_repository_count": null
   },
   "nodes": [
@@ -207,7 +207,7 @@
       "family": null
     },
     {
-      "repository_caption": "12 public repos",
+      "repository_caption": "14 public repos",
       "display_stack": [],
       "label_prefix": null,
       "id": "domain:personal",
@@ -674,8 +674,8 @@
       "summary": "Distributed caching with MySQL",
       "details": [
         "Family: cache",
-        "Observed version: 10.6.3",
-        "Downloads: 2953"
+        "Observed version: 11.0.0",
+        "Downloads: 4353"
       ],
       "tags": [
         "nuget",
@@ -703,8 +703,8 @@
       "summary": "EF Core provider for MySQL and MariaDB",
       "details": [
         "Family: provider",
-        "Observed version: 10.6.3",
-        "Downloads: 6879"
+        "Observed version: 11.0.0",
+        "Downloads: 10673"
       ],
       "tags": [
         "nuget",
@@ -732,8 +732,8 @@
       "summary": "Spatial support",
       "details": [
         "Family: spatial",
-        "Observed version: 10.6.3",
-        "Downloads: 3354"
+        "Observed version: 11.0.0",
+        "Downloads: 4568"
       ],
       "tags": [
         "nuget",
@@ -792,8 +792,8 @@
       "summary": "Ordered hierarchies, queries, and mutations",
       "details": [
         "Family: hierarchy",
-        "Observed version: 10.1.0",
-        "Downloads: 348"
+        "Observed version: 10.4.0",
+        "Downloads: 1443"
       ],
       "tags": [
         "nuget",
@@ -821,8 +821,8 @@
       "summary": "EntityFrameworkCore.NestedSet.MySql package",
       "details": [
         "Family: doka-labs/nested-set",
-        "Observed version: 10.1.0",
-        "Downloads: 50"
+        "Observed version: 10.4.0",
+        "Downloads: 451"
       ],
       "tags": [
         "nuget",
@@ -850,8 +850,8 @@
       "summary": "EntityFrameworkCore.NestedSet.Postgres package",
       "details": [
         "Family: doka-labs/nested-set",
-        "Observed version: 10.1.0",
-        "Downloads: 51"
+        "Observed version: 10.4.0",
+        "Downloads: 444"
       ],
       "tags": [
         "nuget",
@@ -879,8 +879,8 @@
       "summary": "EntityFrameworkCore.NestedSet.SqlServer package",
       "details": [
         "Family: doka-labs/nested-set",
-        "Observed version: 10.1.0",
-        "Downloads: 54"
+        "Observed version: 10.4.0",
+        "Downloads: 447"
       ],
       "tags": [
         "nuget",
@@ -908,8 +908,8 @@
       "summary": "EntityFrameworkCore.NestedSet.Sqlite package",
       "details": [
         "Family: doka-labs/nested-set",
-        "Observed version: 10.1.0",
-        "Downloads: 59"
+        "Observed version: 10.4.0",
+        "Downloads: 441"
       ],
       "tags": [
         "nuget",
@@ -937,8 +937,8 @@
       "summary": "EF-independent node and bounds contracts",
       "details": [
         "Family: hierarchy",
-        "Observed version: 10.1.0",
-        "Downloads: 314"
+        "Observed version: 10.4.0",
+        "Downloads: 1130"
       ],
       "tags": [
         "nuget",
@@ -996,8 +996,8 @@
       "summary": "Core package",
       "details": [
         "Family: migrations",
-        "Observed version: 10.6.1",
-        "Downloads: 4777"
+        "Observed version: 10.7.3",
+        "Downloads: 6310"
       ],
       "tags": [
         "nuget",
@@ -1025,8 +1025,8 @@
       "summary": "MySQL and MariaDB adapter",
       "details": [
         "Family: migrations",
-        "Observed version: 10.6.1",
-        "Downloads: 4089"
+        "Observed version: 10.7.3",
+        "Downloads: 5449"
       ],
       "tags": [
         "nuget",
@@ -1054,8 +1054,8 @@
       "summary": "PostgreSQL adapter",
       "details": [
         "Family: migrations",
-        "Observed version: 10.6.1",
-        "Downloads: 3105"
+        "Observed version: 10.7.3",
+        "Downloads: 4167"
       ],
       "tags": [
         "nuget",
@@ -1083,8 +1083,8 @@
       "summary": "SQL Server adapter",
       "details": [
         "Family: migrations",
-        "Observed version: 10.6.1",
-        "Downloads: 967"
+        "Observed version: 10.7.3",
+        "Downloads: 1744"
       ],
       "tags": [
         "nuget",
@@ -1112,8 +1112,8 @@
       "summary": "SQLite adapter",
       "details": [
         "Family: migrations",
-        "Observed version: 10.6.1",
-        "Downloads: 1428"
+        "Observed version: 10.7.3",
+        "Downloads: 2282"
       ],
       "tags": [
         "nuget",
@@ -2641,126 +2641,6 @@
   ],
   "activity": [
     {
-      "date": "2025-11-04",
-      "count": 3,
-      "level": 1
-    },
-    {
-      "date": "2025-11-05",
-      "count": 1,
-      "level": 1
-    },
-    {
-      "date": "2025-11-06",
-      "count": 1,
-      "level": 1
-    },
-    {
-      "date": "2025-11-07",
-      "count": 3,
-      "level": 1
-    },
-    {
-      "date": "2025-11-08",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-09",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-10",
-      "count": 3,
-      "level": 1
-    },
-    {
-      "date": "2025-11-11",
-      "count": 3,
-      "level": 1
-    },
-    {
-      "date": "2025-11-12",
-      "count": 3,
-      "level": 1
-    },
-    {
-      "date": "2025-11-13",
-      "count": 3,
-      "level": 1
-    },
-    {
-      "date": "2025-11-14",
-      "count": 1,
-      "level": 1
-    },
-    {
-      "date": "2025-11-15",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-16",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-17",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-18",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-19",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-20",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-21",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-22",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-23",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-24",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-25",
-      "count": 2,
-      "level": 1
-    },
-    {
-      "date": "2025-11-26",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-27",
-      "count": 8,
-      "level": 1
-    },
-    {
       "date": "2025-11-28",
       "count": 2,
       "level": 1
@@ -3757,7 +3637,7 @@
     },
     {
       "date": "2026-06-15",
-      "count": 6,
+      "count": 7,
       "level": 1
     },
     {
@@ -3892,7 +3772,7 @@
     },
     {
       "date": "2026-07-12",
-      "count": 9,
+      "count": 10,
       "level": 1
     },
     {
@@ -4432,12 +4312,12 @@
     },
     {
       "date": "2026-10-28",
-      "count": 10,
+      "count": 17,
       "level": 1
     },
     {
       "date": "2026-10-29",
-      "count": 7,
+      "count": 9,
       "level": 1
     },
     {
@@ -4462,7 +4342,127 @@
     },
     {
       "date": "2026-11-03",
+      "count": 11,
+      "level": 1
+    },
+    {
+      "date": "2026-11-04",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-11-05",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2026-11-06",
+      "count": 14,
+      "level": 1
+    },
+    {
+      "date": "2026-11-07",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-11-08",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-11-09",
+      "count": 3,
+      "level": 1
+    },
+    {
+      "date": "2026-11-10",
+      "count": 8,
+      "level": 1
+    },
+    {
+      "date": "2026-11-11",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-11-12",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-11-13",
+      "count": 6,
+      "level": 1
+    },
+    {
+      "date": "2026-11-14",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-11-15",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-11-16",
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-11-17",
       "count": 4,
+      "level": 1
+    },
+    {
+      "date": "2026-11-18",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-11-19",
+      "count": 7,
+      "level": 1
+    },
+    {
+      "date": "2026-11-20",
+      "count": 2,
+      "level": 1
+    },
+    {
+      "date": "2026-11-21",
+      "count": 16,
+      "level": 1
+    },
+    {
+      "date": "2026-11-22",
+      "count": 12,
+      "level": 1
+    },
+    {
+      "date": "2026-11-23",
+      "count": 41,
+      "level": 2
+    },
+    {
+      "date": "2026-11-24",
+      "count": 17,
+      "level": 1
+    },
+    {
+      "date": "2026-11-25",
+      "count": 11,
+      "level": 1
+    },
+    {
+      "date": "2026-11-26",
+      "count": 13,
+      "level": 1
+    },
+    {
+      "date": "2026-11-27",
+      "count": 2,
       "level": 1
     }
   ],
@@ -4470,112 +4470,112 @@
     {
       "owner": "doka-labs",
       "id": "Doka.Caching.MySql",
-      "version": "10.6.3",
-      "total_downloads": 2953,
+      "version": "11.0.0",
+      "total_downloads": 4353,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.Caching.MySql/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.MySql",
-      "version": "10.6.3",
-      "total_downloads": 6879,
+      "version": "11.0.0",
+      "total_downloads": 10673,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.MySql.NetTopologySuite",
-      "version": "10.6.3",
-      "total_downloads": 3354,
+      "version": "11.0.0",
+      "total_downloads": 4568,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql.NetTopologySuite/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.NestedSet",
-      "version": "10.1.0",
-      "total_downloads": 348,
+      "version": "10.4.0",
+      "total_downloads": 1443,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.NestedSet.MySql",
-      "version": "10.1.0",
-      "total_downloads": 50,
+      "version": "10.4.0",
+      "total_downloads": 451,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet.MySql/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.NestedSet.Postgres",
-      "version": "10.1.0",
-      "total_downloads": 51,
+      "version": "10.4.0",
+      "total_downloads": 444,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet.Postgres/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.NestedSet.SqlServer",
-      "version": "10.1.0",
-      "total_downloads": 54,
+      "version": "10.4.0",
+      "total_downloads": 447,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet.SqlServer/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.NestedSet.Sqlite",
-      "version": "10.1.0",
-      "total_downloads": 59,
+      "version": "10.4.0",
+      "total_downloads": 441,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet.Sqlite/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations",
-      "version": "10.6.1",
-      "total_downloads": 4777,
+      "version": "10.7.3",
+      "total_downloads": 6310,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.MySql",
-      "version": "10.6.1",
-      "total_downloads": 4089,
+      "version": "10.7.3",
+      "total_downloads": 5449,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.MySql/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
-      "version": "10.6.1",
-      "total_downloads": 3105,
+      "version": "10.7.3",
+      "total_downloads": 4167,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.PostgreSql/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.SqlServer",
-      "version": "10.6.1",
-      "total_downloads": 967,
+      "version": "10.7.3",
+      "total_downloads": 1744,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.SqlServer/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.Sqlite",
-      "version": "10.6.1",
-      "total_downloads": 1428,
+      "version": "10.7.3",
+      "total_downloads": 2282,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.Sqlite/"
     },
     {
       "owner": "doka-labs",
       "id": "Doka.NestedSet",
-      "version": "10.1.0",
-      "total_downloads": 314,
+      "version": "10.4.0",
+      "total_downloads": 1130,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.NestedSet/"
     }
