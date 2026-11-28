@@ -67,7 +67,7 @@
     }
   ],
   "mode": "live",
-  "fetched_at": "2026-11-27T12:15:16.157176636+00:00",
+  "fetched_at": "2026-11-28T11:42:42.856473615+00:00",
   "user": {
     "login": "kdominic89",
     "display_name": "Dominic",
@@ -97,7 +97,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-11-26T12:39:31Z"
+      "pushed_at": "2026-11-27T12:26:37Z"
     },
     {
       "owner": "doka-labs",
@@ -217,7 +217,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-11-26T22:56:58Z"
+      "pushed_at": "2026-11-27T23:29:04Z"
     },
     {
       "owner": "doka-labs",
@@ -231,7 +231,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-11-27T09:28:44Z"
+      "pushed_at": "2026-11-27T17:16:52Z"
     },
     {
       "owner": "kdominic89",
@@ -287,7 +287,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-11-26T12:29:27Z"
+      "pushed_at": "2026-11-27T12:15:42Z"
     },
     {
       "owner": "kdominic89",
@@ -356,7 +356,7 @@
       "forks": 0,
       "archived": false,
       "fork": false,
-      "pushed_at": "2026-11-21T04:03:30Z"
+      "pushed_at": "2026-11-28T04:03:30Z"
     },
     {
       "owner": "kdominic89",
@@ -374,18 +374,13 @@
     }
   ],
   "contributions": {
-    "total": 3084,
-    "commits": 529,
+    "total": 3091,
+    "commits": 533,
     "issues": 5,
-    "pull_requests": 159,
+    "pull_requests": 163,
     "reviews": 21,
-    "restricted": 2366,
+    "restricted": 2365,
     "days": [
-      {
-        "date": "2025-11-28",
-        "count": 2,
-        "level": 1
-      },
       {
         "date": "2025-11-29",
         "count": 0,
@@ -2203,6 +2198,11 @@
       },
       {
         "date": "2026-11-27",
+        "count": 9,
+        "level": 1
+      },
+      {
+        "date": "2026-11-28",
         "count": 2,
         "level": 1
       }
@@ -2214,7 +2214,7 @@
       "owner": "doka-labs",
       "id": "Doka.Caching.MySql",
       "version": "11.0.0",
-      "total_downloads": 4353,
+      "total_downloads": 4383,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.Caching.MySql/"
     },
@@ -2222,7 +2222,7 @@
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.MySql",
       "version": "11.0.0",
-      "total_downloads": 10673,
+      "total_downloads": 10847,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql/"
     },
@@ -2230,7 +2230,7 @@
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.MySql.NetTopologySuite",
       "version": "11.0.0",
-      "total_downloads": 4568,
+      "total_downloads": 4591,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.MySql.NetTopologySuite/"
     },
@@ -2238,7 +2238,7 @@
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.NestedSet",
       "version": "10.4.0",
-      "total_downloads": 1443,
+      "total_downloads": 1473,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet/"
     },
@@ -2246,7 +2246,7 @@
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.NestedSet.MySql",
       "version": "10.4.0",
-      "total_downloads": 451,
+      "total_downloads": 454,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet.MySql/"
     },
@@ -2254,7 +2254,7 @@
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.NestedSet.Postgres",
       "version": "10.4.0",
-      "total_downloads": 444,
+      "total_downloads": 447,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet.Postgres/"
     },
@@ -2262,7 +2262,7 @@
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.NestedSet.SqlServer",
       "version": "10.4.0",
-      "total_downloads": 447,
+      "total_downloads": 450,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet.SqlServer/"
     },
@@ -2270,7 +2270,7 @@
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.NestedSet.Sqlite",
       "version": "10.4.0",
-      "total_downloads": 441,
+      "total_downloads": 444,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.NestedSet.Sqlite/"
     },
@@ -2278,7 +2278,7 @@
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations",
       "version": "10.7.3",
-      "total_downloads": 6310,
+      "total_downloads": 6385,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations/"
     },
@@ -2286,7 +2286,7 @@
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.MySql",
       "version": "10.7.3",
-      "total_downloads": 5449,
+      "total_downloads": 5520,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.MySql/"
     },
@@ -2294,7 +2294,7 @@
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.PostgreSql",
       "version": "10.7.3",
-      "total_downloads": 4167,
+      "total_downloads": 4246,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.PostgreSql/"
     },
@@ -2302,7 +2302,7 @@
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.SqlServer",
       "version": "10.7.3",
-      "total_downloads": 1744,
+      "total_downloads": 1754,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.SqlServer/"
     },
@@ -2310,7 +2310,7 @@
       "owner": "doka-labs",
       "id": "Doka.EntityFrameworkCore.SafeMigrations.Sqlite",
       "version": "10.7.3",
-      "total_downloads": 2282,
+      "total_downloads": 2305,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.EntityFrameworkCore.SafeMigrations.Sqlite/"
     },
@@ -2318,7 +2318,7 @@
       "owner": "doka-labs",
       "id": "Doka.NestedSet",
       "version": "10.4.0",
-      "total_downloads": 1130,
+      "total_downloads": 1146,
       "updated_at": null,
       "url": "https://www.nuget.org/packages/Doka.NestedSet/"
     }
